@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taybmeals.com/sitemap.xml
