@@ -1,0 +1,54 @@
+<svg width="1000" height="800" viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="800" fill="#F4F4F2"/>
+
+  <circle cx="820" cy="140" r="160" fill="#F6B6C1" opacity="0.5"/>
+  <circle cx="120" cy="700" r="130" fill="#F6B6C1" opacity="0.4"/>
+
+  <g transform="translate(230,110) rotate(-4)">
+    <rect x="0" y="0" width="420" height="560" rx="14" fill="#FFFFFF" stroke="#E4E4E0" stroke-width="2"/>
+    <rect x="0" y="0" width="420" height="70" rx="14" fill="#E11936"/>
+    <rect x="0" y="46" width="420" height="24" fill="#E11936"/>
+    <text x="30" y="45" font-family="Poppins, sans-serif" font-weight="700" font-size="26" fill="#FFFFFF">This Week's Menu</text>
+
+    <g font-family="Inter, sans-serif" fill="#2D2D2D">
+      <circle cx="45" cy="120" r="10" fill="#E11936"/>
+      <path d="M40 120 L44 124 L51 115" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="70" y="128" font-size="22" font-weight="600">Idly &amp; Sambar</text>
+      <text x="70" y="150" font-size="15" fill="#8A8A85">B02 &#183; Breakfast</text>
+
+      <circle cx="45" cy="200" r="10" fill="#E11936"/>
+      <path d="M40 200 L44 204 L51 195" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="70" y="208" font-size="22" font-weight="600">Chicken Biriyani</text>
+      <text x="70" y="230" font-size="15" fill="#8A8A85">L09 &#183; Lunch</text>
+
+      <circle cx="45" cy="280" r="10" fill="#E11936"/>
+      <path d="M40 280 L44 284 L51 275" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="70" y="288" font-size="22" font-weight="600">Ghee Rice Combo</text>
+      <text x="70" y="310" font-size="15" fill="#8A8A85">D16 &#183; Dinner</text>
+
+      <circle cx="45" cy="360" r="10" fill="none" stroke="#E11936" stroke-width="2"/>
+      <text x="70" y="368" font-size="22" font-weight="600" fill="#B7B7B0">Veg Pulao</text>
+      <text x="70" y="390" font-size="15" fill="#B7B7B0">L06 &#183; Lunch</text>
+
+      <circle cx="45" cy="440" r="10" fill="none" stroke="#E11936" stroke-width="2"/>
+      <text x="70" y="448" font-size="22" font-weight="600" fill="#B7B7B0">Chicken Burger</text>
+      <text x="70" y="470" font-size="15" fill="#B7B7B0">D15 &#183; Dinner</text>
+    </g>
+
+    <rect x="30" y="500" width="360" height="40" rx="20" fill="#F6B6C1"/>
+    <text x="210" y="526" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="15" fill="#E11936">NEW DISHES ADDED WEEKLY</text>
+  </g>
+
+  <g transform="translate(600,470) rotate(6)">
+    <rect x="0" y="0" width="180" height="180" rx="16" fill="#E11936"/>
+    <text x="90" y="80" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="46" fill="#FFFFFF">7</text>
+    <text x="90" y="118" text-anchor="middle" font-family="Inter, sans-serif" font-weight="600" font-size="16" fill="#FFFFFF">days a week</text>
+    <text x="90" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#F6B6C1">fresh menu updates</text>
+  </g>
+
+  <g transform="translate(90,150) rotate(-8)">
+    <circle cx="0" cy="0" r="55" fill="#FFFFFF" stroke="#E11936" stroke-width="3"/>
+    <text x="0" y="-6" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="24" fill="#E11936">200+</text>
+    <text x="0" y="18" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#2D2D2D">meals</text>
+  </g>
+</svg>

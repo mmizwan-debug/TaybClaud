@@ -254,13 +254,89 @@
             font-size: 0.85rem;
         }
 
+        .header-cta {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .whatsapp-header-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #25D366;
+            color: #FFFFFF;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: filter 0.2s ease, transform 0.2s ease;
+        }
+
+        .whatsapp-header-btn:hover {
+            filter: brightness(1.08);
+            transform: translateY(-1px);
+        }
+
+        .whatsapp-footer-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: #25D366;
+            color: #FFFFFF;
+            padding: 0.65rem 1.25rem;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: filter 0.2s ease, transform 0.2s ease;
+        }
+
+        .whatsapp-footer-btn:hover {
+            filter: brightness(1.08);
+            transform: translateY(-1px);
+        }
+
         /* Hero Section */
         #hero {
             min-height: calc(90vh - var(--header-height));
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            justify-content: center;
             padding-top: 4rem;
             padding-bottom: 4rem;
+            gap: 3rem;
+        }
+
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--color-white);
+            border: 1px solid var(--color-pink);
+            color: var(--color-dark);
+            padding: 0.6rem 1.1rem;
+            border-radius: var(--radius-full, 9999px);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .hero-badge-icon {
+            color: var(--color-red);
+            display: flex;
+            flex-shrink: 0;
         }
 
         .hero-grid {
@@ -321,6 +397,22 @@
             max-width: 800px;
             margin: 0 auto;
             box-shadow: var(--shadow-hover);
+        }
+
+        .trial-gradient-bg {
+            background: radial-gradient(circle at 15% 20%, rgba(225, 25, 54, 0.10), transparent 45%),
+                        radial-gradient(circle at 85% 80%, rgba(246, 182, 193, 0.55), transparent 50%),
+                        var(--color-offwhite);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trial-gradient-bg::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: repeating-linear-gradient(135deg, rgba(225,25,54,0.03) 0px, rgba(225,25,54,0.03) 2px, transparent 2px, transparent 14px);
+            pointer-events: none;
         }
 
         .important-note {
