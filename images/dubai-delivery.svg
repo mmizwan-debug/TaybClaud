@@ -1,0 +1,56 @@
+<svg width="1000" height="800" viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="800" fill="#F4F4F2"/>
+
+  <circle cx="150" cy="120" r="140" fill="#F6B6C1" opacity="0.45"/>
+  <circle cx="870" cy="680" r="170" fill="#F6B6C1" opacity="0.35"/>
+
+  <g transform="translate(150,140)">
+    <rect x="0" y="0" width="700" height="520" rx="20" fill="#FFFFFF" stroke="#E4E4E0" stroke-width="2"/>
+
+    <g stroke="#EDEDE9" stroke-width="1.5">
+      <line x1="0" y1="130" x2="700" y2="130"/>
+      <line x1="0" y1="260" x2="700" y2="260"/>
+      <line x1="0" y1="390" x2="700" y2="390"/>
+      <line x1="175" y1="0" x2="175" y2="520"/>
+      <line x1="350" y1="0" x2="350" y2="520"/>
+      <line x1="525" y1="0" x2="525" y2="520"/>
+    </g>
+
+    <path d="M60 480 Q 180 380 260 400 T 420 320 T 560 240 T 660 90" fill="none" stroke="#F6B6C1" stroke-width="10" stroke-linecap="round"/>
+    <path d="M60 480 Q 180 380 260 400 T 420 320 T 560 240 T 660 90" fill="none" stroke="#E11936" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 16"/>
+
+    <circle cx="60" cy="480" r="14" fill="#2D2D2D"/>
+    <circle cx="60" cy="480" r="6" fill="#FFFFFF"/>
+
+    <g transform="translate(660,60)">
+      <path d="M0 0 C -22 0 -40 18 -40 40 C -40 68 0 100 0 100 C 0 100 40 68 40 40 C 40 18 22 0 0 0 Z" fill="#E11936"/>
+      <circle cx="0" cy="38" r="16" fill="#FFFFFF"/>
+    </g>
+
+    <g transform="translate(260,388)">
+      <circle r="9" fill="#E11936"/>
+    </g>
+    <g transform="translate(420,308)">
+      <circle r="9" fill="#E11936"/>
+    </g>
+    <g transform="translate(560,228)">
+      <circle r="9" fill="#E11936"/>
+    </g>
+
+    <g transform="translate(40,40)" font-family="Poppins, sans-serif">
+      <text x="0" y="0" font-weight="700" font-size="26" fill="#2D2D2D">Dubai-wide delivery</text>
+      <text x="0" y="26" font-family="Inter, sans-serif" font-size="15" fill="#8A8A85">Every office, every home</text>
+    </g>
+
+    <g transform="translate(500,430)">
+      <rect x="0" y="0" width="160" height="52" rx="26" fill="#E11936"/>
+      <text x="80" y="33" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="700" font-size="16" fill="#FFFFFF">7 days a week</text>
+    </g>
+  </g>
+
+  <g transform="translate(120,590) rotate(-6)">
+    <rect x="0" y="0" width="210" height="90" rx="16" fill="#2D2D2D"/>
+    <text x="20" y="36" font-family="Poppins, sans-serif" font-weight="800" font-size="28" fill="#FFFFFF">100%</text>
+    <text x="20" y="62" font-family="Inter, sans-serif" font-size="14" fill="#C5CAA3">Dubai coverage</text>
+  </g>
+</svg>
