@@ -3,14 +3,14 @@
   var MEALS = ["Breakfast", "Lunch", "Dinner"];
 
   var STYLE_LABELS = {
+    all: "All Meals",
     kerala: "Kerala",
-    tamilnadu: "Tamil Nadu",
     south: "South Indian",
     north: "North Indian"
   };
 
   var state = {
-    style: "kerala",
+    style: "all",
     vegOnly: false,
     day: DAYS[0],
     meal: "Breakfast"
@@ -24,6 +24,9 @@
   var dishCountEl = document.getElementById("dish-count");
 
   function dishMatchesStyle(dish, style) {
+    if (style === "all") {
+      return true;
+    }
     if (style === "south") {
       return dish.styles.indexOf("north") === -1;
     }
