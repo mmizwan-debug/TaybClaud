@@ -2,21 +2,46 @@
   var DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
   var MEALS = ["Breakfast", "Lunch", "Dinner"];
 
+  var STYLE_LABELS = {
+    kerala: "Kerala",
+    tamilnadu: "Tamil Nadu",
+    south: "South Indian",
+    north: "North Indian"
+  };
+
   var state = {
-    menu: "weekly", // "weekly" | "north"
+    style: "kerala",
+    vegOnly: false,
     day: DAYS[0],
     meal: "Breakfast"
   };
 
+  var toggleBtns = document.querySelectorAll(".menu-toggle-btn");
+  var vegToggleBtn = document.getElementById("vegToggle");
   var dayTabsEl = document.getElementById("day-tabs");
   var mealTabsEl = document.getElementById("meal-tabs");
   var dishListEl = document.getElementById("dish-list");
   var dishCountEl = document.getElementById("dish-count");
-  var toggleBtns = document.querySelectorAll(".menu-toggle-btn");
+
+  function dishMatchesStyle(dish, style) {
+    if (style === "south") {
+      return dish.style !== "north";
+    }
+    return dish.style === style;
+  }
+
+  function getFilteredDishes(day, meal) {
+    var dayData = TAGGED_MENU[day] || {};
+    var mealDishes = dayData[meal] || [];
+    return mealDishes.filter(function (d) {
+      var styleMatch = dishMatchesStyle(d, state.style);
+      var vegMatch = !state.vegOnly || d.diet === "veg";
+      return styleMatch && vegMatch;
+    });
+  }
 
   function availableMealsForDay(day) {
-    var source = state.menu === "weekly" ? WEEKLY_MENU : NORTH_INDIAN_MENU;
-    var dayData = source[day] || {};
+    var dayData = TAGGED_MENU[day] || {};
     return MEALS.filter(function (m) { return dayData.hasOwnProperty(m); });
   }
 
@@ -55,37 +80,20 @@
     });
   }
 
-  function getCurrentDishes() {
-    var source = state.menu === "weekly" ? WEEKLY_MENU : NORTH_INDIAN_MENU;
-    var dayData = source[state.day] || {};
-    var mealData = dayData[state.meal];
-    if (!mealData) return { dishes: [], fallback: false };
-
-    if (state.menu === "weekly") {
-      return { dishes: mealData, fallback: false };
-    }
-    return { dishes: mealData.dishes || [], fallback: mealData.fallback || false };
-  }
-
   function renderDishes() {
-    var result = getCurrentDishes();
-    var dishes = result.dishes;
+    var dishes = getFilteredDishes(state.day, state.meal);
 
-    dishCountEl.textContent = dishes.length + (dishes.length === 1 ? " dish available" : " dishes available") + " · select your favourite";
+    var styleLabel = STYLE_LABELS[state.style];
+    var vegLabel = state.vegOnly ? " veg" : "";
+    dishCountEl.textContent = dishes.length + (dishes.length === 1 ? " dish" : " dishes") +
+      vegLabel + " available in " + styleLabel + " \u00b7 select your favourite";
 
     dishListEl.innerHTML = "";
-
-    if (result.fallback) {
-      var note = document.createElement("div");
-      note.className = "fallback-note";
-      note.textContent = "No North Indian breakfast dishes this day — South Indian favourites shown below.";
-      dishListEl.appendChild(note);
-    }
 
     if (dishes.length === 0) {
       var empty = document.createElement("p");
       empty.className = "empty-note";
-      empty.textContent = "No dishes available for this selection.";
+      empty.textContent = "No " + styleLabel + (state.vegOnly ? " veg" : "") + " dishes for this meal \u2014 try another style, day, or meal.";
       dishListEl.appendChild(empty);
       return;
     }
@@ -97,13 +105,23 @@
       var info = document.createElement("div");
       info.className = "dish-info";
 
+      var nameRow = document.createElement("div");
+      nameRow.className = "dish-name-row";
+
       var name = document.createElement("h4");
       name.textContent = dish.name;
+
+      var dietBadge = document.createElement("span");
+      dietBadge.className = "diet-badge " + (dish.diet === "veg" ? "diet-veg" : "diet-nonveg");
+      dietBadge.title = dish.diet === "veg" ? "Vegetarian" : "Non-Vegetarian";
+
+      nameRow.appendChild(dietBadge);
+      nameRow.appendChild(name);
 
       var desc = document.createElement("p");
       desc.textContent = dish.desc;
 
-      info.appendChild(name);
+      info.appendChild(nameRow);
       info.appendChild(desc);
 
       var code = document.createElement("span");
@@ -124,19 +142,23 @@
 
   toggleBtns.forEach(function (btn) {
     btn.addEventListener("click", function () {
-      var menuType = btn.getAttribute("data-menu");
-      if (menuType === state.menu) return;
-      state.menu = menuType;
+      var style = btn.getAttribute("data-style");
+      if (style === state.style) return;
+      state.style = style;
       toggleBtns.forEach(function (b) { b.classList.remove("active"); });
       btn.classList.add("active");
-
-      var meals = availableMealsForDay(state.day);
-      if (meals.indexOf(state.meal) === -1) {
-        state.meal = meals[0];
-      }
       renderAll();
     });
   });
+
+  if (vegToggleBtn) {
+    vegToggleBtn.addEventListener("click", function () {
+      state.vegOnly = !state.vegOnly;
+      vegToggleBtn.setAttribute("aria-pressed", String(state.vegOnly));
+      vegToggleBtn.classList.toggle("active", state.vegOnly);
+      renderAll();
+    });
+  }
 
   renderAll();
 })();
