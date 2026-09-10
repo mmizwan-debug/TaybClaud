@@ -157,8 +157,7 @@
   if (vegToggleBtn) {
     vegToggleBtn.addEventListener("click", function () {
       state.vegOnly = !state.vegOnly;
-      vegToggleBtn.setAttribute("aria-pressed", String(state.vegOnly));
-      vegToggleBtn.classList.toggle("active", state.vegOnly);
+      vegToggleBtn.setAttribute("aria-checked", String(state.vegOnly));
       renderAll();
     });
   }

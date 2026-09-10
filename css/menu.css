@@ -85,40 +85,66 @@
 
 /* Veg-only toggle */
 .veg-toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 220px;
     margin-bottom: 1.5rem;
+    padding: 0.6rem 0.9rem;
+    background: var(--color-offwhite);
+    border-radius: var(--radius-full, 9999px);
 }
 
-.veg-toggle-btn {
+.veg-toggle-label {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 0.85rem;
-    padding: 0.55rem 1rem;
-    border: 1.5px solid #2E7D32;
-    border-radius: var(--radius-full, 9999px);
-    background: var(--color-white);
-    color: #2E7D32;
-    cursor: pointer;
-    transition: all 0.2s ease;
+    color: var(--color-dark);
 }
 
-.veg-toggle-btn .veg-dot {
+.veg-toggle-label .veg-dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background: #2E7D32;
     display: inline-block;
+    flex-shrink: 0;
 }
 
-.veg-toggle-btn.active {
-    background: #2E7D32;
-    color: var(--color-white);
+.veg-switch {
+    position: relative;
+    width: 42px;
+    height: 24px;
+    border-radius: var(--radius-full, 9999px);
+    background: #C9C9C9;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
 }
 
-.veg-toggle-btn.active .veg-dot {
+.veg-switch-thumb {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
     background: var(--color-white);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease;
+}
+
+.veg-switch[aria-checked="true"] {
+    background: #2E7D32;
+}
+
+.veg-switch[aria-checked="true"] .veg-switch-thumb {
+    transform: translateX(18px);
 }
 
 /* Photo strip on menu hero */
