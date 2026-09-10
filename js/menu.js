@@ -25,9 +25,9 @@
 
   function dishMatchesStyle(dish, style) {
     if (style === "south") {
-      return dish.style !== "north";
+      return dish.styles.indexOf("north") === -1;
     }
-    return dish.style === style;
+    return dish.styles.indexOf(style) !== -1;
   }
 
   function getFilteredDishes(day, meal) {

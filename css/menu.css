@@ -29,6 +29,19 @@
     margin: 0 auto 1rem auto;
 }
 
+.menu-instruction {
+    max-width: 640px;
+    margin: 0 auto;
+    background: var(--color-pink);
+    color: var(--color-red);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.85rem 1.25rem;
+    border-radius: var(--radius-md);
+    display: inline-block;
+}
+
 #menu-browser {
     padding-top: 1rem;
 }
