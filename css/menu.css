@@ -52,6 +52,35 @@
     padding-top: 1rem;
 }
 
+/* Custom Menu / Fixed Menu mode toggle */
+.menu-mode-toggle {
+    display: inline-flex;
+    background: var(--color-dark);
+    border-radius: var(--radius-md);
+    padding: 0.4rem;
+    margin-bottom: 1.5rem;
+    gap: 0.4rem;
+}
+
+.mode-toggle-btn {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mode-toggle-btn.active {
+    background: var(--color-red);
+    color: var(--color-white);
+    box-shadow: var(--shadow-soft);
+}
+
 /* Style toggle (Kerala / Tamil Nadu / South Indian / North Indian) */
 .menu-toggle {
     display: inline-flex;
@@ -380,6 +409,15 @@ nav a.active-link {
 
 /* Mobile */
 @media (max-width: 640px) {
+    .menu-mode-toggle {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .mode-toggle-btn {
+        text-align: center;
+        padding: 0.7rem 0.5rem;
+    }
     .dish-card {
         flex-direction: column;
         gap: 0.5rem;
