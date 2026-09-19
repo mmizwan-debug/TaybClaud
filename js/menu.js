@@ -8,11 +8,58 @@
     south: "South Indian",
     north: "North Indian"
   };
+  var VALID_STYLES = Object.keys(STYLE_LABELS);
+
+  function getUrlParams() {
+    return new URLSearchParams(window.location.search);
+  }
+
+  function initialStyleFromUrl() {
+    var params = getUrlParams();
+    var style = params.get("style");
+    return VALID_STYLES.indexOf(style) !== -1 ? style : "all";
+  }
+
+  function initialDayFromUrl() {
+    var params = getUrlParams();
+    var day = params.get("day");
+    for (var i = 0; i < DAYS.length; i++) {
+      if (DAYS[i].toLowerCase() === (day || "").toLowerCase()) return DAYS[i];
+    }
+    return DAYS[0];
+  }
+
+  function initialVegFromUrl() {
+    var params = getUrlParams();
+    return params.get("veg") === "1";
+  }
+
+  function updateUrl() {
+    var params = getUrlParams();
+    if (state.style === "all") {
+      params.delete("style");
+    } else {
+      params.set("style", state.style);
+    }
+    if (state.day === DAYS[0]) {
+      params.delete("day");
+    } else {
+      params.set("day", state.day);
+    }
+    if (state.vegOnly) {
+      params.set("veg", "1");
+    } else {
+      params.delete("veg");
+    }
+    var qs = params.toString();
+    var newUrl = window.location.pathname + (qs ? "?" + qs : "");
+    window.history.replaceState(null, "", newUrl);
+  }
 
   var state = {
-    style: "all",
-    vegOnly: false,
-    day: DAYS[0],
+    style: initialStyleFromUrl(),
+    vegOnly: initialVegFromUrl(),
+    day: initialDayFromUrl(),
     meal: "Breakfast"
   };
 
@@ -141,6 +188,16 @@
     renderDayTabs();
     renderMealTabs();
     renderDishes();
+    updateUrl();
+  }
+
+  function syncToggleButtons() {
+    toggleBtns.forEach(function (b) {
+      b.classList.toggle("active", b.getAttribute("data-style") === state.style);
+    });
+    if (vegToggleBtn) {
+      vegToggleBtn.setAttribute("aria-checked", String(state.vegOnly));
+    }
   }
 
   toggleBtns.forEach(function (btn) {
@@ -162,5 +219,6 @@
     });
   }
 
+  syncToggleButtons();
   renderAll();
 })();

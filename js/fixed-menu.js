@@ -115,10 +115,57 @@
   };
 
   /* ===================== STATE ===================== */
+  var VALID_CATEGORIES = Object.keys(FIXED_MENU);
+  var DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+  function getUrlParams() {
+    return new URLSearchParams(window.location.search);
+  }
+
+  function initialModeFromUrl() {
+    return getUrlParams().get("mode") === "fixed" ? "fixed" : "custom";
+  }
+
+  function initialCategoryFromUrl() {
+    var cat = getUrlParams().get("category");
+    return VALID_CATEGORIES.indexOf(cat) !== -1 ? cat : "kerala";
+  }
+
+  function initialFixedDayIndexFromUrl() {
+    var day = getUrlParams().get("day");
+    for (var i = 0; i < DAY_NAMES.length; i++) {
+      if (DAY_NAMES[i].toLowerCase() === (day || "").toLowerCase()) return i;
+    }
+    return 0;
+  }
+
+  var currentMode = initialModeFromUrl();
+
   const fixedState = {
-    category: "kerala",
-    dayIndex: 0
+    category: initialCategoryFromUrl(),
+    dayIndex: initialFixedDayIndexFromUrl()
   };
+
+  function updateFixedUrl() {
+    const params = getUrlParams();
+    if (currentMode === "fixed") {
+      params.set("mode", "fixed");
+      params.set("category", fixedState.category);
+      const day = FIXED_MENU[fixedState.category].days[fixedState.dayIndex];
+      if (day && day.name !== DAY_NAMES[0]) {
+        params.set("day", day.name);
+      } else {
+        params.delete("day");
+      }
+    } else {
+      params.delete("mode");
+      params.delete("category");
+      params.delete("day");
+    }
+    const qs = params.toString();
+    const newUrl = window.location.pathname + (qs ? "?" + qs : "");
+    window.history.replaceState(null, "", newUrl);
+  }
 
   const customSection = document.getElementById("customMenuSection");
   const fixedSection = document.getElementById("fixedMenuSection");
@@ -131,19 +178,26 @@
   if (!fixedSection) return;
 
   /* ===================== MODE SWITCH ===================== */
+  function activateMode(mode) {
+    currentMode = mode;
+    modeButtons.forEach(function (b) {
+      b.classList.toggle("active", b.getAttribute("data-mode") === mode);
+    });
+    if (mode === "fixed") {
+      customSection.style.display = "none";
+      fixedSection.style.display = "block";
+      renderFixedAll();
+    } else {
+      fixedSection.style.display = "none";
+      customSection.style.display = "block";
+      updateFixedUrl();
+    }
+  }
+
   modeButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       const mode = btn.getAttribute("data-mode");
-      modeButtons.forEach(function (b) { b.classList.remove("active"); });
-      btn.classList.add("active");
-      if (mode === "fixed") {
-        customSection.style.display = "none";
-        fixedSection.style.display = "block";
-        renderFixedAll();
-      } else {
-        fixedSection.style.display = "none";
-        customSection.style.display = "block";
-      }
+      activateMode(mode);
     });
   });
 
@@ -176,6 +230,7 @@
         fixedState.dayIndex = i;
         renderPlan();
         renderDayBar();
+        updateFixedUrl();
       });
       dayBar.appendChild(btn);
     });
@@ -215,5 +270,10 @@
     renderCategoryBar();
     renderDayBar();
     renderPlan();
+    updateFixedUrl();
+  }
+
+  if (currentMode === "fixed") {
+    activateMode("fixed");
   }
 })();
