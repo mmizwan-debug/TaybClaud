@@ -100,7 +100,7 @@
           { label: "Dinner", dish: "Chappathi with Chicken Aloo Curry", vnv: "Non-Veg", code: "D02-W", sub: "Soft whole wheat chappathis accompanied by tender chicken aloo curry" }
         ]},
         { name: "Friday", tag: "Veg Day", meals: [
-          { label: "Breakfast", dish: "Idly Set", vnv: "Veg", code: "B01-F", sub: "Soft, steamed set of 3 idlys served with homestyle sambar (South Indian favourite \u2014 no North Indian breakfast this day)" },
+          { label: "Breakfast", dish: "Upma", vnv: "Veg", code: "B04-F", sub: "Flavorful upma with a medley of fresh vegetables, complemented by aromatic South Indian sambar (South Indian favourite \u2014 no North Indian breakfast this day)" },
           { label: "Lunch", dish: "Chappathi Lunch", vnv: "Veg", code: "L07-F", sub: "Set of whole wheat chapathis served with flavorful vegetable chunks masala" },
           { label: "Dinner", dish: "Chappathi with Spiced Egg Gravy", vnv: "Non-Veg", code: "D02-TH", sub: "Soft whole wheat chappathis accompanied by spiced egg gravy" }
         ]},
