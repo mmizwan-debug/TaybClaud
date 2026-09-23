@@ -136,7 +136,7 @@
     var styleLabel = STYLE_LABELS[state.style];
     var vegLabel = state.vegOnly ? " veg" : "";
     dishCountEl.textContent = dishes.length + (dishes.length === 1 ? " dish" : " dishes") +
-      vegLabel + " available in " + styleLabel + " \u00b7 select your favourite";
+      vegLabel + " available in " + styleLabel + " \u2014 browse here, then choose your favourites during registration";
 
     dishListEl.innerHTML = "";
 
