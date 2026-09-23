@@ -175,6 +175,36 @@
             color: var(--color-red);
         }
 
+        /* Highlighted CTA (used for Register Now on menu page header) */
+        .btn-highlight {
+            background-color: var(--color-white);
+            color: var(--color-red);
+            border: 2px solid var(--color-white);
+            animation: btnPulseGlow 2.2s infinite;
+        }
+
+        .btn-highlight:hover {
+            background-color: var(--color-dark);
+            color: var(--color-white);
+            border-color: var(--color-dark);
+            animation: none;
+        }
+
+        @keyframes btnPulseGlow {
+            0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.55); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+        }
+
+        /* Hero CTA row on menu page */
+        .menu-hero-cta-row {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
         /* Header */
         header {
             position: sticky;
