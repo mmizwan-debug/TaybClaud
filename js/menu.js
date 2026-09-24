@@ -71,6 +71,9 @@
   var dishCountEl = document.getElementById("dish-count");
 
   function dishMatchesStyle(dish, style) {
+    if (dish.styles.indexOf("universal") !== -1) {
+      return true;
+    }
     if (style === "all") {
       return true;
     }
