@@ -33,7 +33,7 @@
       areas: [
         "Al Barsha", "Jumeirah", "Umm Suqeim", "Al Safa", "Al Nahda", "Al Qusais",
         "Al Rashidiya", "Mirdif", "International City", "Dubai Silicon Oasis",
-        "Academic City", "Arabian Ranches", "Emirates Living (Springs/Meadows/Lakes)",
+        "Academic City",
         "Dubailand", "Mudon", "MBR City", "Festival City", "Nadd Al Sheba"
       ]
     }
