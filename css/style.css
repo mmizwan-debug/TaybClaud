@@ -541,6 +541,61 @@
             width: 100%;
         }
 
+        /* Starter Plan details (menu page) */
+        .starter-plan-wrap {
+            max-width: 640px;
+            margin: 3rem auto 0;
+            padding: 0 var(--spacing-container);
+        }
+
+        .starter-plan-card {
+            background: var(--color-offwhite);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+        }
+
+        .starter-plan-highlight {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: var(--color-red);
+            margin-bottom: 0.75rem;
+        }
+
+        .starter-plan-card > p {
+            margin-bottom: 1.25rem;
+        }
+
+        .starter-plan-list {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .starter-plan-list li {
+            font-size: 0.98rem;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .starter-plan-list li:last-child {
+            border-bottom: none;
+        }
+
+        .starter-plan-payments {
+            background: var(--color-white);
+            border-radius: var(--radius-md);
+            padding: 1.25rem 1.5rem;
+        }
+
+        .starter-plan-payments-label {
+            display: block;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--color-red);
+            margin-bottom: 0.4rem;
+        }
+
         /* Trial Section */
         .glass-panel {
             background: rgba(255, 255, 255, 0.96);
