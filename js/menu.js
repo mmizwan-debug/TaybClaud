@@ -133,17 +133,44 @@
     });
   }
 
+  var NORTH_BREAKFAST_FALLBACK = {
+    "Thursday": "B02-TH",
+    "Friday": "B04-F"
+  };
+
+  function getFallbackDish(day, meal) {
+    if (state.style !== "north" || meal !== "Breakfast") return null;
+    var code = NORTH_BREAKFAST_FALLBACK[day];
+    if (!code) return null;
+    var dayData = TAGGED_MENU[day] || {};
+    var mealDishes = dayData[meal] || [];
+    var found = mealDishes.filter(function (d) { return d.code === code; })[0];
+    return found || null;
+  }
+
   function renderDishes() {
     var dishes = getFilteredDishes(state.day, state.meal);
+    var fallbackDish = dishes.length === 0 ? getFallbackDish(state.day, state.meal) : null;
 
     var styleLabel = STYLE_LABELS[state.style];
     var vegLabel = state.vegOnly ? " veg" : "";
-    dishCountEl.textContent = dishes.length + (dishes.length === 1 ? " dish" : " dishes") +
-      vegLabel + " available in " + styleLabel + " \u2014 browse here, then choose your favourites during registration";
+
+    if (fallbackDish) {
+      dishCountEl.textContent = "No North Indian breakfast this day \u2014 South Indian favourite shown below";
+    } else {
+      dishCountEl.textContent = dishes.length + (dishes.length === 1 ? " dish" : " dishes") +
+        vegLabel + " available in " + styleLabel + " \u2014 browse here, then choose your favourites during registration";
+    }
 
     dishListEl.innerHTML = "";
 
-    if (dishes.length === 0) {
+    if (fallbackDish) {
+      var note = document.createElement("p");
+      note.className = "fallback-note";
+      note.textContent = "No North Indian breakfast dishes this day \u2014 South Indian favourite shown below.";
+      dishListEl.appendChild(note);
+      dishes = [fallbackDish];
+    } else if (dishes.length === 0) {
       var empty = document.createElement("p");
       empty.className = "empty-note";
       empty.textContent = "No " + styleLabel + (state.vegOnly ? " veg" : "") + " dishes for this meal \u2014 try another style, day, or meal.";
