@@ -541,6 +541,14 @@
             width: 100%;
         }
 
+        .zone-disclaimer {
+            font-size: 0.8rem;
+            color: #999;
+            text-align: center;
+            margin-top: 0.75rem;
+            margin-bottom: 0;
+        }
+
         /* Starter Plan details (menu page) */
         .starter-plan-wrap {
             max-width: 640px;
