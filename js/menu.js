@@ -62,6 +62,10 @@
     day: initialDayFromUrl(),
     meal: "Breakfast"
   };
+  /* Sunday has no breakfast — open on the first available meal */
+  if (!(TAGGED_MENU[state.day] && TAGGED_MENU[state.day][state.meal])) {
+    state.meal = Object.keys(TAGGED_MENU[state.day] || {})[0] || "Lunch";
+  }
 
   var toggleBtns = document.querySelectorAll(".menu-toggle-btn");
   var vegToggleBtn = document.getElementById("vegToggle");

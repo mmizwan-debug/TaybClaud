@@ -6,7 +6,7 @@
       label: "Kerala",
       days: [
         { name: "Monday", tag: "Veg Day", meals: [
-          { label: "Breakfast", dish: "Kerala Style Breakfast Combo", vnv: "Veg", code: "B02-M", sub: "Puttu, parota, payasam served with kadala curry & sambar" },
+          { label: "Breakfast", dish: "Kerala Style Breakfast Combo", vnv: "Veg", code: "B02-M", sub: "Puttu, parotta, and payasam served with kadala curry & sambar" },
           { label: "Lunch", dish: "Veg Meal", vnv: "Veg", code: "L03-M", sub: "Kerala special matta rice served with homely sambar, kootu curry, flavorful rasam, and appalam" },
           { label: "Dinner", dish: "Neychoru Beef", vnv: "Non-Veg", code: "D11-M", sub: "Traditional Kerala ghee rice (Neychoru) served with rich beef curry and tangy pickle" }
         ]},
@@ -55,7 +55,7 @@
         { name: "Wednesday", tag: "Veg Day", meals: [
           { label: "Breakfast", dish: "Pongal Sambar", vnv: "Veg", code: "B03-W", sub: "Soft, creamy pongal served with traditional spicy gothsu" },
           { label: "Lunch", dish: "Veg Meal", vnv: "Veg", code: "L01-W", sub: "Steamed rice served with homestyle sambar, poricha kulambu / puli kulambu / vathakuzhambu, flavorful rasam, kootu and appalam" },
-          { label: "Dinner", dish: "Rice Non-Veg Combo", vnv: "Non-Veg", code: "D17-W", sub: "Steamed basmati rice served with traditional sambar and spicy chicken chukka masala" }
+          { label: "Dinner", dish: "Rice Non-Veg Combo", vnv: "Non-Veg", code: "D17-W", sub: "Baric rice served with dal, rasam and chicken 65" }
         ]},
         { name: "Thursday", tag: "Non-Veg Day", meals: [
           { label: "Breakfast", dish: "Club Sandwich", vnv: "Non-Veg", code: "B04-TH", sub: "3-layer white bread sandwich stuffed with sliced chicken, egg and vegetables" },
@@ -80,7 +80,7 @@
       label: "North Indian",
       days: [
         { name: "Monday", tag: "Non-Veg Day", meals: [
-          { label: "Breakfast", dish: "Chappathi", vnv: "Non-Veg", code: "B04-M", sub: "Set of whole wheat chapathis served with chicken curry/masala" },
+          { label: "Breakfast", dish: "Chappathi", vnv: "Veg", code: "B04-M", sub: "Set of whole wheat chappathis served with potato curry / masala" },
           { label: "Lunch", dish: "Chappathi with Chicken Curry & Chicken 65", vnv: "Non-Veg", code: "L12-M", sub: "Served with chicken curry & chicken 65" },
           { label: "Dinner", dish: "Butter Chicken", vnv: "Non-Veg", code: "D19-M", sub: "Flavorful butter chicken served with steamed rice" }
         ]},
