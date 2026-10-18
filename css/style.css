@@ -542,12 +542,66 @@
         }
 
         .zone-disclaimer {
-            font-size: 0.8rem;
-            color: #999;
+            font-size: 0.9rem;
+            color: #5a4300;
+            background: #fff6d6;
+            border: 1px solid #f2d36b;
+            border-radius: var(--radius-md);
+            padding: 0.75rem 1rem;
             text-align: center;
-            margin-top: 0.75rem;
+            margin-top: 0.9rem;
             margin-bottom: 0;
         }
+
+        .zone-approx-tag {
+            display: inline-block;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.65rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #5a4300;
+            background: #ffe58f;
+            border-radius: 999px;
+            padding: 0.15rem 0.55rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .zone-share-row { display: flex; gap: 0.75rem; margin-top: 0.9rem; }
+
+        .zone-share-btn {
+            flex: 1;
+            text-align: center;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.75rem 0.5rem;
+            border-radius: var(--radius-md);
+            border: 2px solid #25D366;
+            background: var(--color-white);
+            color: #128C4A;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .zone-share-btn.zone-share-wa { background: #25D366; color: #fff; }
+
+        /* Standalone delivery timings page */
+        .zone-overview {
+            max-width: 760px;
+            margin: 2rem auto 0;
+            padding: 0 var(--spacing-container);
+            display: grid;
+            gap: 1rem;
+        }
+        .zone-overview-card { background: var(--color-offwhite); border-radius: var(--radius-md); padding: 1.1rem 1.25rem; }
+        .zone-overview-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.6rem; }
+        .zone-overview-name { font-family: var(--font-heading); font-weight: 800; font-size: 1.1rem; color: var(--color-red); }
+        .zone-overview-head .zone-approx-tag { margin-bottom: 0; }
+        .zone-overview-times { display: flex; gap: 1rem; margin-bottom: 0.6rem; }
+        .zone-overview-times > div { flex: 1; }
+        .zone-overview-times strong { display: block; font-family: var(--font-heading); font-size: 1.05rem; color: var(--color-dark); }
+        .zone-overview-areas { font-size: 0.85rem; color: #666; margin: 0; line-height: 1.5; }
 
         /* Starter Plan details (menu page) */
         .starter-plan-wrap {

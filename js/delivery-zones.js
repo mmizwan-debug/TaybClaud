@@ -40,6 +40,28 @@
   };
 
   var WHATSAPP_NUMBER = "971509487880";
+  var SHARE_URL = "https://taybmeals.com/delivery-timings.html";
+
+  function shareLink(area) {
+    return SHARE_URL + (area ? "?area=" + encodeURIComponent(area) : "");
+  }
+
+  function renderOverview(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var html = "";
+    Object.keys(ZONES).forEach(function (key) {
+      var z = ZONES[key];
+      html += '<div class="zone-overview-card">' +
+        '<div class="zone-overview-head"><span class="zone-overview-name">' + z.label + '</span>' +
+        '<span class="zone-approx-tag">Approx.</span></div>' +
+        '<div class="zone-overview-times">' +
+        '<div><span class="zone-time-label">Breakfast &amp; Lunch</span><strong>' + z.bf + '</strong></div>' +
+        '<div><span class="zone-time-label">Dinner</span><strong>' + z.dinner + '</strong></div></div>' +
+        '<p class="zone-overview-areas">' + z.areas.join(" \u2022 ") + '</p></div>';
+    });
+    el.innerHTML = html;
+  }
 
   function buildSelect(select) {
     var placeholder = document.createElement("option");
@@ -81,8 +103,36 @@
 
     buildSelect(select);
 
+    var shareWa = container.querySelector(".zone-share-wa");
+    var copyBtn = container.querySelector(".zone-copy-link");
+    function updateShare() {
+      var link = shareLink(select.value);
+      if (shareWa) {
+        shareWa.href = "https://wa.me/?text=" + encodeURIComponent("Tayb Meals delivery timings (approx.): " + link);
+      }
+      if (copyBtn) copyBtn.setAttribute("data-link", link);
+    }
+    if (copyBtn) {
+      copyBtn.addEventListener("click", function () {
+        var link = copyBtn.getAttribute("data-link") || shareLink("");
+        var done = function () {
+          var old = copyBtn.getAttribute("data-label") || copyBtn.textContent;
+          copyBtn.setAttribute("data-label", old);
+          copyBtn.textContent = "Link copied \u2713";
+          setTimeout(function () { copyBtn.textContent = old; }, 1800);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(link).then(done, function () { window.prompt("Copy this link:", link); });
+        } else {
+          window.prompt("Copy this link:", link);
+        }
+      });
+    }
+    updateShare();
+
     select.addEventListener("change", function () {
       var area = select.value;
+      updateShare();
       if (!area) {
         resultWrap.style.display = "none";
         return;
@@ -98,7 +148,17 @@
 
       resultWrap.style.display = "block";
     });
+
+    /* Preselect from shared link, e.g. delivery-timings.html?area=Dubai%20Marina */
+    try {
+      var wanted = new URLSearchParams(window.location.search).get("area");
+      if (wanted && findZoneKey(wanted)) {
+        select.value = wanted;
+        select.dispatchEvent(new Event("change"));
+      }
+    } catch (e) {}
   }
 
+  renderOverview("zoneOverview");
   init("deliveryZonesWidget");
 })();

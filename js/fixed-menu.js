@@ -110,7 +110,7 @@
           { label: "Dinner", dish: "Butter Chicken with Rice", vnv: "Non-Veg", code: "D08-SA", sub: "Butter chicken served with steamed rice" }
         ]}
       ],
-      addon: "Sunday (optional add-on): choose either <strong>Chicken Biriyai (LD01-SU)</strong> \u2014 tender chicken basmati biriyani with raita and pickle, or <strong>Veg Biriyani (LD04-SU)</strong> \u2014 basmati rice with fresh vegetables and raita. Same two options cover both lunch and dinner."
+      addon: "Sunday (optional add-on): choose either <strong>Chicken Biriyani (LD01-SU)</strong> \u2014 tender chicken basmati biriyani with raita and pickle, or <strong>Veg Biriyani (LD04-SU)</strong> \u2014 basmati rice with fresh vegetables and raita. Same two options cover both lunch and dinner."
     }
   };
 
