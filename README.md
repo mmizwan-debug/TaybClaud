@@ -99,3 +99,6 @@ Then visit `http://localhost:8000`.
   verified and use `target="_blank" rel="noopener noreferrer"` for security.
 - Fonts (Inter, Poppins) load from Google Fonts CDN — works online; for a
   fully offline copy, download the font files and self-host.
+
+
+Last updated: 18 Oct 2026 (Delivery Timings page added).
