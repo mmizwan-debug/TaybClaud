@@ -601,7 +601,8 @@
         .zone-overview-times { display: flex; gap: 1rem; margin-bottom: 0.6rem; }
         .zone-overview-times > div { flex: 1; }
         .zone-overview-times strong { display: block; font-family: var(--font-heading); font-size: 1.05rem; color: var(--color-dark); }
-        .zone-overview-areas { font-size: 0.85rem; color: #666; margin: 0; line-height: 1.5; }
+        .zone-overview-areas { font-size: 0.85rem; color: #666; margin: 0 0 0.9rem; line-height: 1.5; }
+        .zone-overview-earlier { display: block; text-align: center; }
 
         /* Starter Plan details (menu page) */
         .starter-plan-wrap {

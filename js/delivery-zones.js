@@ -58,7 +58,10 @@
         '<div class="zone-overview-times">' +
         '<div><span class="zone-time-label">Breakfast &amp; Lunch</span><strong>' + z.bf + '</strong></div>' +
         '<div><span class="zone-time-label">Dinner</span><strong>' + z.dinner + '</strong></div></div>' +
-        '<p class="zone-overview-areas">' + z.areas.join(" \u2022 ") + '</p></div>';
+        '<p class="zone-overview-areas">' + z.areas.join(" \u2022 ") + '</p>' +
+        '<a class="btn btn-outline zone-earlier-btn zone-overview-earlier" target="_blank" rel="noopener noreferrer" href="https://wa.me/' + WHATSAPP_NUMBER + '?text=' +
+        encodeURIComponent("Hi, I'd like to ask if delivery could be earlier than the usual " + z.bf + " breakfast/lunch slot in " + z.label + ". Kindly advise.") +
+        '">Want it earlier? Ask on WhatsApp</a></div>';
     });
     el.innerHTML = html;
   }
