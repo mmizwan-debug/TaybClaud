@@ -36,6 +36,12 @@
         "Academic City",
         "Dubailand", "Mudon", "MBR City", "Festival City", "Nadd Al Sheba"
       ]
+    },
+    E: {
+      label: "Zone E",
+      bf: "Before 7:30 AM",
+      dinner: "Before 7:30 PM",
+      areas: ["Al Jaddaf"]
     }
   };
 
