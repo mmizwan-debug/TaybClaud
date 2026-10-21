@@ -1398,3 +1398,58 @@
                 font-size: 2rem !important;
             }
         }
+/* Food gallery — endless scrolling carousel */
+.food-gallery-section { padding: 3rem 0 2.5rem; }
+.food-carousel {
+    overflow: hidden;
+    margin: 1.5rem 0 0;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+            mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+}
+#menu-hero .food-carousel { margin-top: 2rem; }
+.food-carousel-track {
+    display: flex;
+    gap: 14px;
+    width: max-content;
+    animation: food-scroll 70s linear infinite;
+    will-change: transform;
+}
+.food-carousel:hover .food-carousel-track { animation-play-state: paused; }
+.food-carousel-track img {
+    flex: 0 0 auto;
+    width: 220px;
+    height: 275px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+}
+@keyframes food-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(calc(-50% - 7px)); }
+}
+@media (max-width: 600px) {
+    .food-carousel-track { gap: 10px; animation-duration: 55s; }
+    .food-carousel-track img { width: 150px; height: 188px; }
+    @keyframes food-scroll { to { transform: translateX(calc(-50% - 5px)); } }
+}
+@media (prefers-reduced-motion: reduce) {
+    .food-carousel { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+    .food-carousel-track { animation: none; }
+}
+
+/* Desktop nav: keep all links on one line */
+@media (min-width: 769px) {
+    nav { gap: 1.1rem; }
+    nav a { white-space: nowrap; font-size: 0.78rem; letter-spacing: 0.03em; }
+}
+@media (min-width: 769px) and (max-width: 1180px) {
+    nav { gap: 0.8rem; }
+    nav a { font-size: 0.72rem; }
+    .whatsapp-header-btn.hidden-mobile { display: none; }
+}
+@media (min-width: 769px) and (max-width: 960px) {
+    nav { gap: 0.55rem; }
+    nav a { font-size: 0.64rem; letter-spacing: 0.01em; }
+    .header-cta .btn-highlight { white-space: nowrap; padding: 0.55rem 0.8rem; font-size: 0.7rem; }
+    .logo-container a { height: 34px; }
+}
