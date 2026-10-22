@@ -10,7 +10,7 @@ Use the SAME name, phone, address and website everywhere (consistency helps Goog
 - **Order / register link:** https://taybmeals.paperform.co
 - **Address:** Warsan 1st, France Cluster, Dubai, UAE  (Google: choose "I deliver to customers" and hide the address if this is a kitchen, not a walk-in shop)
 - **Service area:** Dubai — Jebel Ali, Al Quoz, DIP, DIC, Dubai South, Al Khail Gate, Discovery Gardens, Al Jaddaf, Bur Dubai, Deira, Karama, Al Nahda, Al Qusais, Rashidiya, Umm Ramool, Muhaisnah, Warsan, Al Warqa, International City, Business Bay, JLT, Dubai Marina
-- **Hours:** OWNER TO CONFIRM (website footer says Mon–Fri 9am–5pm, Sat–Sun closed, but meals are delivered Mon–Sat)
+- **Hours:** Mon–Sat 7:00 AM–9:00 PM, Sunday 11:00 AM–2:00 PM
 
 **Short description (≤250 chars):**
 Homestyle monthly mess food and tiffin service in Dubai. South Indian, Kerala, North Indian and global meals delivered Mon–Sat to homes and offices across Dubai. Plans from AED 199/month.
