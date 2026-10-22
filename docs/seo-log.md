@@ -43,3 +43,7 @@ Search tool used is a US-based web index, not Google UAE, so positions are a rou
 
 ### Update 2026-10-22 (owner request) — delivery areas
 - Expanded delivery areas from 42 to 122 across the timing zones (js/delivery-zones.js), the areaServed JSON-LD and the "Where do you deliver?" FAQ. New areas were put in the zone of their nearest existing neighbour — owner to confirm times for: Palm Jumeirah, Emirates Hills/Springs/Meadows, Arabian Ranches, Damac Hills 1&2, Expo City, The Valley, Dubai Creek Harbour, JAFZA.
+
+### Update 2026-10-22 (afternoon)
+- Done: "all across Dubai" wording everywhere (owner request); menu.html title/meta now Kerala & South Indian with real dishes; delivery-timings title/meta; added /llms.txt; robots.txt explicitly allows GPTBot, OAI-SearchBot, Google-Extended, PerplexityBot, ClaudeBot. Owner updated hours to Mon–Sat 7am–9pm, Sun 11am–2pm.
+- Evening run: skip these; next ideas are a short quotable "About Tayb Meals" paragraph and a /kerala-mess-dubai.html page proposal (PR).
