@@ -60,3 +60,4 @@ Search tool used is a US-based web index, not Google UAE, so positions are a rou
 - Proposed (PR): /kerala-mess-dubai.html — https://github.com/mmizwan-debug/TaybClaud/pull/1 (page + sitemap + llms.txt).
 - Next idea: once PR #1 is merged, propose /tamil-mess-dubai.html (Tamil Nadu meals: idly, dosa, pongal, rasam, kuzhambu, curd rice, tamarind rice, kuzhi paniyaram); add a link to the Kerala page from the homepage FAQ/footer; then area pages (Karama, Al Qusais).
 - Note: index.html FAQ mentions "sambar rice" and "lemon rice"; menu data has "Sambar with Rice" and lemon rice only in fixed-menu — fine, but keep names matched to the menu.
+- Owner approved and PR #1 merged: /kerala-mess-dubai.html is live. Linked to it from the homepage Kerala FAQ and the About page.
