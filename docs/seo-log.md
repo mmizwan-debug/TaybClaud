@@ -42,4 +42,4 @@ Search tool used is a US-based web index, not Google UAE, so positions are a rou
 - Next ideas for this audience: more Tamil Nadu / South Indian wording where it's true to the menu; a /kerala-mess-dubai.html page (as a PR); area pages for Karama, Al Qusais, Al Nahda, International City.
 
 ### Update 2026-10-22 (owner request) — delivery areas
-- Expanded delivery areas from 47 to 122 across the timing zones (js/delivery-zones.js), the areaServed JSON-LD and the "Where do you deliver?" FAQ. New areas were put in the zone of their nearest existing neighbour — owner to confirm times for: Palm Jumeirah, Emirates Hills/Springs/Meadows, Arabian Ranches, Damac Hills 1&2, Expo City, The Valley, Dubai Creek Harbour, JAFZA.
+- Expanded delivery areas from 42 to 122 across the timing zones (js/delivery-zones.js), the areaServed JSON-LD and the "Where do you deliver?" FAQ. New areas were put in the zone of their nearest existing neighbour — owner to confirm times for: Palm Jumeirah, Emirates Hills/Springs/Meadows, Arabian Ranches, Damac Hills 1&2, Expo City, The Valley, Dubai Creek Harbour, JAFZA.
