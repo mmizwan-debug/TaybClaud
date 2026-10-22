@@ -1,6 +1,6 @@
 # Tayb Meals — SEO / GEO log
 
-**Target audience (owner, 2026-10-22):** Keralites (Malayalis), Tamilians and other South Indians in Dubai. North Indian/global meals are secondary.
+**Target audience (owner, 2026-10-22):** Malayalis (Kerala) AND Tamil-speaking people in Dubai, equal priority, plus other South Indians. North Indian/global meals are secondary.
 
 ## 2026-10-22 — Morning check (first run)
 
