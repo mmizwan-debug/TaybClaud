@@ -19,10 +19,8 @@
         "Dubai Sports City",
         "Dubai Studio City",
         "Emaar South",
-        "Expo City",
         "Green Community",
         "Jebel Ali",
-        "Jebel Ali Free Zone (JAFZA)",
         "Jebel Ali Village",
         "Jumeirah Golf Estates",
         "Jumeirah Village Circle (JVC)",
@@ -54,7 +52,6 @@
         "Jumeirah Heights",
         "Jumeirah Islands",
         "Jumeirah Park",
-        "Palm Jumeirah",
         "The Greens",
         "The Lakes",
         "The Meadows",
@@ -108,13 +105,10 @@
         "Al Safa",
         "Al Twar",
         "Al Warqa",
-        "Arabian Ranches",
         "Arabian Ranches 2",
         "Arabian Ranches 3",
         "Barsha Heights (Tecom)",
         "Damac Hills",
-        "Damac Hills 2",
-        "Dubai Creek Harbour",
         "Dubai Hills Estate",
         "Dubai Silicon Oasis",
         "Dubailand",
@@ -136,7 +130,6 @@
         "Reem",
         "Serena",
         "Sobha Hartland",
-        "The Valley",
         "Tilal Al Ghaf",
         "Town Square",
         "Umm Ramool",
@@ -155,6 +148,20 @@
         "Al Jaddaf",
         "Culture Village",
         "Dubai Design District (d3)"
+      ]
+    },
+    F: {
+      label: "Zone F",
+      bf: "Before 7:30 AM",
+      dinner: "Before 8:00 PM",
+      areas: [
+        "Arabian Ranches",
+        "Damac Hills 2",
+        "Dubai Creek Harbour",
+        "Expo City",
+        "Jebel Ali Free Zone (JAFZA)",
+        "Palm Jumeirah",
+        "The Valley"
       ]
     }
   };
