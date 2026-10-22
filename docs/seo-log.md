@@ -1,0 +1,36 @@
+# Tayb Meals — SEO / GEO log
+
+## 2026-10-22 — Morning check (first run)
+
+### Rankings
+Search tool used is a US-based web index, not Google UAE, so positions are a rough signal only.
+- "monthly mess dubai": taybmeals.com not found. Shows Royal Kalavara Monthly Mess (Karama, magicpin), plus unrelated Airbnb/Dubizzle results.
+- "kerala mess dubai": not found. Results are Kerala restaurant guides (Property Finder, Gulf News) — no mess/subscription players.
+- "tiffin service dubai": not found. Gulf News "tiffin culture in the UAE" article, Tiffin Wala Bur Dubai (hidubai.com).
+- "home food delivery dubai monthly": not found. Gulf News meal-plan articles, Meals on Me, MakeMyMeal.
+- "monthly meal plan dubai AED": not found. Dominated by diet meal plans (Right Bite, Meals on Me, EMP).
+- "monthly mess karama": not found. Royal Kalavara (magicpin) again.
+- "mess jebel ali": not found. No mess businesses at all — only port/area pages (low competition gap).
+- "Tayb Meals Dubai" (brand): not found. Results show "Tayeb Kitchen Restaurant" (Deira) and "Tayba Gourmet" — name-confusion risk.
+
+### AI/GEO visibility
+- "best tiffin service in Dubai": sources are Gulf News (tiffin culture article), hidubai.com (Dubai govt business directory), a Google Business listing (Dabbawaalah Tiffin Services), limetray (Tiffin & More). Tayb Meals not mentioned anywhere.
+- Likely AI-cited sources for this niche: Gulf News / Khaleej Times articles, hidubai.com, magicpin, Google Maps/Business Profile, Right Bite & Meals on Me blogs ("best meal plan in Dubai 2026").
+- No third-party page found that mentions Tayb Meals → AI assistants have nothing to cite yet.
+
+### Site health
+- Live fetch of taybmeals.com was blocked from this run's sandbox (proxy/permission), so live load not verified. Checks below are from the repo code.
+- Titles + meta descriptions present on all 3 pages; canonicals present; OG tags on homepage; robots.txt OK and points to sitemap.
+- JSON-LD on index.html parses OK: FoodEstablishment + FAQPage (13 questions). Missing: url, areaServed, offers (199/359/459), openingHours, sameAs, geo. menu.html and delivery-timings.html have no JSON-LD.
+- **sitemap.xml is missing /menu.html** (only / and /delivery-timings.html).
+- No broken local links/images found in the 3 pages.
+- **Homepage never uses the words people search: "monthly mess" (0), "mess" (0), "tiffin" (0), "Kerala" (0), "Jebel Ali" (0).** Title is generic: "Modern Food Delivery in Dubai".
+
+### Plan for tonight
+1. Rewrite homepage title/meta/intro copy to include the real search terms, e.g. title "Monthly Mess & Tiffin Service in Dubai from AED 199 | Tayb Meals"; mention Kerala, South & North Indian homestyle food and key areas (Jebel Ali, Al Quoz, Karama, DIP...) in visible text.
+2. Strengthen JSON-LD: add url, areaServed (Dubai areas list), Offer/OfferCatalog for AED 199/359/459 monthly plans, openingHours Mo–Sa, sameAs (WhatsApp/socials); add FAQ "Is Tayb Meals a monthly mess / tiffin service?" and "Do you serve Kerala food?".
+3. Add menu.html to sitemap.xml and update lastmod.
+
+### Owner to-do
+- Create/claim Google Business Profile ("Tayb Meals – Monthly Mess & Tiffin, Dubai").
+- List on hidubai.com (free Dubai business directory) and magicpin.
