@@ -1453,3 +1453,16 @@
     .header-cta .btn-highlight { white-space: nowrap; padding: 0.55rem 0.8rem; font-size: 0.7rem; }
     .logo-container a { height: 34px; }
 }
+
+/* Hero welcome line (Tamil · Malayalam) */
+.hero-greeting {
+    display: inline-block;
+    background: var(--color-pink);
+    color: var(--color-red);
+    font-family: var(--font-heading), "Noto Sans Tamil", "Noto Sans Malayalam", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+    border-radius: var(--radius-sm);
+    margin-bottom: 1rem;
+}

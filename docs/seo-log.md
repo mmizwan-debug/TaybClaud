@@ -49,3 +49,4 @@ Search tool used is a US-based web index, not Google UAE, so positions are a rou
 - Evening run: skip these; next ideas are a short quotable "About Tayb Meals" paragraph and a /kerala-mess-dubai.html page proposal (PR).
 - Owner confirmed timings for far areas: Palm Jumeirah, Arabian Ranches, Damac Hills 2, Expo City, The Valley, Dubai Creek Harbour, JAFZA → new Zone F (breakfast & lunch before 7:30 AM, dinner before 8:00 PM).
 - Arabian Ranches 2 & 3 moved to Zone F (owner confirmed).
+- Owner approved: hero welcome line "வணக்கம் · നമസ്കാരം · Welcome" above the homepage headline (Tamil + Malayalam greeting).
