@@ -18,5 +18,6 @@
 ## Pages
 - [Home, plans and FAQ](https://taybmeals.com/)
 - [About Tayb Meals](https://taybmeals.com/about.html)
+- [Kerala Mess in Dubai](https://taybmeals.com/kerala-mess-dubai.html): Kerala / Malayali mess food dishes, plans and FAQ
 - [Weekly menu](https://taybmeals.com/menu.html)
 - [Delivery timings by area](https://taybmeals.com/delivery-timings.html)
