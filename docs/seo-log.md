@@ -1,5 +1,7 @@
 # Tayb Meals — SEO / GEO log
 
+**Target audience (owner, 2026-10-22):** Keralites (Malayalis), Tamilians and other South Indians in Dubai. North Indian/global meals are secondary.
+
 ## 2026-10-22 — Morning check (first run)
 
 ### Rankings
@@ -34,3 +36,7 @@ Search tool used is a US-based web index, not Google UAE, so positions are a rou
 ### Owner to-do
 - Create/claim Google Business Profile ("Tayb Meals – Monthly Mess & Tiffin, Dubai").
 - List on hidubai.com (free Dubai business directory) and magicpin.
+
+### Update 2026-10-22 (owner)
+- Owner applied the homepage SEO prompt: new title "Monthly Mess & Tiffin Service in Dubai from AED 199", menu.html added to sitemap, JSON-LD still parses OK. Homepage now mentions Kerala 17×, mess 17×, tiffin 16×, Tamil 2×.
+- Next ideas for this audience: more Tamil Nadu / South Indian wording where it's true to the menu; a /kerala-mess-dubai.html page (as a PR); area pages for Karama, Al Qusais, Al Nahda, International City.
