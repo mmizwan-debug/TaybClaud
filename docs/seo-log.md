@@ -52,3 +52,5 @@ Search tool used is a US-based web index, not Google UAE, so positions are a rou
 - Owner approved: hero welcome line "வணக்கம் · നമസ്കാരം · Welcome" above the homepage headline (Tamil + Malayalam greeting).
 - New page /about.html (owner approved): quotable summary, story, Kerala + Tamil Nadu dishes, who we cook for, at-a-glance facts table, how to start; AboutPage + Breadcrumb JSON-LD linked to #business on index; footer "About Us" link on all pages; added to sitemap and llms.txt.
 - Owner to confirm: testimonials are real customers; "200+" vs "250+" dishes; "7 days a week" line vs Mon–Sat; "A-grade DFA certified kitchen" (only in meta keywords).
+- Owner confirmed: reviews were made up → testimonials section removed. Dish count is 300+ (updated everywhere). Supplier kitchen is B-grade → removed "A-grade DFA certified kitchen" keyword; About/llms now say "Address" not "Kitchen". "7 days a week" fixed to Mon–Sat + Sunday add-on.
+- Rule for all runs: never add reviews/ratings unless the owner supplies real ones (e.g. from Google Business Profile); never claim a kitchen grade or certification.
