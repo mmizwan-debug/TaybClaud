@@ -54,3 +54,9 @@ Search tool used is a US-based web index, not Google UAE, so positions are a rou
 - Owner to confirm: testimonials are real customers; "200+" vs "250+" dishes; "7 days a week" line vs Mon–Sat; "A-grade DFA certified kitchen" (only in meta keywords).
 - Owner confirmed: reviews were made up → testimonials section removed. Dish count is 300+ (updated everywhere). Supplier kitchen is B-grade → removed "A-grade DFA certified kitchen" keyword; About/llms now say "Address" not "Kitchen". "7 days a week" fixed to Mon–Sat + Sunday add-on.
 - Rule for all runs: never add reviews/ratings unless the owner supplies real ones (e.g. from Google Business Profile); never claim a kitchen grade or certification.
+
+### Evening — 2026-10-22
+- Changed (live): menu.html now has FAQPage JSON-LD matching its visible FAQ (6 Qs); new visible + JSON-LD FAQs on homepage "How much is a Kerala or Tamil mess in Dubai?" and "Do you have veg meals?" (veg FAQ also on menu.html); homepage Kerala / South Indian FAQ answers now link to menu.html?style=kerala and ?style=south; alt text with dish + Dubai on hero and 3 gallery photos (idly breakfast, Kerala matta rice meals, kothu parotta).
+- Proposed (PR): /kerala-mess-dubai.html — https://github.com/mmizwan-debug/TaybClaud/pull/1 (page + sitemap + llms.txt).
+- Next idea: once PR #1 is merged, propose /tamil-mess-dubai.html (Tamil Nadu meals: idly, dosa, pongal, rasam, kuzhambu, curd rice, tamarind rice, kuzhi paniyaram); add a link to the Kerala page from the homepage FAQ/footer; then area pages (Karama, Al Qusais).
+- Note: index.html FAQ mentions "sambar rice" and "lemon rice"; menu data has "Sambar with Rice" and lemon rice only in fixed-menu — fine, but keep names matched to the menu.
