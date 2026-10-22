@@ -17,5 +17,6 @@
 
 ## Pages
 - [Home, plans and FAQ](https://taybmeals.com/)
+- [About Tayb Meals](https://taybmeals.com/about.html)
 - [Weekly menu](https://taybmeals.com/menu.html)
 - [Delivery timings by area](https://taybmeals.com/delivery-timings.html)

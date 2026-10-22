@@ -50,3 +50,5 @@ Search tool used is a US-based web index, not Google UAE, so positions are a rou
 - Owner confirmed timings for far areas: Palm Jumeirah, Arabian Ranches, Damac Hills 2, Expo City, The Valley, Dubai Creek Harbour, JAFZA → new Zone F (breakfast & lunch before 7:30 AM, dinner before 8:00 PM).
 - Arabian Ranches 2 & 3 moved to Zone F (owner confirmed).
 - Owner approved: hero welcome line "வணக்கம் · നമസ്കാരം · Welcome" above the homepage headline (Tamil + Malayalam greeting).
+- New page /about.html (owner approved): quotable summary, story, Kerala + Tamil Nadu dishes, who we cook for, at-a-glance facts table, how to start; AboutPage + Breadcrumb JSON-LD linked to #business on index; footer "About Us" link on all pages; added to sitemap and llms.txt.
+- Owner to confirm: testimonials are real customers; "200+" vs "250+" dishes; "7 days a week" line vs Mon–Sat; "A-grade DFA certified kitchen" (only in meta keywords).
