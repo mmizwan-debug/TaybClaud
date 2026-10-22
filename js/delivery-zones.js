@@ -105,8 +105,6 @@
         "Al Safa",
         "Al Twar",
         "Al Warqa",
-        "Arabian Ranches 2",
-        "Arabian Ranches 3",
         "Barsha Heights (Tecom)",
         "Damac Hills",
         "Dubai Hills Estate",
@@ -156,6 +154,8 @@
       dinner: "Before 8:00 PM",
       areas: [
         "Arabian Ranches",
+        "Arabian Ranches 2",
+        "Arabian Ranches 3",
         "Damac Hills 2",
         "Dubai Creek Harbour",
         "Expo City",
