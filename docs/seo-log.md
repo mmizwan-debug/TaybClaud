@@ -61,3 +61,38 @@ Search tool used is a US-based web index, not Google UAE, so positions are a rou
 - Next idea: once PR #1 is merged, propose /tamil-mess-dubai.html (Tamil Nadu meals: idly, dosa, pongal, rasam, kuzhambu, curd rice, tamarind rice, kuzhi paniyaram); add a link to the Kerala page from the homepage FAQ/footer; then area pages (Karama, Al Qusais).
 - Note: index.html FAQ mentions "sambar rice" and "lemon rice"; menu data has "Sambar with Rice" and lemon rice only in fixed-menu — fine, but keep names matched to the menu.
 - Owner approved and PR #1 merged: /kerala-mess-dubai.html is live. Linked to it from the homepage Kerala FAQ and the About page.
+
+## 2026-10-23 — Morning check
+
+### Rankings
+Search tool is a US-based web index, not Google UAE — rough signal only. taybmeals.com was **not found for any query**, including a search for "taybmeals.com" itself (site looks not indexed yet in this index).
+- Kerala — "malayali mess dubai": not found. Royal Kalavara Monthly Mess (Karama, magicpin) is the only real mess result; rest is Gulf News/Khaleej Times Onam articles and r/DubaiMallus (Malayali subreddit).
+- Kerala — "nadan food dubai home delivery": not found. Only old food-delivery roundups (Bayut, Gulf News, What's On). No nadan/mess competitor — open gap.
+- Tamil — "tamil mess dubai": not found. Only Royal Kalavara (magicpin) again; no Tamil-focused mess at all.
+- Tamil — "tamil home food dubai": not found. Anjappar Chettinad (Karama, magicpin) and Kerala restaurant listicles. No Tamil home-food/tiffin business ranks.
+- Tamil — "chennai mess dubai": not found. Results are about Chennai city / flights — no Dubai competitor (open gap).
+- General — "office lunch delivery dubai monthly": not found. Meals on Me blogs, Lunch On, MakeMyMeal.
+- Area — "mess al qusais": not found. Only area/property guides; no mess business ranks.
+- "best South Indian tiffin service in Dubai monthly": not found. delibitecatering.com (Balanced Bites, listicle "Best monthly tiffin services in Dubai by budget"), tiffinservicedubai.com, gharkithali.ae, anmolhyderabadirestaurant.com, blog.healthyinuae.com tiffin review, chitku.ae. None are Kerala- or Tamil-focused (mostly North Indian/Hyderabadi).
+
+### AI/GEO visibility
+- Sources AI tools are likely to cite for "best Kerala/Tamil/South Indian mess Dubai": magicpin (Royal Kalavara, Anjappar), tiffin listicles on competitor blogs (delibitecatering — only lists its own brand), blog.healthyinuae.com reviews, Gulf News / Khaleej Times / Property Finder Kerala-restaurant guides, r/DubaiMallus.
+- No Tamil-specific mess/tiffin source exists at all — whoever publishes a clear Tamil mess page first can own that answer.
+- Tayb Meals: still not mentioned on any third-party page. Listings (GBP, hidubai, magicpin) still not found (see docs/listing-status.md).
+
+### Site health
+- Live fetch of taybmeals.com was blocked again from this sandbox (permission request timed out) — checks are from repo code.
+- All 5 pages have title + meta description. JSON-LD parses OK on index (FoodEstablishment + FAQPage), about (AboutPage + Breadcrumb), kerala-mess-dubai (WebPage + Breadcrumb + FAQPage), menu (FAQPage).
+- delivery-timings.html has **no JSON-LD** and **0 mentions of Tamil**.
+- sitemap.xml lists all 5 pages. No missing local links/images found.
+- Balance gap: Kerala has its own landing page; **Tamil has none** (homepage Tamil 15× vs Kerala 27×; "Chennai" 0× anywhere).
+
+### Plan for tonight
+1. **Tamil page (as a PR, like #1):** /tamil-mess-dubai.html — "Tamil Mess in Dubai — Tamil Nadu Meals from AED 199". Only dishes that are really on menu.html (idly, dosa, pongal, sambar rice, rasam, kuzhambu, curd rice, tamarind rice…), plans, Starter Plan, areas with many Tamil residents (Karama, Bur Dubai, Al Qusais, Al Nahda, International City, Jebel Ali), FAQ ("Is there a Tamil mess near me in Dubai?", "Do you have Chennai-style veg meals?") + WebPage/Breadcrumb/FAQPage JSON-LD. Add to sitemap + llms.txt; cross-link with the Kerala page.
+2. **delivery-timings.html:** add WebPage + BreadcrumbList JSON-LD linked to index #business, and one short visible line "Kerala and Tamil mess meals delivered to Karama, Al Qusais, Al Nahda, Bur Dubai…" (true to delivery-zones.js).
+3. After the Tamil PR is merged (not tonight): link it from the homepage Tamil FAQ and About page.
+
+### Owner to-do
+- Still open: Google Business Profile, hidubai.com, magicpin (none found yet).
+- Post a short intro (price, Starter Plan, WhatsApp) in r/DubaiMallus and 1–2 Tamil-in-UAE Facebook/WhatsApp groups.
+- Optional: ask blog.healthyinuae.com to try and review the service (they already review Dubai tiffin services).
