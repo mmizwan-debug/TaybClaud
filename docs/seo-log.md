@@ -99,3 +99,8 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 
 ## 2026-10-23 — Owner instruction (permanent)
 - The homepage testimonials ("Loved by Dubai's everyday eaters") are REAL customer feedback, given to the owner by phone and message. Do NOT remove, rewrite or flag them as fake/sample. They were restored on 2026-10-23 after an earlier run removed them.
+
+### Evening — 2026-10-23
+- Changed (live): delivery-timings.html now has WebPage + BreadcrumbList JSON-LD (linked to index #business) and one visible line "Kerala and Tamil mess food is delivered to … Karama, Bur Dubai, Deira, Al Qusais, Al Nahda, International City, Al Quoz, DIP, Jebel Ali and 110+ more areas" with links to the Kerala page and South Indian menu; sitemap lastmod updated. Verified live: page loads, new line visible, Register buttons → taybmeals.paperform.co. (Homepage live fetch was blocked from the sandbox; homepage was not changed.)
+- Proposed (PR): /tamil-mess-dubai.html — https://github.com/mmizwan-debug/TaybClaud/pull/2 (page with Tamil Nadu dishes taken only from the current menu, plans table, 6 FAQs + WebPage/Breadcrumb/FAQPage JSON-LD; added to sitemap + llms.txt; link from Kerala page).
+- Next idea: after PR #2 is merged, link the Tamil page from the homepage Tamil FAQ, About page and delivery-timings line; then area pages (Karama, Al Qusais) as a PR.
