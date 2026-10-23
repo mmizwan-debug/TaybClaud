@@ -2,12 +2,14 @@
 
 | Listing | Status | Last checked | Notes |
 |---|---|---|---|
-| Google Business Profile | not found | 2026-10-23 | no Google Maps / business.google.com / g.page result for name, website or phone |
-| hidubai.com | not found | 2026-10-23 | no hidubai.com/businesses/ page for Tayb Meals |
+| Google Business Profile | not found | 2026-10-23 | Owner (2026-10-23): profile started, but Google is not accepting the Dubai eTrader licence for verification. No public Maps / g.page result yet. |
+| hidubai.com | not found | 2026-10-23 | Owner (2026-10-23): registered today, waiting for approval. No public hidubai.com/businesses/ page yet. |
 | magicpin | not found | 2026-10-23 | no magicpin.com/uae/Dubai/ page (only unrelated "Tayeb Kitchen", Al Khabaisi) |
+| Apple Business Connect (Apple Maps) | not found | 2026-10-23 | Owner (2026-10-23): submitted, under review. |
+| Bing Places | not found | 2026-10-23 | Owner (2026-10-23): submitted, under review. |
 
 Reminder cycle: tracking since 2026-10-22; next gentle reminder due 2026-10-28 if items are still pending.
 
 ## Questions waiting for the owner
-- Has a Google Business Profile already been started? Which Google account?
-- Trade licence name/number for hidubai (name on licence may differ from "Tayb Meals").
+- Google verification: which option did Google offer (video, phone/SMS, postcard, documents), and what exactly did it say when it rejected the eTrader licence?
+- magicpin: not started yet? (merchant sign-up needs only a mobile OTP)
