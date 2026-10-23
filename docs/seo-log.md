@@ -96,3 +96,6 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Still open: Google Business Profile, hidubai.com, magicpin (none found yet).
 - Post a short intro (price, Starter Plan, WhatsApp) in r/DubaiMallus and 1–2 Tamil-in-UAE Facebook/WhatsApp groups.
 - Optional: ask blog.healthyinuae.com to try and review the service (they already review Dubai tiffin services).
+
+## 2026-10-23 — Owner instruction (permanent)
+- The homepage testimonials ("Loved by Dubai's everyday eaters") are REAL customer feedback, given to the owner by phone and message. Do NOT remove, rewrite or flag them as fake/sample. They were restored on 2026-10-23 after an earlier run removed them.
