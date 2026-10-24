@@ -105,3 +105,38 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Proposed (PR): /tamil-mess-dubai.html — https://github.com/mmizwan-debug/TaybClaud/pull/2 (page with Tamil Nadu dishes taken only from the current menu, plans table, 6 FAQs + WebPage/Breadcrumb/FAQPage JSON-LD; added to sitemap + llms.txt; link from Kerala page).
 - Next idea: after PR #2 is merged, link the Tamil page from the homepage Tamil FAQ, About page and delivery-timings line; then area pages (Karama, Al Qusais) as a PR.
 - Owner approved and PR #2 merged: /tamil-mess-dubai.html is live. Linked to it from the homepage South Indian FAQ, the About page and the delivery-timings areas line.
+
+## 2026-10-24 — Morning check
+
+### Rankings
+Search tool is a US-based web index, not Google UAE — rough signal only. taybmeals.com was **not found for any query**, including a brand search ("Tayb Meals Dubai taybmeals") — site still not indexed in this index. Brand search shows Tayeb Kitchen (magicpin), Tayba Gourmet, Meals on Me.
+- Kerala — "kerala food delivery dubai": not found. Kerala restaurant listicles only (Property Finder, dannibindubai, Bayut, Gulf News Onam/Vishu). No mess/subscription player.
+- Kerala — "kerala meals monthly dubai": not found. Same listicles + Khaleej Times "best Kerala curry", Onmanorama, Ifthar Restaurant Al Quoz (magicpin). No monthly-mess competitor — open gap.
+- Tamil — "tamil food delivery dubai": not found. Anjappar Chettinad Karama (magicpin), old What's On delivery article. No Tamil mess/tiffin business.
+- Tamil — "tamil nadu meals dubai": not found. Khaleej Times "Bahubali Thali", Gulf News "Taste of Tamil Nadu", Anjappar (magicpin), CurlyTales/pickyourtrail South Indian restaurant lists.
+- Tamil — "south indian veg meals dubai": not found. Saravana Bhavan (HappyCow), Nalan Mankhool (magicpin), Bayut veg-restaurant guide.
+- General — "mess near me dubai": not found. Mess Service Alot Kitchen, Motor City (magicpin) — new competitor seen; rest is Foursquare noise.
+- Area — "mess international city dubai": not found. No mess business at all (only area info pages) — open gap.
+
+### AI/GEO visibility
+- "best South Indian monthly mess Dubai": Royal Kalavara Monthly Mess Karama (magicpin) is the top real answer again; also Mess Service Alot Kitchen (magicpin), Bayut / Property Finder South Indian restaurant guides. magicpin is the main source AI tools can cite for "mess" in Dubai.
+- Tamil communities: meetup.com "Dubai Tamil Professionals Group" found; The National article on helpful UAE Facebook groups; Gulf News tiffin-culture article. No Tamil-focused mess/tiffin page exists anywhere.
+- Tayb Meals: still not mentioned on any third-party page. Listings (GBP, hidubai, Apple, Bing) pending per docs/listing-status.md; magicpin not started.
+
+### Site health
+- Live fetch of taybmeals.com blocked again from this sandbox (permission request timed out) — checks are from repo code.
+- All 6 pages have title + meta description; JSON-LD parses OK on all 6. sitemap.xml lists all 6 pages. No missing local links/images.
+- **menu.html links to neither the Kerala nor the Tamil landing page**, and its H1 is generic ("Designed for everyday eating."). Title says "Kerala & South Indian" — no "Tamil".
+- Landing pages are linked from only 1 place on most pages (no footer link).
+- "Chennai" still 0× on the whole site.
+
+### Plan for tonight
+1. **menu.html (balance Kerala + Tamil):** title → "Kerala & Tamil Nadu Mess Menu in Dubai | Tayb Meals"; H1 with real words (e.g. "This week's Kerala & Tamil mess menu"); add a short line linking to /kerala-mess-dubai.html and /tamil-mess-dubai.html.
+2. **Footer on all 6 pages:** add "Kerala Mess Dubai" and "Tamil Mess Dubai" links (helps crawl + internal links to both landing pages equally).
+3. **Proposal (PR, not live):** /mess-karama-dubai.html — area page for Karama (big Malayali + Tamil area; competitor Royal Kalavara is there). Real delivery timing from js/delivery-zones.js, plans, both Kerala and Tamil dishes from the menu, FAQ + WebPage/Breadcrumb/FAQPage JSON-LD. International City / Al Qusais pages later.
+
+### Owner to-do
+- Sign up on magicpin (merchant, mobile OTP) — it's the #1 source showing up for "mess Dubai" searches.
+- Keep pushing Google Business Profile verification; ask first customers for Google reviews once live.
+- Post in Dubai Tamil Professionals Group (meetup.com), a Tamil-in-UAE Facebook group, and r/DubaiMallus with price + Starter Plan + WhatsApp.
+- Question: do you cook Chennai-style or Madurai/Chettinad-style dishes? If yes, we can add that wording to the Tamil page.
