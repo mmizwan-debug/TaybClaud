@@ -2,6 +2,8 @@
 
 **Target audience (owner, 2026-10-22):** Malayalis (Kerala) AND Tamil-speaking people in Dubai, equal priority, plus other South Indians. North Indian/global meals are secondary.
 
+**Owner instruction (permanent, 2026-10-26):** Focus changes from only South Indian to **South AND North Indian**. Treat North Indian as a main audience next to Kerala and Tamil (South Indian), not a secondary one. Use only North Indian dishes that are really on the menu.
+
 ## 2026-10-22 — Morning check (first run)
 
 ### Rankings
@@ -176,3 +178,11 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Google Business Profile: tell us which verification option Google offered after the eTrader licence was refused (video / phone / postcard).
 - Post intro (price, Starter Plan, WhatsApp) in one Malayali group (r/DubaiMallus or a Kerala FB group) and one Tamil group (Dubai Tamil Professionals meetup / Tamil-in-UAE FB group).
 - Still open: is the Tamil food Chennai-style, Chettinad or Madurai? (lets us add that wording truthfully)
+
+### Evening — 2026-10-26
+- Owner instruction applied (South + North Indian focus) — tonight's 10-26 plan adjusted to it.
+- Changed (live, commit 3448d78): titles/meta now say "South & North Indian" on about.html ("About Tayb Meals | South & North Indian Mess Food in Dubai"), menu.html ("South & North Indian Mess Menu in Dubai — Kerala, Tamil Nadu") and the meta descriptions on index and delivery-timings; menu meta now names real North Indian dishes. Homepage: 2 new FAQs (visible + FAQPage JSON-LD) — "Do you serve North Indian food?" (real dishes, links to menu.html?style=north and the North Indian fixed menu) and "Is there a South or North Indian mess near me in Karama, Bur Dubai or Al Qusais?" (Zone C/D timings from delivery-zones.js, links to timings + Kerala + Tamil pages). llms.txt audience + North Indian dishes. Sitemap lastmod 2026-10-26. Verified live: homepage loads, both FAQs visible, all 5 Register buttons → taybmeals.paperform.co.
+- Proposed (PR): /north-indian-mess-dubai.html — https://github.com/mmizwan-debug/TaybClaud/pull/3 (page with only on-menu North Indian dishes, plans, Starter Plan, 7 FAQs + WebPage/Breadcrumb/FAQPage JSON-LD; footer link on all pages; sitemap + llms.txt). Karama area page postponed.
+- Next idea: after PR #3 is merged, link it from the homepage North Indian FAQ, About page and delivery-timings line; add North Indian dishes to the About page's dish list; then a Karama / Bur Dubai area page covering South + North Indian (PR).
+- Note: pre-existing copy still uses the word "try" ("try another style" in js/menu.js empty-state text) and the nav link "Trial" — not changed (would be a rewrite); owner may want these renamed.
+
