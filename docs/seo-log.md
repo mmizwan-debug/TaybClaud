@@ -4,6 +4,8 @@
 
 **Owner instruction (permanent, 2026-10-26):** Focus changes from only South Indian to **South AND North Indian**. Treat North Indian as a main audience next to Kerala and Tamil (South Indian), not a secondary one. Use only North Indian dishes that are really on the menu.
 
+**Owner instruction (permanent, 2026-10-26):** For North Indian content, say **"tiffin service"** (or "tiffin meals"), not "mess". Keep "mess" for Kerala / Tamil / South Indian content.
+
 ## 2026-10-22 — Morning check (first run)
 
 ### Rankings
@@ -185,4 +187,4 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Proposed (PR): /north-indian-mess-dubai.html — https://github.com/mmizwan-debug/TaybClaud/pull/3 (page with only on-menu North Indian dishes, plans, Starter Plan, 7 FAQs + WebPage/Breadcrumb/FAQPage JSON-LD; footer link on all pages; sitemap + llms.txt). Karama area page postponed.
 - Next idea: after PR #3 is merged, link it from the homepage North Indian FAQ, About page and delivery-timings line; add North Indian dishes to the About page's dish list; then a Karama / Bur Dubai area page covering South + North Indian (PR).
 - Note: pre-existing copy still uses the word "try" ("try another style" in js/menu.js empty-state text) and the nav link "Trial" — not changed (would be a rewrite); owner may want these renamed.
-
+- Owner update: North Indian wording switched from "mess" to "tiffin service" on homepage FAQs, menu/about titles, delivery-timings meta; PR #3 page renamed to /north-indian-tiffin-service-dubai.html.
