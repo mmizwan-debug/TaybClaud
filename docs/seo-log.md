@@ -188,3 +188,4 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Next idea: after PR #3 is merged, link it from the homepage North Indian FAQ, About page and delivery-timings line; add North Indian dishes to the About page's dish list; then a Karama / Bur Dubai area page covering South + North Indian (PR).
 - Note: pre-existing copy still uses the word "try" ("try another style" in js/menu.js empty-state text) and the nav link "Trial" — not changed (would be a rewrite); owner may want these renamed.
 - Owner update: North Indian wording switched from "mess" to "tiffin service" on homepage FAQs, menu/about titles, delivery-timings meta; PR #3 page renamed to /north-indian-tiffin-service-dubai.html.
+- Owner approved PR #3 → merged: /north-indian-tiffin-service-dubai.html is live. Linked it from the homepage North Indian FAQ. Next: link from About page and delivery-timings line.
