@@ -189,3 +189,8 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Note: pre-existing copy still uses the word "try" ("try another style" in js/menu.js empty-state text) and the nav link "Trial" — not changed (would be a rewrite); owner may want these renamed.
 - Owner update: North Indian wording switched from "mess" to "tiffin service" on homepage FAQs, menu/about titles, delivery-timings meta; PR #3 page renamed to /north-indian-tiffin-service-dubai.html.
 - Owner approved PR #3 → merged: /north-indian-tiffin-service-dubai.html is live. Linked it from the homepage North Indian FAQ. Next: link from About page and delivery-timings line.
+
+### Evening (2nd run) — 2026-10-26
+- Changed (live, commit 0da5f52): About page — North Indian bullet now names real dishes (chappathi with chole, poori with chole, butter chicken with rice, paneer) + link "North Indian tiffin service in Dubai"; delivery-timings areas line now links to the North Indian tiffin page; menu.html got WebPage + BreadcrumbList JSON-LD (linked to index #business). All JSON-LD parses; tags balanced. Live check could not run (WebFetch permission timed out from the sandbox), so nothing was verified on the live site.
+- Proposed (PR): /mess-karama-dubai.html — https://github.com/mmizwan-debug/TaybClaud/pull/4 (Kerala & Tamil mess + North Indian tiffin in Karama, Zone C timings from delivery-zones.js, plans, Starter Plan, 6 FAQs + WebPage/Breadcrumb/FAQPage JSON-LD; sitemap + llms.txt; link from delivery-timings).
+- Next idea: once PR #4 is merged, link it from the homepage "near me in Karama…" FAQ; then the same kind of page for Al Qusais / Al Nahda (Zone D) or International City.
