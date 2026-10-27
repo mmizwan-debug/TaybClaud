@@ -228,3 +228,8 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Google Business Profile: tell us which verification option Google offered after the eTrader refusal.
 - Post intro (price, Starter Plan, WhatsApp) in r/DubaiMallus and one Tamil-in-UAE Facebook group.
 - Still open: Tamil food style — Chennai, Chettinad or Madurai?
+
+### Evening — 2026-10-27
+- Changed (live, commit 1479879): one native-language FAQ on each landing page, balanced South + North — Kerala page "ദുബായിൽ കേരള മെസ്സ് ഉണ്ടോ? (Is there a Kerala mess in Dubai?)", Tamil page "துபாயில் தமிழ் மெஸ் இருக்கிறதா? (Is there a Tamil mess in Dubai?)", North Indian page "क्या दुबई में नॉर्थ इंडियन टिफिन सर्विस है? (Is there a North Indian tiffin service in Dubai?)" — English answer with plans 199/359/459 + Starter Plan, `lang` attribute on the script text, mirrored in FAQPage JSON-LD. llms.txt: new "Common questions" block (Kerala mess, Tamil mess, North Indian tiffin, monthly mess price, areas, Starter Plan). Sitemap lastmod 2026-10-27. JSON-LD parses, tags balanced, no "free"/"try". Live check could not run (sandbox proxy 403 + WebFetch permission timed out) — not verified on the live site.
+- Proposed (PR): none new — PR #4 (Karama page) still open and waiting for the owner: https://github.com/mmizwan-debug/TaybClaud/pull/4
+- Next idea: once PR #4 is merged, link it from the homepage "near me in Karama…" FAQ; then an Al Qusais / Al Nahda (Zone D) page covering South + North Indian (PR). Small live idea: add "Common questions" style quick answers to about.html as visible text.
