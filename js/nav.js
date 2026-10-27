@@ -42,10 +42,14 @@
   });
 })();
 
-// WhatsApp click tracking (Google Ads conversion "WhatsApp click" + GA4 event)
+// WhatsApp click tracking (Google Ads "WhatsApp click" + GA4 event + Meta Pixel "Contact")
 document.addEventListener('click', function (e) {
   var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
-  if (!a || typeof gtag !== 'function') return;
-  gtag('event', 'conversion', { send_to: 'AW-18529136473/GkhACMrgz6cdENnesINF', value: 1.0, currency: 'AED' });
-  gtag('event', 'whatsapp_click', { link_url: a.href, page_path: location.pathname });
+  if (!a) return;
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', { send_to: 'AW-18529136473/GkhACMrgz6cdENnesINF', value: 1.0, currency: 'AED' });
+    gtag('event', 'whatsapp_click', { link_url: a.href, page_path: location.pathname });
+  }
+  // Meta Pixel standard "Contact" event
+  if (typeof fbq === 'function') fbq('track', 'Contact', { content_name: 'WhatsApp click', content_category: location.pathname });
 }, true);
