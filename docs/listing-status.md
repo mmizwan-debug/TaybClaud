@@ -2,11 +2,11 @@
 
 | Listing | Status | Last checked | Notes |
 |---|---|---|---|
-| Google Business Profile | not found | 2026-10-23 | Owner (2026-10-23): profile started, but Google is not accepting the Dubai eTrader licence for verification. No public Maps / g.page result yet. |
-| hidubai.com | not found | 2026-10-23 | Owner (2026-10-23): registered today, waiting for approval. No public hidubai.com/businesses/ page yet. |
-| magicpin | not found | 2026-10-23 | no magicpin.com/uae/Dubai/ page (only unrelated "Tayeb Kitchen", Al Khabaisi) |
-| Apple Business Connect (Apple Maps) | not found | 2026-10-23 | Owner (2026-10-23): submitted, under review. |
-| Bing Places | not found | 2026-10-23 | Owner (2026-10-23): submitted, under review. |
+| Google Business Profile | not found | 2026-10-27 | Owner (2026-10-23): profile started, but Google is not accepting the Dubai eTrader licence for verification. No public Maps / g.page result yet. |
+| hidubai.com | not found | 2026-10-27 | Owner (2026-10-23): registered today, waiting for approval. No public hidubai.com/businesses/ page yet. |
+| magicpin | not found | 2026-10-27 | no magicpin.com/uae/Dubai/ page for Tayb Meals (only unrelated "Tayeb Kitchen", Al Khabaisi). Owner has not reported starting sign-up. |
+| Apple Business Connect (Apple Maps) | not found | 2026-10-27 | Owner (2026-10-23): submitted, under review. |
+| Bing Places | not found | 2026-10-27 | Owner (2026-10-23): submitted, under review. |
 
 Reminder cycle: tracking since 2026-10-22; next gentle reminder due 2026-10-28 if items are still pending.
 
