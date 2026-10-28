@@ -268,3 +268,8 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Google Business Profile: which verification option did Google offer?
 - Post intro (price, Starter Plan, WhatsApp) in one Malayali group (r/DubaiMallus) and one Tamil-in-UAE Facebook group.
 - Still open: Tamil food style — Chennai, Chettinad or Madurai?
+
+### Evening — 2026-10-28
+- Changed (live, commit 526798b): one "home food" FAQ on each landing page, so South and North Indian get equal space: Kerala page "Do you deliver Kerala home food (nadan meals) monthly in Dubai?", Tamil page "Do you deliver Tamil home food (வீட்டு சாப்பாடு) in Dubai?", North Indian page "Do you deliver North Indian home food (घर का खाना) in Dubai?". Answers use only dishes already listed on each page, plus plans 199/359/459 and the Starter Plan, and are mirrored in FAQPage JSON-LD. llms.txt has a new "Do you deliver home food in Dubai?" answer. Sitemap lastmod is now 2026-10-28 on all 7 pages. JSON-LD parses, tags balanced, no "free"/"try". Live check could not run (WebFetch permission timed out, curl got a proxy 403), so nothing was verified on the live site.
+- Proposed (PR): https://github.com/mmizwan-debug/TaybClaud/pull/5 (1) a visible "Quick answers" list on about.html that matches llms.txt; (2) a real default WhatsApp link instead of `href="#"` on the "Want it earlier?" button in index, delivery-timings and menu. Both went to a PR because rule 3 counts a new section as big and rule 4 says not to change WhatsApp buttons.
+- Next idea: the About page "Who we cook for" line names only Malayali and Tamil customers. Propose adding North Indian customers (it's a rewrite, so it needs a PR) once PR #4 and PR #5 are decided. Then link the Karama page from the homepage FAQ after #4 is merged.
