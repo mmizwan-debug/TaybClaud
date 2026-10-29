@@ -166,8 +166,6 @@
         "Arabian Ranches 2",
         "Arabian Ranches 3",
         "Damac Hills 2",
-        "Dubai Creek Harbour",
-        "Expo City",
         "Jebel Ali Free Zone (JAFZA)",
         "Palm Jumeirah",
         "The Valley"
