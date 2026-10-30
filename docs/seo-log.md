@@ -365,3 +365,5 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Validation: tags balanced, JSON-LD parses on all 22 pages, one H1 each, Register links → taybmeals.paperform.co, no "free"/"try" (only the existing "Trial" nav link), no broken local links, no Expo City / Creek Harbour anywhere, mobile render checked (no horizontal scroll).
 - Proposed (PR): none tonight (PR #5 still open).
 - Next idea: batch 3 tomorrow (Dubai Marina, JVC + Hessa Street, WTC, Jumeirah, Satwa, Al Khail Gate, Silicon Oasis, Academic City, Mirdif, Al Rashidiya); then swap delivery-timings?area= links (JLT/Discovery Gardens → Dubai Marina, Al Barsha/JLT/Al Quoz → JVC, Business Bay → WTC, Karama → Satwa, International City → Silicon Oasis/Mirdif) for the new pages.
+
+- 2026-10-30: Owner closed PR #4 (Karama area page) without merging. Do not re-propose the Karama page unless the owner asks.
