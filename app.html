@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tayb Meals App</title>
+<meta name="description" content="Tayb Meals app: monthly mess &amp; tiffin plans in Dubai. Register, view the E-Menu, plans, delivery timings, FAQ, reviews and contact support or sales on WhatsApp.">
+<link rel="canonical" href="https://taybmeals.com/app.html">
+<meta name="theme-color" content="#E11936">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tayb Meals">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/app-icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) - Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TC0PL992N7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TC0PL992N7');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2105430750001737');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2105430750001737&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+<style>
+:root{--red:#E11936;--pink:#F6B6C1;--dark:#2D2D2D;--off:#F4F4F2;--white:#fff;--wa:#25D366;--bar:64px;--top:56px;
+--safe-t:env(safe-area-inset-top,0px);--safe-b:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%}
+body{font-family:Inter,system-ui,sans-serif;color:var(--dark);background:#e9e9e6;overscroll-behavior:none;-webkit-user-select:none;user-select:none}
+h1,h2,h3{font-family:Poppins,sans-serif;margin:0}
+a{color:inherit;text-decoration:none}
+.shell{position:relative;max-width:480px;height:100%;margin:0 auto;background:var(--off);display:flex;flex-direction:column;overflow:hidden;box-shadow:0 0 40px rgba(0,0,0,.15)}
+.top{flex:none;height:calc(var(--top) + var(--safe-t));padding:var(--safe-t) 16px 0;background:var(--red);color:#fff;display:flex;align-items:center;gap:10px}
+.top img{height:34px;background:#fff;border-radius:8px;padding:3px 6px}
+.top h1{font-size:1.05rem;flex:1}
+.top .back{display:none;background:none;border:0;color:#fff;padding:6px;margin-left:-6px}
+.top .back svg{display:block}
+.top.sub .back{display:block}.top.sub img{display:none}
+.views{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:16px 16px calc(var(--bar) + var(--safe-b) + 20px)}
+.view{display:none;animation:in .2s ease}.view.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.hero{background:linear-gradient(135deg,var(--red),#b8102a);color:#fff;border-radius:20px;padding:20px;margin-bottom:16px;position:relative;overflow:hidden}
+.hero h2{font-size:1.35rem;line-height:1.25}
+.hero p{margin:8px 0 14px;opacity:.92;font-size:.92rem}
+.hero .price{display:inline-block;background:rgba(255,255,255,.18);border-radius:999px;padding:4px 12px;font-size:.8rem;font-weight:600;margin-bottom:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:14px;padding:13px 18px;font:600 .95rem Poppins,sans-serif;cursor:pointer}
+.btn.w{width:100%}
+.btn.white{background:#fff;color:var(--red)}
+.btn.red{background:var(--red);color:#fff}
+.btn.wa{background:var(--wa);color:#fff}
+.btn.dark{background:var(--dark);color:#fff}
+.sec{font:700 .8rem Poppins,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#777;margin:18px 2px 10px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{background:#fff;border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);min-height:112px;text-align:left;border:0;font:inherit;color:inherit;cursor:pointer;transition:transform .1s}
+.tile:active{transform:scale(.96)}
+.tile .ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:#fde8ec;color:var(--red)}
+.tile .ic svg{width:22px;height:22px}
+.tile b{font:600 .92rem Poppins,sans-serif;line-height:1.2}
+.tile small{color:#777;font-size:.75rem;line-height:1.3}
+.tile.wa .ic{background:#dcf8e6;color:#128c4a}
+.tile.dark{background:var(--dark);color:#fff}.tile.dark small{color:#bbb}.tile.dark .ic{background:#444;color:var(--pink)}
+.tile.full{grid-column:1/-1}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{background:#fff;border-radius:999px;padding:9px 16px;font:600 .85rem Poppins,sans-serif;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.card{background:#fff;border-radius:18px;padding:16px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.plan{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.plan h3{font-size:1rem}.plan .p{font:800 1.6rem Poppins,sans-serif}.plan .p small{font:500 .75rem Inter;color:#888}
+.plan.pop{background:var(--dark);color:#fff;position:relative}.plan.pop .badge{position:absolute;top:-9px;right:14px;background:var(--red);color:#fff;font:600 .68rem Poppins;padding:3px 10px;border-radius:999px}
+.plan.pop h3{color:var(--pink)}
+.ticks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ticks li{display:flex;gap:10px;align-items:center;font-size:.92rem}
+.ticks svg{flex:none;color:var(--red)}
+.note{background:#fff8d6;border:1px solid #f2dc8b;color:#5a4300;border-radius:12px;padding:10px 12px;font-size:.8rem;margin-bottom:12px}
+input[type=search],select{width:100%;padding:13px 14px;border:1.5px solid #ddd;border-radius:14px;font:500 1rem Inter;background:#fff;color:var(--dark);-webkit-user-select:text;user-select:text}
+.res{margin-top:12px}
+.zone{background:#fff;border-radius:18px;padding:14px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.zone.hit{outline:2px solid var(--red)}
+.zone .hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.zone .hd b{font:700 1rem Poppins}
+.tag{background:#fff3c4;color:#6b5200;font:700 .65rem Poppins;letter-spacing:.05em;text-transform:uppercase;padding:2px 8px;border-radius:999px}
+.times{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.times div{background:var(--off);border-radius:12px;padding:8px 10px}
+.times span{display:block;font-size:.7rem;color:#777}.times strong{font-size:.88rem}
+.areas{font-size:.78rem;color:#666;line-height:1.5;margin:0 0 10px}
+details{background:#fff;border-radius:16px;margin-bottom:10px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}
+summary{list-style:none;padding:14px 16px;font:600 .92rem Poppins,sans-serif;cursor:pointer;display:flex;justify-content:space-between;gap:10px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.3rem;color:var(--red);flex:none}
+details[open] summary::after{content:"\2212"}
+.fa{padding:0 16px 14px;font-size:.88rem;line-height:1.55;color:#444}
+.fa p{margin:0 0 8px}.fa a{color:var(--red);text-decoration:underline}
+.rev .st{color:#f5a623;letter-spacing:2px;font-size:.95rem}
+.rev p{margin:6px 0 12px;font-size:.92rem;line-height:1.5}
+.rev .au{display:flex;gap:10px;align-items:center}
+.av{width:38px;height:38px;border-radius:50%;background:var(--pink);color:var(--red);display:grid;place-items:center;font:700 .8rem Poppins}
+.rev small{display:block;color:#777;font-size:.75rem}
+.tabs{position:absolute;left:0;right:0;bottom:0;height:calc(var(--bar) + var(--safe-b));padding-bottom:var(--safe-b);background:#fff;display:flex;border-top:1px solid #e5e5e5;z-index:5}
+.tabs button{flex:1;border:0;background:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:#888;font:600 .66rem Poppins,sans-serif;cursor:pointer}
+.tabs button svg{width:24px;height:24px}
+.tabs button.on{color:var(--red)}
+.install{display:none;position:absolute;left:12px;right:12px;bottom:calc(var(--bar) + var(--safe-b) + 10px);background:var(--dark);color:#fff;border-radius:16px;padding:12px 14px;z-index:6;align-items:center;gap:10px;font-size:.85rem}
+.install.show{display:flex}.install span{flex:1}
+.install button{border:0;border-radius:10px;padding:8px 14px;font:600 .8rem Poppins;cursor:pointer}
+.install .go{background:var(--red);color:#fff}.install .x{background:none;color:#bbb}
+.foot{text-align:center;color:#999;font-size:.72rem;margin:20px 0 4px}
+@media (min-width:481px){body{padding:16px 0}.shell{height:calc(100% - 0px);border-radius:28px}}
+@media (prefers-reduced-motion:reduce){.view{animation:none}}
+</style>
+</head>
+<body>
+<div class="shell" id="shell">
+  <header class="top" id="top">
+    <button class="back" id="back" aria-label="Back"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <img src="images/logo.png" alt="Tayb Meals">
+    <h1 id="title">Tayb Meals</h1>
+  </header>
+
+  <main class="views" id="views">
+    <!-- HOME -->
+    <section class="view on" id="v-home">
+      <div class="hero">
+        <span class="price">Plans from AED 199 / month</span>
+        <h2>Homestyle meals, delivered every day</h2>
+        <p>Kerala, South &amp; North Indian monthly mess and tiffin across Dubai.</p>
+        <a class="btn white w" href="https://taybmeals.paperform.co/" target="_blank" rel="noopener noreferrer" data-ev="Register">Register Now</a>
+      </div>
+
+      <div class="sec">Quick actions</div>
+      <div class="grid">
+        <a class="tile" href="https://taybmeals.paperform.co/" target="_blank" rel="noopener noreferrer" data-ev="Register"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg></span><b>Registration</b><small>Join Tayb Meals</small></a>
+        <a class="tile" href="menu.html"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5V22h16"/></svg></span><b>E-Menu Book</b><small>Daily menu &amp; filters</small></a>
+        <button class="tile" data-go="plans"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.2"/></svg></span><b>Plans &amp; Prices</b><small>AED 199 / 359 / 459</small></button>
+        <button class="tile" data-go="timings"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><b>Delivery Timings</b><small>Find your area</small></button>
+        <a class="tile" href="https://forms.gle/gmCg4WX1mPQF2fcT7" target="_blank" rel="noopener noreferrer" data-ev="MenuChange"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span><b>Menu Change</b><small>For existing customers</small></a>
+        <a class="tile wa" href="https://wa.me/971509487880?text=Hi%2C%20I%27d%20like%20to%20change%20my%20meal%20plan%20or%20menu.%20Kindly%20assist." target="_blank" rel="noopener noreferrer" data-ev="PlanChange"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span><b>Plan Change</b><small>Change plan on WhatsApp</small></a>
+        <a class="tile wa" href="https://wa.me/971545974559?text=Hi%20Tayb%20Meals%20Support%2C%20I%20need%20help%20with%20my%20Tayb%20Meals%20subscription%20%28hold%20delivery%20%2F%20pause%20%2F%20support%29." target="_blank" rel="noopener noreferrer" data-ev="HoldPause"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M10 9v6M14 9v6"/></svg></span><b>Hold / Pause</b><small>Hold delivery or pause</small></a>
+        <a class="tile wa" href="https://wa.me/971545974559?text=Hi%20Tayb%20Meals%20Support%2C%20I%20need%20help%20with%20my%20subscription." target="_blank" rel="noopener noreferrer" data-ev="Support"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg></span><b>Customer Support</b><small>WhatsApp 054 597 4559</small></a>
+        <a class="tile wa" href="https://wa.me/971509487880?text=Hi%20Tayb%20Meals%20Sales%2C%20I%27d%20like%20to%20start%20a%20meal%20plan.%20Kindly%20send%20details." target="_blank" rel="noopener noreferrer" data-ev="Sales"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><b>Sales Team</b><small>WhatsApp 050 948 7880</small></a>
+        <button class="tile" data-go="faq"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></span><b>FAQ</b><small>Quick answers</small></button>
+        <button class="tile" data-go="reviews"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><b>Reviews</b><small>What customers say</small></button>
+        <button class="tile" data-go="explore"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><b>Mess Near You</b><small>Kerala, Tamil &amp; areas</small></button>
+        <a class="tile dark" href="index.html"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></span><b>Website</b><small>taybmeals.com</small></a>
+      </div>
+
+      <div class="sec">Choose your food</div>
+      <div class="chips">
+        <a class="chip" href="menu.html?style=kerala">Kerala</a>
+        <a class="chip" href="menu.html?style=south">South Indian</a>
+        <a class="chip" href="menu.html?style=north">North Indian</a>
+        <a class="chip" href="menu.html?veg=1">Veg only</a>
+      </div>
+      <p class="foot">Mon–Sat 7:00 AM – 9:00 PM · Sun 11:00 AM – 2:00 PM</p>
+    </section>
+
+    <!-- PLANS -->
+    <section class="view" id="v-plans">
+      <div class="card plan"><div><h3>1 Meal / Day</h3></div><div class="p">AED 199<small> / month</small></div></div>
+      <div class="card plan pop"><span class="badge">Most Popular</span><div><h3>2 Meals / Day</h3></div><div class="p">AED 359<small> / month</small></div></div>
+      <div class="card plan"><div><h3>3 Meals / Day</h3></div><div class="p">AED 459<small> / month</small></div></div>
+      <div class="sec">All plans include</div>
+      <div class="card"><ul class="ticks">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>Monday–Saturday Delivery</li><li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>Sunday Add-on Available</li><li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>250+ Meal Options</li><li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>Weekly Menu Changes</li><li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>Delivery Across Dubai</li>
+      </ul></div>
+      <a class="btn red w" href="https://taybmeals.paperform.co/" target="_blank" rel="noopener noreferrer" data-ev="Register">Start Registration</a>
+      <a class="btn wa w" style="margin-top:10px" href="https://wa.me/971509487880?text=Hi%20Tayb%20Meals%20Sales%2C%20I%27d%20like%20to%20start%20a%20meal%20plan.%20Kindly%20send%20details." target="_blank" rel="noopener noreferrer" data-ev="Sales">Ask Sales on WhatsApp</a>
+      <div class="sec">How it works</div>
+      <div class="card"><ul class="ticks">
+        <li><b>1.</b> Choose your plan</li><li><b>2.</b> Complete registration</li><li><b>3.</b> Do order confirmation on WhatsApp</li><li><b>4.</b> Fresh meals delivered</li>
+      </ul></div>
+    </section>
+
+    <!-- TIMINGS -->
+    <section class="view" id="v-timings">
+      <div class="note"><b>Approx.</b> Delivery times are approximate and may vary with traffic and demand.</div>
+      <input type="search" id="area" placeholder="Search your area, e.g. Karama" autocomplete="off" aria-label="Search your area">
+      <div class="res" id="zones"></div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="view" id="v-faq">
+      <details>
+                        <summary>Is Tayb Meals a monthly mess / tiffin service?</summary>
+                        <div class="fa">
+                            <p>Yes. Tayb Meals is a monthly mess and tiffin service in Dubai. Choose a monthly meal plan from AED 199 per month and get homestyle breakfast, lunch and dinner delivered Monday to Saturday (Sunday optional) to your home or office.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>Do you serve Kerala food?</summary>
+                        <div class="fa">
+                            <p>Yes. Our menu has a dedicated Kerala selection, including matta rice meals, Kerala-style fish and chicken curries, parotta with beef or chicken, puttu, idiyappam and Kasargod-style choru, alongside South Indian and North Indian dishes. Use the Kerala filter in our E-Menu Book to see them.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>Do you serve South Indian food?</summary>
+                        <div class="fa">
+                            <p>Yes. Besides our Kerala selection, our menu has South Indian meals such as sambar rice, curd rice, lemon rice, pongal and dosa, with Tamil Nadu-style lunches and dinners. Use the South Indian filter in our E-Menu Book to see them.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>Can I change my menu?</summary>
+                        <div class="fa">
+                            <p>Yes. You can change your menu anytime or update it weekly to explore more meal options from our menu.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>Can I pause deliveries?</summary>
+                        <div class="fa">
+                            <p>Yes. You can pause or hold your deliveries by contacting our support team on <a href="https://wa.me/971509487880" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>Can I cancel anytime?</summary>
+                        <div class="fa">
+                            <p>Yes. You can continue, change your menu, or cancel anytime with 1 working day’s notice. You only pay for the meals you have received and applicable fees. Any eligible refund will be processed at the end of your service period.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>How does the Starter Plan work?</summary>
+                        <div class="fa">
+                            <p>Enjoy your first 2 days of meals with complete peace of mind — payment is due on the 2nd day of delivery.</p>
+                            <p>Satisfied? Continue with your monthly prepaid fee on the 2nd day of delivery. Not satisfied? Cancel and pay only for the meals you've received.</p>
+                            <p>Per meal cost is approximately AED 5–8. Need to change or cancel? Just give us 1 working day's notice.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>When should I pay my monthly prepaid amount?</summary>
+                        <div class="fa">
+                            <p>Your monthly prepaid amount is due on the 2nd day of delivery.</p>
+                            <p>We accept:</p>
+                            <ul style="margin: 0.5rem 0 1rem 1.25rem; padding: 0;">
+                                <li>Bank Transfer</li>
+                                <li>Aani</li>
+                                <li>Credit Card</li>
+                                <li>Debit Card</li>
+                                <li>Tabby</li>
+                                <li>Tamara</li>
+                                <li>CDM (Cash Deposit Machine)</li>
+                            </ul>
+                            <p>Cash payments and card machine payments are not available.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>Where do you deliver?</summary>
+                        <div class="fa">
+                            <p>We deliver fresh home-style meals to most areas across Dubai.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>What is the cost of the Starter Plan?</summary>
+                        <div class="fa">
+                            <p>Meals typically cost approximately AED 5–8 each during the Starter Plan — you only pay for what you've received, with payment due on the 2nd day of delivery. If you continue, you'll move to your monthly prepaid fee; if not, you can cancel with 1 working day's notice.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>What are your service days?</summary>
+                        <div class="fa">
+                            <p>Our regular service days are Monday to Saturday. Sunday is available as an optional add-on service.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>What is the Sunday add-on cost?</summary>
+                        <div class="fa">
+                            <p>Lunch only: AED 30/month<br>Lunch + Dinner: AED 50/month<br>Breakfast is not available on Sundays.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>Do you offer fixed menus?</summary>
+                        <div class="fa">
+                            <p>Yes. You can choose either:</p>
+                            <ul style="margin: 0.5rem 0 1rem 1.25rem; padding: 0;">
+                                <li><strong>Custom Menu</strong> – Select your preferred meals.</li>
+                                <li><strong>Fixed Menu</strong> – We select meals for you based on our weekly menu.</li>
+                            </ul>
+                            <p>You can switch between them anytime.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>How often is the menu updated?</summary>
+                        <div class="fa">
+                            <p>Our menu is updated regularly, and customers can review and update their meal selections weekly.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>Can I change my delivery address?</summary>
+                        <div class="fa">
+                            <p>Yes. Delivery address changes can be requested through our support team, subject to service availability and route coverage.</p>
+                        </div>
+                    </details>
+<details>
+                        <summary>Do you deliver to homes and offices?</summary>
+                        <div class="fa">
+                            <p>Yes. We deliver to both homes and offices across most areas of Dubai.</p>
+                        </div>
+                    </details>
+
+      <a class="btn wa w" style="margin-top:6px" href="https://wa.me/971545974559?text=Hi%20Tayb%20Meals%20Support%2C%20I%20need%20help%20with%20my%20subscription." target="_blank" rel="noopener noreferrer" data-ev="Support">Still need help? Chat with us</a>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="view" id="v-reviews">
+      <div class="card rev"><div class="st">★★★★★</div><p>"We're all roommates and honestly, Tayb Meals has saved our flat from constant 'whose turn to cook' arguments. Everyone just picks their own meals — sorted."</p><div class="au"><div class="av">AR</div><div><b style="font-size:.9rem">Arjun &amp; Roommates</b><small>Shared Apartment, JLT</small></div></div></div>
+<div class="card rev"><div class="st">★★★★★</div><p>"What I love most is being able to change my menu whenever I want. It never feels repetitive — there's always something new to enjoy each week."</p><div class="au"><div class="av">PN</div><div><b style="font-size:.9rem">Priya Nair</b><small>Marketing Executive, Business Bay</small></div></div></div>
+<div class="card rev"><div class="st">★★★★★</div><p>"I only signed up for the starter plan to test it out — ended up subscribing the same week. Zero risk, and the food genuinely tastes homemade."</p><div class="au"><div class="av">RM</div><div><b style="font-size:.9rem">Rahul Menon</b><small>Software Engineer, Al Barsha</small></div></div></div>
+<div class="card rev"><div class="st">★★★★★</div><p>"200+ dishes and they still keep adding new ones every week. I've genuinely not repeated a single meal in over a month."</p><div class="au"><div class="av">SP</div><div><b style="font-size:.9rem">Sneha Pillai</b><small>HR Manager, Deira</small></div></div></div>
+<div class="card rev"><div class="st">★★★★★</div><p>"Reliable delivery, tasty homestyle food, and even my kids ask for it. Exactly what our busy family needed on weekdays."</p><div class="au"><div class="av">AK</div><div><b style="font-size:.9rem">Anand Krishnan</b><small>Family Customer, Al Nahda</small></div></div></div>
+<div class="card rev"><div class="st">★★★★★</div><p>"Big on variety, light on the pocket — exactly as advertised. Great value for daily office lunches, and delivery is always on time."</p><div class="au"><div class="av">FR</div><div><b style="font-size:.9rem">Fathima Rasheed</b><small>Office Professional, Karama</small></div></div></div>
+
+      <a class="btn red w" href="https://taybmeals.paperform.co/" target="_blank" rel="noopener noreferrer" data-ev="Register">Register Now</a>
+    </section>
+
+    <!-- EXPLORE -->
+    <section class="view" id="v-explore">
+      <div class="sec" style="margin-top:0">Food &amp; about us</div>
+      <div class="chips"><a class="chip" href="kerala-mess-dubai.html">Kerala Mess</a><a class="chip" href="tamil-mess-dubai.html">Tamil Mess</a><a class="chip" href="north-indian-tiffin-service-dubai.html">North Indian Tiffin</a><a class="chip" href="about.html">About Tayb Meals</a></div>
+      <div class="sec">Mess near you</div>
+      <div class="chips"><a class="chip" href="mess-in-al-barsha.html">Al Barsha</a><a class="chip" href="mess-in-al-nahda.html">Al Nahda</a><a class="chip" href="mess-in-al-quoz.html">Al Quoz</a><a class="chip" href="mess-in-al-qusais.html">Al Qusais</a><a class="chip" href="mess-in-bur-dubai.html">Bur Dubai</a><a class="chip" href="mess-in-business-bay.html">Business Bay</a><a class="chip" href="mess-in-deira.html">Deira</a><a class="chip" href="mess-in-dic.html">Dubai Industrial City</a><a class="chip" href="mess-in-dip.html">Dubai Investment Park</a><a class="chip" href="mess-in-discovery-gardens.html">Discovery Gardens</a><a class="chip" href="mess-in-dubai-south.html">Dubai South</a><a class="chip" href="mess-in-international-city.html">International City</a><a class="chip" href="mess-in-jebel-ali.html">Jebel Ali</a><a class="chip" href="mess-in-jlt.html">JLT</a><a class="chip" href="mess-in-karama.html">Karama</a></div>
+      <a class="btn wa w" style="margin-top:16px" href="https://wa.me/971509487880?text=Hi%2C%20do%20you%20deliver%20to%20my%20area%3F" target="_blank" rel="noopener noreferrer" data-ev="Sales">Area not listed? Ask on WhatsApp</a>
+    </section>
+
+    <!-- HELP -->
+    <section class="view" id="v-help">
+      <div class="sec" style="margin-top:0">Customer support</div>
+      <div class="card"><p style="margin:0 0 12px;font-size:.9rem">Hold delivery, pause subscription, or any question about your service.</p>
+        <a class="btn wa w" href="https://wa.me/971545974559?text=Hi%20Tayb%20Meals%20Support%2C%20I%20need%20help%20with%20my%20subscription." target="_blank" rel="noopener noreferrer" data-ev="Support">WhatsApp Support · 054 597 4559</a>
+        <a class="btn dark w" style="margin-top:10px" href="https://wa.me/971545974559?text=Hi%20Tayb%20Meals%20Support%2C%20I%20need%20help%20with%20my%20Tayb%20Meals%20subscription%20%28hold%20delivery%20%2F%20pause%20%2F%20support%29." target="_blank" rel="noopener noreferrer" data-ev="HoldPause">Hold / Pause Delivery</a></div>
+      <div class="sec">Sales team</div>
+      <div class="card"><p style="margin:0 0 12px;font-size:.9rem">New to Tayb Meals? Get plan details and order confirmation.</p>
+        <a class="btn wa w" href="https://wa.me/971509487880?text=Hi%20Tayb%20Meals%20Sales%2C%20I%27d%20like%20to%20start%20a%20meal%20plan.%20Kindly%20send%20details." target="_blank" rel="noopener noreferrer" data-ev="Sales">WhatsApp Sales · 050 948 7880</a></div>
+      <div class="sec">Existing customers</div>
+      <div class="grid">
+        <a class="tile" href="https://forms.gle/gmCg4WX1mPQF2fcT7" target="_blank" rel="noopener noreferrer" data-ev="MenuChange"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span><b>Menu Change</b></a>
+        <a class="tile wa" href="https://wa.me/971509487880?text=Hi%2C%20I%27d%20like%20to%20change%20my%20meal%20plan%20or%20menu.%20Kindly%20assist." target="_blank" rel="noopener noreferrer" data-ev="PlanChange"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span><b>Plan Change</b></a>
+      </div>
+      <div class="sec">More</div>
+      <div class="grid">
+        <button class="tile" data-go="faq"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></span><b>FAQ</b></button>
+        <button class="tile" data-go="reviews"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><b>Reviews</b></button>
+        <button class="tile" data-go="explore"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><b>Mess Near You</b><small>Kerala, Tamil &amp; areas</small></button>
+      </div>
+      <p class="foot">Mon–Sat 7:00 AM – 9:00 PM · Sun 11:00 AM – 2:00 PM</p>
+    </section>
+  </main>
+
+  <div class="install" id="install"><span>Add Tayb Meals to your home screen</span><button class="go" id="installGo">Install</button><button class="x" id="installX">Not now</button></div>
+
+  <nav class="tabs" id="tabs" aria-label="App">
+    <button data-go="home" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></button>
+    <button data-go="plans"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.2"/></svg><span>Plans</span></button>
+    <button data-go="timings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>Timings</span></button>
+    <button data-go="faq"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg><span>FAQ</span></button>
+    <button data-go="help"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg><span>Help</span></button>
+  </nav>
+</div>
+
+<script>
+(function(){
+  var TITLES={home:"Tayb Meals",plans:"Plans & Prices",timings:"Delivery Timings",faq:"FAQ",reviews:"Customer Reviews",explore:"Mess Near You",help:"Help & Contact"};
+  var TABS={home:1,plans:1,timings:1,faq:1,help:1};
+  var ZONES={"A": {"label": "Zone A", "bf": "By 5:00 AM", "dinner": "Before 7:00 PM", "areas": ["Dubai South", "Dubai Investment Park (DIP)", "Dubai Industrial City (DIC)", "Al Quoz", "Jebel Ali", "Al Maktoum Airport Area", "Dubai Production City / IMPZ", "Remraam", "Jumeirah Village Circle (JVC)", "Jumeirah Village Triangle (JVT)", "Dubai Sports City", "Motor City"]}, "B": {"label": "Zone B", "bf": "Before 7:30 AM", "dinner": "Before 8:30 PM", "areas": ["Al Furjan", "Discovery Gardens", "Dubai Marina", "JBR", "JLT", "Downtown Dubai", "Business Bay", "World Trade Centre (WTC)"]}, "C": {"label": "Zone C", "bf": "Before 7:00 AM", "dinner": "Before 8:00 PM", "areas": ["Bur Dubai", "Deira", "Karama", "Oud Metha", "Satwa"]}, "D": {"label": "Zone D", "bf": "Before 7:00 AM", "dinner": "Before 7:00 PM", "areas": ["Al Barsha", "Jumeirah", "Umm Suqeim", "Al Safa", "Al Nahda", "Al Qusais", "Al Rashidiya", "Mirdif", "International City", "Dubai Silicon Oasis", "Academic City", "Dubailand", "Mudon", "MBR City", "Festival City", "Nadd Al Sheba"]}, "E": {"label": "Zone E", "bf": "Before 7:30 AM", "dinner": "Before 7:30 PM", "areas": ["Al Jaddaf"]}};
+  var WA="971509487880";
+  var views=document.getElementById("views"),top=document.getElementById("top"),title=document.getElementById("title");
+
+  function show(name,push){
+    if(!TITLES[name])name="home";
+    document.querySelectorAll(".view").forEach(function(v){v.classList.toggle("on",v.id==="v-"+name)});
+    document.querySelectorAll(".tabs button").forEach(function(b){b.classList.toggle("on",b.dataset.go===name)});
+    title.textContent=TITLES[name];
+    top.classList.toggle("sub",name!=="home");
+    views.scrollTop=0;
+    if(push!==false){try{history.pushState({v:name},"","#"+name)}catch(e){location.hash=name}}
+  }
+  document.addEventListener("click",function(e){
+    var g=e.target.closest("[data-go]");
+    if(g){e.preventDefault();show(g.dataset.go);return}
+    var ev=e.target.closest("[data-ev]");
+    if(ev&&window.fbq){try{fbq("trackCustom","App_"+ev.dataset.ev)}catch(x){}}
+    if(ev&&window.gtag){try{gtag("event","app_"+ev.dataset.ev.toLowerCase())}catch(x){}}
+  });
+  document.getElementById("back").addEventListener("click",function(){
+    if(history.length>1&&history.state&&history.state.v){history.back()}else{show("home",false)}
+  });
+  window.addEventListener("popstate",function(){show((location.hash||"#home").slice(1),false)});
+  show((location.hash||"#home").slice(1),false);
+  try{history.replaceState({v:(location.hash||"#home").slice(1)},"")}catch(e){}
+
+  // Timings
+  var zonesEl=document.getElementById("zones"),q=document.getElementById("area");
+  function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+  function render(term){
+    term=(term||"").trim().toLowerCase();var html="",n=0;
+    Object.keys(ZONES).forEach(function(k){
+      var z=ZONES[k],hit=term&&z.areas.some(function(a){return a.toLowerCase().indexOf(term)>-1});
+      if(term&&!hit)return;n++;
+      var areas=z.areas.map(function(a){return term&&a.toLowerCase().indexOf(term)>-1?"<b style='color:#E11936'>"+esc(a)+"</b>":esc(a)}).join(" • ");
+      var msg="Hi, I'd like to ask if delivery could be earlier than the usual "+z.bf+" breakfast/lunch slot in "+z.label+". Kindly advise.";
+      html+='<div class="zone'+(term?" hit":"")+'"><div class="hd"><b>'+z.label+'</b><span class="tag">Approx.</span></div>'+
+        '<div class="times"><div><span>Breakfast &amp; Lunch</span><strong>'+z.bf+'</strong></div><div><span>Dinner</span><strong>'+z.dinner+'</strong></div></div>'+
+        '<p class="areas">'+areas+'</p>'+
+        '<a class="btn wa w" style="padding:10px;font-size:.82rem" target="_blank" rel="noopener noreferrer" href="https://wa.me/'+WA+'?text='+encodeURIComponent(msg)+'">Want it earlier? Ask on WhatsApp</a></div>';
+    });
+    zonesEl.innerHTML=n?html:'<div class="card" style="text-align:center">No match. Ask us on WhatsApp if we deliver to your area.<br><br><a class="btn wa" target="_blank" rel="noopener noreferrer" href="https://wa.me/'+WA+'?text='+encodeURIComponent("Hi, do you deliver to "+q.value+"?")+'">Ask on WhatsApp</a></div>';
+  }
+  q.addEventListener("input",function(){render(q.value)});
+  render("");
+
+  // Install prompt
+  var dp=null,box=document.getElementById("install");
+  window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();dp=e;try{if(sessionStorage.getItem("noinst"))return}catch(x){}box.classList.add("show")});
+  document.getElementById("installGo").onclick=function(){if(dp){dp.prompt();dp=null}box.classList.remove("show")};
+  document.getElementById("installX").onclick=function(){box.classList.remove("show");try{sessionStorage.setItem("noinst","1")}catch(x){}};
+  window.addEventListener("appinstalled",function(){box.classList.remove("show")});
+
+  if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}
+})();
+</script>
+</body>
+</html>
