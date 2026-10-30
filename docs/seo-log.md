@@ -354,3 +354,14 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Google Business Profile: which verification option did Google offer?
 - Post intro (price, Starter Plan, WhatsApp) in r/DubaiMallus and one Tamil-in-UAE Facebook group.
 - Still open: Tamil food style — Chennai, Chettinad or Madurai? ("chennai mess dubai" has no Dubai competitor.)
+
+### Evening — 2026-10-30
+- Changed (live, commit 71dd870): **area pages batch 2** — 8 pre-approved pages in the batch-1 format (same header/footer/tracking/Register + WhatsApp buttons), each with real zone times per sub-area, "Nearest metro stations" line, who orders there, Kerala/Tamil mess food + North Indian tiffin service (different on-menu dishes per page), plans, Sunday add-on, Starter Plan, 4 FAQs + FAQPage, LocalBusiness (areaServed = sub-areas) and Breadcrumb JSON-LD, "Nearby areas" links. "Is there a mess near <station> metro?" FAQ on Deira, Bur Dubai, Karama, Al Qusais, Al Nahda.
+- Metro line added to batch 1: Jebel Ali (Energy, Danube, Life Pharmacy), DIP, Al Barsha (Mall of the Emirates, Insurance Market), Discovery Gardens (Discovery Gardens, Ibn Battuta). DIC, Dubai South, International City and Al Quoz get a "we deliver to your door" line instead (no station clearly in the area; Expo station not mentioned).
+- Airport Free Zone station left off the Al Qusais page because its name contains "free" (same rule as JAFZA).
+- Links: delivery-timings.html "Area pages" list now has all 15; Al Barsha nearby → Al Quoz + JLT pages; Discovery Gardens nearby → JLT; Kerala + Tamil "near me in Karama, Al Qusais or Al Nahda" FAQs now link Karama, Bur Dubai, Deira, Al Qusais, Al Nahda, International City, Al Quoz, DIP, Jebel Ali pages. sitemap.xml (+8, lastmod 2026-10-30 on all) and llms.txt (+8).
+- Area pages built: https://taybmeals.com/mess-in-al-qusais.html, https://taybmeals.com/mess-in-karama.html, https://taybmeals.com/mess-in-al-nahda.html, https://taybmeals.com/mess-in-bur-dubai.html, https://taybmeals.com/mess-in-deira.html, https://taybmeals.com/mess-in-jlt.html, https://taybmeals.com/mess-in-business-bay.html, https://taybmeals.com/mess-in-al-quoz.html
+- PR #4 (mess-karama-dubai.html) closed — rebuilt as mess-in-karama.html in the area format, reusing its dish list.
+- Validation: tags balanced, JSON-LD parses on all 22 pages, one H1 each, Register links → taybmeals.paperform.co, no "free"/"try" (only the existing "Trial" nav link), no broken local links, no Expo City / Creek Harbour anywhere, mobile render checked (no horizontal scroll).
+- Proposed (PR): none tonight (PR #5 still open).
+- Next idea: batch 3 tomorrow (Dubai Marina, JVC + Hessa Street, WTC, Jumeirah, Satwa, Al Khail Gate, Silicon Oasis, Academic City, Mirdif, Al Rashidiya); then swap delivery-timings?area= links (JLT/Discovery Gardens → Dubai Marina, Al Barsha/JLT/Al Quoz → JVC, Business Bay → WTC, Karama → Satwa, International City → Silicon Oasis/Mirdif) for the new pages.
