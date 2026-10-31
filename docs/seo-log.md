@@ -367,3 +367,45 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Next idea: batch 3 tomorrow (Dubai Marina, JVC + Hessa Street, WTC, Jumeirah, Satwa, Al Khail Gate, Silicon Oasis, Academic City, Mirdif, Al Rashidiya); then swap delivery-timings?area= links (JLT/Discovery Gardens → Dubai Marina, Al Barsha/JLT/Al Quoz → JVC, Business Bay → WTC, Karama → Satwa, International City → Silicon Oasis/Mirdif) for the new pages.
 
 - 2026-10-30: Owner closed PR #4 (Karama area page) without merging. Do not re-propose the Karama page unless the owner asks.
+
+## 2026-10-31 — Morning check
+
+### Rankings
+Search tool is a US-based web index, not Google UAE — rough signal only. taybmeals.com was **not found for any query**, including brand search ("Tayb Meals Dubai monthly mess") — still not indexed here.
+- Kerala — "kerala food delivery dubai": not found. Only restaurant lists (Property Finder, dannibindubai, Bayut, Gulf News Onam/Vishu/New Year, Curly Tales), wanderlog (Kerala Castle, Calicut Foodies Express JLT), Swiggy (India). No mess/subscription business.
+- Kerala — "nadan food dubai": not found. Search engine reads "nadan" as Nad Al Hamar / Emirati food — no Kerala result at all.
+- Tamil — "tamil home food dubai": not found. Anjappar / Anjappar Chettinad Karama (magicpin ×3), wanderlog, Gulf News, Curly Tales, Airbnb Tamil cooking class. No Tamil home-food/mess business.
+- Tamil — "tamil nadu meals dubai": not found. Khaleej Times "Bahubali Thali", Gulf News "The taste of Tamil Nadu", pickyourtrail, Curly Tales, Anjappar (magicpin), Tamil Nadu Restaurant Sharjah (eazydiner). Restaurants only.
+- General — "tiffin service dubai": not found. Gulf News tiffin-culture article, Tiffin Wala Bur Dubai (hidubai.com), Dabbawaalah Tiffin Services (Google Business Profile page), rest is spam/other cities.
+- General — "home food delivery dubai": not found. Gulf News "home-cooked style delivery meals grow in popularity", Visit Dubai, delivery-app lists. No South Indian player.
+- Area — "mess bur dubai": not found (our /mess-in-bur-dubai.html, live since 10-30, not indexed here yet). Only Wikipedia / rentals / travel guides — no mess business.
+- New competitor type: **"Yallamess – Monthly mess finder"** iOS app (apps.apple.com) showed for the brand/monthly-mess search — a mess directory app. Listing opportunity.
+
+### AI/GEO visibility
+- "best Kerala Tamil South Indian monthly mess tiffin service Dubai": Royal Kalavara Karama (magicpin ×2), pickyourtrail, Gulf News Kerala list, Property Finder (×4), dannibindubai, Bayut. 9th check in a row with the same pattern: **magicpin + Property Finder / Gulf News / dannibindubai are what AI tools would cite.**
+- Tamil community search: Gulf News "Taste of Tamil Nadu", Zurich Kotak veg-food guide (also in Tamil), Joshua Project. No Tamil-in-UAE group, association page or Reddit thread surfaced. Malayali side: onmanorama Kerala snacks article only.
+- Tayb Meals: not mentioned on any third-party page. Listings unchanged per docs/listing-status.md (GBP stuck on eTrader verification; hidubai/Apple/Bing under review; magicpin not started).
+
+### Site health
+- Live fetch blocked (WebFetch permission timed out) — checks are from repo code.
+- 23 HTML pages: all have title + meta description + one H1; JSON-LD parses on all 22 content pages; no broken local links. Sitemap: 22 URLs, lastmod 2026-10-30.
+- **New page from owner: app.html** (web app, 5 commits on 10-30, linked from homepage "App" nav). Problems found:
+  - **It shows 6 sample 5-star reviews** (Arjun & Roommates, Priya Nair, Rahul Menon, Sneha Pillai, Anand Krishnan, Fathima Rasheed) — the same kind of sample reviews removed from the site on purpose. Fake-looking reviews risk Google and trust; AI tools may quote them as real.
+  - Says "200+ dishes" (site says 300+).
+  - Has a second WhatsApp number (+971 54 597 4559) next to +971 50 948 7880 — fine if intended (sales vs support), just confirming.
+  - Not in sitemap.xml (OK for now — it's an app shell; canonical is set).
+- `href="#"` on "Want it earlier?" still on index, delivery-timings, menu — fix waiting in PR #5 (3 days).
+- Wording gap: neither landing page uses the searched phrases "Tamil Nadu meals" (Tamil page: 0) or "Kerala meals" (Kerala page: 0); "nadan" already 8× on Kerala page.
+
+### Plan for tonight
+1. **app.html reviews (PR, owner's page):** replace the 6 sample reviews with an honest "Reviews coming soon — tell us on WhatsApp / Google" card, and fix "200+ dishes" → "300+ dishes". Send as a PR because the owner just built this page.
+2. **"Tamil Nadu meals" + "Kerala meals" wording, balanced (live, small):** one sentence/FAQ each — Tamil page "Do you deliver Tamil Nadu meals (full meals with sambar, rasam, poriyal) in Dubai?" and Kerala page "Do you deliver Kerala meals (matta rice, sambar, thoran) in Dubai?" — only dishes already on each page, plans 199/359/459, Starter Plan; mirror in FAQPage JSON-LD.
+3. If time: area pages batch 3 (Dubai Marina, JVC, Satwa, Silicon Oasis, Mirdif first) as noted in the 10-30 evening log.
+
+### Owner to-do
+- **app.html has 6 sample reviews** — OK to remove them (PR coming tonight)? Is +971 54 597 4559 the right sales number?
+- Review/merge PR #5 (About quick answers + WhatsApp link): https://github.com/mmizwan-debug/TaybClaud/pull/5
+- List Tayb Meals on the "Yallamess – Monthly mess finder" app, and do the magicpin merchant sign-up (wins "best mess" searches every day).
+- Google Business Profile: which verification option did Google offer?
+- Post intro (price, Starter Plan, WhatsApp) in r/DubaiMallus and one Tamil-in-UAE Facebook group.
+- Still open: Tamil food style — Chennai, Chettinad or Madurai? (Chettinad: Anjappar dominates Tamil searches.)
