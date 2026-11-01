@@ -6,6 +6,8 @@
 
 **Owner instruction (permanent, 2026-10-26):** For North Indian content, say **"tiffin service"** (or "tiffin meals"), not "mess". Keep "mess" for Kerala / Tamil / South Indian content.
 
+**Owner decision (permanent, 2026-11-01):** Tamil food style = **Madurai style**. Describe the Tamil menu as Madurai-style Tamil home food, using only dishes that are really on the menu. Don't ask the owner about Tamil style again.
+
 ## 2026-10-22 — Morning check (first run)
 
 ### Rankings
@@ -445,7 +447,7 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 
 ### Plan for tonight
 1. **Homepage + North Indian page area links (live, small):** add a short "Mess near you" list on index.html linking all 25 area pages (grouped Deira/Bur Dubai side, New Dubai, Jebel Ali/South side), and the same list on north-indian-tiffin-service-dubai.html worded "Tiffin service near you". Same order everywhere.
-2. **Balanced FAQs (live):** Tamil page "Is there a Chennai mess in Dubai?" — for people from Chennai and across Tamil Nadu; only dishes already on the page; no claim of a Chennai-only style (style question still open with owner). Kerala page "Is there a Malayali mess in Dubai?" — same structure. Plans 199/359/459, Starter Plan, link area pages; mirror in FAQPage JSON-LD.
+2. **Balanced FAQs (live):** Tamil page "Is there a Chennai mess in Dubai?" — for people from Chennai and across Tamil Nadu; say the food is **Madurai-style** Tamil home food (owner decision 2026-11-01); only dishes already on the page. Kerala page "Is there a Malayali mess in Dubai?" — same structure. Plans 199/359/459, Starter Plan, link area pages; mirror in FAQPage JSON-LD.
 3. If time: area pages batch 4 (Al Mizhar, Al Khawaneej, Al Warqa, Warsan, Dubailand, Majan, Liwan, Al Barari) as noted in the 10-31 evening log.
 
 ### Owner to-do
@@ -453,4 +455,4 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Join / post a short intro in the "Dubai Tamil Professionals Group" (meetup.com/dubai-tamil-professionals-group) and r/DubaiMallus — first Tamil community channel found.
 - magicpin merchant sign-up (mobile OTP only) — it wins "mess food", "Tamil mess" and "best mess" searches every day. Also list on the Yallamess app.
 - Google Business Profile: which verification option did Google offer?
-- Still open: Tamil food style — Chennai, Chettinad or Madurai?
+- Tamil food style: owner chose **Madurai style** (2026-11-01). Owner will do the other to-dos in the coming days.
