@@ -419,3 +419,38 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Validation: tags balanced, JSON-LD parses on all 33 pages, one H1 each, Register links → taybmeals.paperform.co, no "free"/"try", no broken local links, no Expo City / Creek Harbour, mobile render checked (390px, no horizontal scroll). Live check could not run (curl proxy 403, WebFetch permission timed out).
 - Proposed (PR): none tonight (PR #5 still open).
 - Next idea: batch 4 tomorrow (Mizhar, Al Khawaneej, Al Warqa, Warsan, Dubailand, Majan, Liwan, Al Barari) — zone names to use: "Al Mizhar", "Al Khawaneej", "Al Warqa", "Warsan", "Dubailand", "Majan", "Liwan", "Al Barari" (all Zone D). Then swap International City's Warsan/Al Warqa ?area= links for the new pages.
+
+## 2026-11-01 — Morning check
+
+### Rankings
+Search tool is a US-based web index, not Google UAE — rough signal only. taybmeals.com was **not found for any query**, including brand search ("Tayb Meals Dubai taybmeals.com") — still not indexed here. Brand search shows the 2015 "Halal Tayyib meals" press release, Al Tayeb trading (hidubai), Tayeb Kitchen (magicpin, eazydiner), Tayba Gourmet app, Meals on Me.
+- Kerala — "kerala mess dubai": not found. Royal Kalavara Monthly Mess Karama (magicpin ×2) is the only Dubai mess; rest is Wikipedia, government news, Gulf News Onam list, Property Finder / Bayut / dannibindubai Kerala-restaurant guides.
+- Kerala — "kerala meals monthly dubai": not found. Restaurant lists only (Gulf News, Bayut, Property Finder, Khaleej Times "best Kerala curry", Curly Tales, onmanorama). No Kerala monthly-mess player.
+- Tamil — "tamil mess dubai": not found. Royal Kalavara (magicpin) only Dubai mess; rest is Wikipedia, tutors, jobs, Singapore/Chennai mess guides. Same as 10-26 and 10-29.
+- Tamil — "south indian veg meals dubai": not found. Zurich Kotak veg guide, Bayut veg + South Indian lists, Nalan Mankhool (magicpin), Saravana Bhavan (HappyCow ×2), Mamis Illam (HappyCow), wanderlog (Hari Prasad, Aryaas). Restaurants only — no veg mess/subscription.
+- General — "mess food dubai": not found. Royal Kalavara (magicpin) #1, Mess Service Alot Kitchen Motor City (magicpin) #2, Meals on Me (Khaleej Times advertorial), then tourist food guides.
+- Area — "mess al nahda dubai": not found (our /mess-in-al-nahda.html, live since 10-30, not indexed here yet). Only Wikipedia / Property Finder / Bayut / dubizzle area pages — no mess business.
+
+### AI/GEO visibility
+- "best Kerala Tamil South Indian monthly mess tiffin service Dubai": Royal Kalavara (magicpin ×2), pickyourtrail South Indian list, Gulf News Kerala list, Property Finder (×5), dannibindubai, Bayut. 10th check in a row with the same pattern: **magicpin + Property Finder / Gulf News / dannibindubai are what AI tools would cite.**
+- Tamil community search ("Tamil association Dubai UAE community group"): **new — "Dubai Tamil Professionals Group" on meetup.com**, and the Tamil Nadu govt Non-Resident Tamils site (nrtamils.tn.gov.in, recognised Tamil associations). First real Tamil community channels found — possible places to introduce Tayb Meals. Malayali side: still only r/DubaiMallus.
+- Tayb Meals: not mentioned on any third-party page. Listings unchanged per docs/listing-status.md (GBP stuck on eTrader verification; hidubai/Apple/Bing under review; magicpin not started).
+
+### Site health
+- Live fetch blocked again (WebFetch permission timed out) — checks are from repo code.
+- 33 HTML pages: all have title + meta description + one H1; JSON-LD parses on all 32 content pages (app.html has none — OK, app shell); no broken local links. Sitemap: 32 URLs (all except app.html), lastmod 2026-10-31.
+- `href="#"` on "Want it earlier?" still on index, delivery-timings, menu — fix waiting in PR #5 (4 days).
+- **Internal-link gap (from the 10-30 plan, not done yet):** homepage and North Indian page link to **0** of the 25 area pages (Kerala and Tamil pages link 13 each; only delivery-timings.html and llms.txt list all 25). Area pages get little link weight from the strongest page.
+- Wording gap: Tamil page has **0 "Chennai"** ("chennai mess dubai" had no Dubai competitor on 10-26 and 10-30). Kerala page has "Malayali" 4× but no "Malayali mess" FAQ.
+
+### Plan for tonight
+1. **Homepage + North Indian page area links (live, small):** add a short "Mess near you" list on index.html linking all 25 area pages (grouped Deira/Bur Dubai side, New Dubai, Jebel Ali/South side), and the same list on north-indian-tiffin-service-dubai.html worded "Tiffin service near you". Same order everywhere.
+2. **Balanced FAQs (live):** Tamil page "Is there a Chennai mess in Dubai?" — for people from Chennai and across Tamil Nadu; only dishes already on the page; no claim of a Chennai-only style (style question still open with owner). Kerala page "Is there a Malayali mess in Dubai?" — same structure. Plans 199/359/459, Starter Plan, link area pages; mirror in FAQPage JSON-LD.
+3. If time: area pages batch 4 (Al Mizhar, Al Khawaneej, Al Warqa, Warsan, Dubailand, Majan, Liwan, Al Barari) as noted in the 10-31 evening log.
+
+### Owner to-do
+- Review/merge PR #5 (About quick answers + WhatsApp link): https://github.com/mmizwan-debug/TaybClaud/pull/5
+- Join / post a short intro in the "Dubai Tamil Professionals Group" (meetup.com/dubai-tamil-professionals-group) and r/DubaiMallus — first Tamil community channel found.
+- magicpin merchant sign-up (mobile OTP only) — it wins "mess food", "Tamil mess" and "best mess" searches every day. Also list on the Yallamess app.
+- Google Business Profile: which verification option did Google offer?
+- Still open: Tamil food style — Chennai, Chettinad or Madurai?
