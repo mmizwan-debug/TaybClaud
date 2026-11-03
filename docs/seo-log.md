@@ -539,3 +539,66 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Google Business Profile: still the #1 job. Which verification option did Google offer?
 - magicpin merchant sign-up (mobile OTP) and list on the Yallamess mess-finder app — both keep showing for mess/Tamil searches.
 - Post a short intro in r/DubaiMallus and the Dubai Tamil Professionals Group (meetup.com).
+
+### Evening — 2026-11-03
+- Changed (live, commit 6e1ed2a): **area pages batch 6 (last batch)** — 8 pre-approved pages in the batch 1–5 format (header/footer/tracking/Register + WhatsApp buttons identical to kerala-mess-dubai.html), real zone times from js/delivery-zones.js, metro line, who orders there, Kerala/Tamil mess food + North Indian tiffin service (on-menu dishes only), plans, Sunday add-on, Starter Plan, 4 FAQs + FAQPage, LocalBusiness (areaServed) + Breadcrumb JSON-LD, "Nearby areas" links. All 8 areas are in delivery-zones.js.
+- Area pages built: https://taybmeals.com/mess-in-ras-al-khor.html (Zone D, site lunch; no station), https://taybmeals.com/mess-in-nad-al-sheba.html (listed as "Nadd Al Sheba"; Zone D; families), https://taybmeals.com/mess-in-arjan.html (Zone A, 5:00 AM), https://taybmeals.com/mess-in-al-furjan.html (Zone B 7:30 AM / 8:30 PM; metro: Al Furjan + "mess near Al Furjan metro" FAQ), https://taybmeals.com/mess-in-motor-city.html (Zone A), https://taybmeals.com/mess-in-dubai-sports-city.html (Zone A), https://taybmeals.com/mess-in-dubai-studio-city.html (Zone A, office lunch), https://taybmeals.com/mess-in-dubai-production-city.html (IMPZ; Zone A).
+- Links: back-links added/swapped on Jebel Ali, Discovery Gardens, DIP (Al Furjan); JVC (Motor City, Sports City); Al Barsha, Dubailand (Arjan); Al Jaddaf, Umm Ramool (Ras Al Khor); Al Warqa, Al Khail Gate (Nad Al Sheba) — max 5 each. delivery-timings.html "Area pages" list now 51. Homepage "Where do you deliver?" FAQ: Al Furjan, Production City, Sports City, Motor City now linked + Ras Al Khor, Nad Al Sheba, Arjan, Studio City in "More area pages" (JSON-LD mirrored). sitemap.xml +8 (58 URLs, lastmod 2026-11-03); llms.txt +8.
+- Plan item 2: new FAQ "Is there daily Kerala food delivery in Dubai?" (Kerala page) and "Is there daily Tamil food delivery in Dubai?" (Tamil page), with area-page links, mirrored in FAQPage JSON-LD.
+- Final sweep: no page mentions Expo City, Dubai Creek Harbour or Expo 2020 (Dubai South page included). Every area page has a metro line; metro FAQs present on Deira, Bur Dubai, Karama, Al Rigga, Al Qusais, Al Nahda. No open PRs (Karama PR #4 already resolved).
+- Validation: 59 HTML files — tags balanced, JSON-LD parses, one H1 per area page, Register → taybmeals.paperform.co, no "free"/"try", no broken local links; sitemap parses; 390px no horizontal scroll. Live check could not run (proxy refuses taybmeals.com) — push to main succeeded.
+- Proposed (PR): none tonight.
+- Next idea: area pages are finished — point Google Ads area keywords to the pages below; next site work: shorten the longest titles (Production City 89 chars) only if Search Console shows truncation hurting CTR; keep adding balanced Kerala/Tamil/North Indian FAQs.
+
+### Area pages: done (2026-11-03) — 51 pages
+- https://taybmeals.com/mess-in-academic-city.html
+- https://taybmeals.com/mess-in-al-barari.html
+- https://taybmeals.com/mess-in-al-barsha.html
+- https://taybmeals.com/mess-in-al-furjan.html
+- https://taybmeals.com/mess-in-al-garhoud.html
+- https://taybmeals.com/mess-in-al-jaddaf.html
+- https://taybmeals.com/mess-in-al-khail-gate.html
+- https://taybmeals.com/mess-in-al-khawaneej.html
+- https://taybmeals.com/mess-in-al-mankhool.html
+- https://taybmeals.com/mess-in-al-muteena.html
+- https://taybmeals.com/mess-in-al-nahda.html
+- https://taybmeals.com/mess-in-al-quoz.html
+- https://taybmeals.com/mess-in-al-qusais.html
+- https://taybmeals.com/mess-in-al-rashidiya.html
+- https://taybmeals.com/mess-in-al-rigga.html
+- https://taybmeals.com/mess-in-al-warqa.html
+- https://taybmeals.com/mess-in-arjan.html
+- https://taybmeals.com/mess-in-bur-dubai.html
+- https://taybmeals.com/mess-in-business-bay.html
+- https://taybmeals.com/mess-in-deira.html
+- https://taybmeals.com/mess-in-dic.html
+- https://taybmeals.com/mess-in-dip.html
+- https://taybmeals.com/mess-in-discovery-gardens.html
+- https://taybmeals.com/mess-in-dubai-healthcare-city.html
+- https://taybmeals.com/mess-in-dubai-marina.html
+- https://taybmeals.com/mess-in-dubai-production-city.html
+- https://taybmeals.com/mess-in-dubai-south.html
+- https://taybmeals.com/mess-in-dubai-sports-city.html
+- https://taybmeals.com/mess-in-dubai-studio-city.html
+- https://taybmeals.com/mess-in-dubailand.html
+- https://taybmeals.com/mess-in-hor-al-anz.html
+- https://taybmeals.com/mess-in-international-city.html
+- https://taybmeals.com/mess-in-jebel-ali.html
+- https://taybmeals.com/mess-in-jlt.html
+- https://taybmeals.com/mess-in-jumeirah.html
+- https://taybmeals.com/mess-in-jvc.html
+- https://taybmeals.com/mess-in-karama.html
+- https://taybmeals.com/mess-in-liwan.html
+- https://taybmeals.com/mess-in-majan.html
+- https://taybmeals.com/mess-in-mirdif.html
+- https://taybmeals.com/mess-in-mizhar.html
+- https://taybmeals.com/mess-in-motor-city.html
+- https://taybmeals.com/mess-in-muhaisnah.html
+- https://taybmeals.com/mess-in-nad-al-sheba.html
+- https://taybmeals.com/mess-in-oud-metha.html
+- https://taybmeals.com/mess-in-ras-al-khor.html
+- https://taybmeals.com/mess-in-satwa.html
+- https://taybmeals.com/mess-in-silicon-oasis.html
+- https://taybmeals.com/mess-in-umm-ramool.html
+- https://taybmeals.com/mess-in-warsan.html
+- https://taybmeals.com/mess-in-world-trade-centre.html
