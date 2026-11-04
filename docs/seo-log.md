@@ -636,3 +636,12 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Google Business Profile: still the #1 job — which verification option did Google offer after the eTrader licence was refused?
 - magicpin merchant sign-up (mobile OTP) — Royal Kalavara on magicpin wins "monthly mess", "Kerala mess" and "Tamil mess" every day.
 - Post a short intro in r/DubaiMallus and the Dubai Tamil Professionals Group (meetup.com).
+
+### Evening — 2026-11-04
+- Changed (live, commit e71dd04): added the word "vegetarian" as one extra sentence in the existing veg FAQ answers on the homepage, Kerala page and Tamil page (visible text + FAQPage JSON-LD; questions unchanged, only on-menu dishes). Added IndexNow key file `/ecc8066d7527cf0d78978d4123cd781e.txt` + `docs/indexnow.md`. Sitemap lastmod → 2026-11-04 for all 58 URLs (owner's WhatsApp-number commit touched every page today).
+- IndexNow submission not sent: outbound to taybmeals.com / api.indexnow.org blocked from the sandbox (proxy 403). Live check also blocked (curl 403, WebFetch permission timed out) — validated from repo code: tags balanced, JSON-LD parses, no "free"/"try".
+- International City page already has the "monthly mess near me in International City" FAQ with zone times — nothing to add.
+- Area pages built: none (all 6 batches already live).
+- Proposed (PR): none.
+- **Flag for owner:** commit 933ccaa ("wa number change") moved WhatsApp links to +971 58 287 1967, but the old number +971 50 948 7880 is still in: every page's footer ("Phone:" line and footer WhatsApp button), the JSON-LD "telephone", FAQ text "Ask us on WhatsApp +971 50 948 7880" (Al Garhoud, Al Jaddaf, Al Muteena, Healthcare City, Jebel Ali, Mizhar, Muhaisnah pages), about.html contact table, and llms.txt ("confirm on WhatsApp +971 50 948 7880"). Not changed by this worker (phone numbers are owner-only) — waiting for the owner to say which number is for phone vs WhatsApp.
+- Next idea: once the owner confirms the numbers, update llms.txt + JSON-LD to match; submit sitemap URLs to IndexNow from a network that allows it.
