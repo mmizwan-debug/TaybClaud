@@ -602,3 +602,37 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - https://taybmeals.com/mess-in-umm-ramool.html
 - https://taybmeals.com/mess-in-warsan.html
 - https://taybmeals.com/mess-in-world-trade-centre.html
+
+## 2026-11-04 — Morning check
+
+### Rankings
+Search tool is a US-based web index, not Google UAE — rough signal only. taybmeals.com **not found for any query**, including brand search ("Tayb Meals taybmeals.com" → only Canadian "Tayybeh" / US "A Taste of Tayb"). 4th day in a row the brand is missing — the site is still not indexed by this engine.
+- Kerala — "kerala mess dubai": not found. Royal Kalavara Monthly Mess Karama (magicpin ×2) the only Dubai mess; **new: "Kairali Kerala Mess" (wanderlog) and a "Kerala Mess" restaurant page (stayneat)**. Rest: Property Finder ×2, Bayut, dannibindubai ×2, Gulf News Onam/Onasadhya, Khaleej Times, govt news.
+- Kerala — "nadan food delivery dubai": not found. No Kerala business at all — engine reads it as general food delivery (Gulf News, Bayut iftar, talabat, Uber Eats). Phrase still wide open.
+- Tamil — "tamil mess dubai": not found. Royal Kalavara (magicpin) only mess; Khaleej Times Bahubali thali, pickyourtrail South Indian list, Chennai/Singapore mess guides, tutors, jobs. Same as 11-01. No Tamil mess in Dubai on page 1.
+- Tamil — "south indian veg meals dubai monthly": not found. Zurich Kotak veg guide (also in Malayalam), Bayut veg list, Saravana Bhavan (HappyCow ×2), Nalan Mankhool (magicpin), **new: Mavalli Tiffin Rooms Dubai (own site), Meenatshi Chettinadu Al Quoz (Deliveroo), vmeals "Indian fusion meal plan"** (first meal-plan company in this query). No veg monthly mess.
+- General — "monthly mess dubai": not found. Royal Kalavara (magicpin ×2) #1–2; **new #3: a "Choose our Monthly Mess Service in Dubai" blog post (social.cigar-cloud.com, no business named)**; rest Airbnb/dubizzle monthly rentals.
+- General — "home food delivery dubai": not found. Gulf News "home-cooked style delivery meals grow in popularity", Visit Dubai, whatson, Khaleej Times, dannibindubai/insurancemarket delivery-app lists. No subscription mess listed.
+- Area — "mess international city dubai": not found (our /mess-in-international-city.html not indexed here). No mess business at all — only Wikipedia/property/hotel pages. Open field.
+
+### AI/GEO visibility
+- "best Tamil Kerala home style monthly tiffin mess service Dubai": Gulf News "tiffin culture in the UAE" (×2), **The National "Tiffin meals a recipe for success for homemakers and workers"** (second editorial on UAE tiffin), Gulf News Onam/Vishu 2026 lists, dannibindubai, Curly Tales, Khaleej Times Onam 2026, the cigar-cloud mess blog, and **a hackmd.io post advertising Anmol Hyderabadi Restaurant's monthly tiffin** (anmolhyderabadirestaurant.com/monthly-tiffin-services-dubai). A competitor is now seeding self-written posts on free blog sites to get cited — Hyderabadi, not Kerala/Tamil.
+- Community search (Malayali/Tamil Facebook groups): no named group surfaced; The National "helpful Facebook groups for UAE residents" and r/dubai / r/UAE snapshots only. Known channels stay: r/DubaiMallus, Dubai Tamil Professionals Group (meetup.com), Yallamess app.
+- 13th check, same pattern: **magicpin + Gulf News / The National + Property Finder / dannibindubai / Bayut** are what AI tools would cite. Tayb Meals: not mentioned on any third-party page. Listings unchanged per docs/listing-status.md (GBP stuck on eTrader verification).
+
+### Site health
+- Live fetch blocked again (WebFetch permission timed out; curl to taybmeals.com refused by proxy, 403) — checks are from repo code.
+- 59 HTML pages: all have title + meta description + one H1 (app.html excepted — app shell); JSON-LD parses on all; no broken local links or images; no `href="#"`. Sitemap: 58 URLs (all except app.html — OK), lastmod 2026-11-03. robots.txt allows all + GPTBot/OAI-SearchBot/Google-Extended/PerplexityBot/ClaudeBot, sitemap declared. llms.txt 85 lines.
+- No Google Search Console or Bing verification tag in the repo (may be DNS-verified — unknown). With 0 results even for the brand after 2+ weeks, indexing is now the main blocker, not content.
+- Wording gap: the word **"vegetarian" appears 0× on the whole site** (only "veg"); veg searches surface "vegetarian" guides (Zurich Kotak, Bayut, HappyCow). Kerala and Tamil pages each already have a veg FAQ.
+
+### Plan for tonight
+1. **IndexNow (helps Bing, and so ChatGPT/Copilot search):** add an IndexNow key file at the site root and a `docs/indexnow.md` note; if the evening network allows, submit all 58 sitemap URLs to api.indexnow.org once. No visible page change.
+2. **"Vegetarian" wording, balanced:** Tamil page — rename FAQ to "Do you have Tamil vegetarian (veg) meals in Dubai?" and add one line on South Indian vegetarian meals Mon–Sat; Kerala page — "Do you have Kerala vegetarian (veg) meals in Dubai?" the same way; homepage veg FAQ add "vegetarian". On-menu dishes only, mirror in FAQPage JSON-LD.
+3. If time: International City page — check it has a "mess near International City" FAQ with zone times (query showed zero competitors there); add one if missing.
+
+### Owner to-do
+- **Google Search Console** (search.google.com/search-console): please confirm taybmeals.com is verified and the sitemap (taybmeals.com/sitemap.xml) is submitted; use "Request indexing" on the homepage, Kerala and Tamil pages. Same in Bing Webmaster Tools. The site still doesn't show even for "Tayb Meals".
+- Google Business Profile: still the #1 job — which verification option did Google offer after the eTrader licence was refused?
+- magicpin merchant sign-up (mobile OTP) — Royal Kalavara on magicpin wins "monthly mess", "Kerala mess" and "Tamil mess" every day.
+- Post a short intro in r/DubaiMallus and the Dubai Tamil Professionals Group (meetup.com).
