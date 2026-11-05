@@ -645,3 +645,38 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Proposed (PR): none.
 - **Flag for owner:** commit 933ccaa ("wa number change") moved WhatsApp links to +971 58 287 1967, but the old number +971 50 948 7880 is still in: every page's footer ("Phone:" line and footer WhatsApp button), the JSON-LD "telephone", FAQ text "Ask us on WhatsApp +971 50 948 7880" (Al Garhoud, Al Jaddaf, Al Muteena, Healthcare City, Jebel Ali, Mizhar, Muhaisnah pages), about.html contact table, and llms.txt ("confirm on WhatsApp +971 50 948 7880"). Not changed by this worker (phone numbers are owner-only) — waiting for the owner to say which number is for phone vs WhatsApp.
 - Next idea: once the owner confirms the numbers, update llms.txt + JSON-LD to match; submit sitemap URLs to IndexNow from a network that allows it.
+
+## 2026-11-05 — Morning check
+
+### Rankings
+Search tool is a US-based web index, not Google UAE — rough signal only. taybmeals.com **not found for any query**, including the brand ("Tayb Meals Dubai taybmeals.com" → Tayeb Kitchen Al Khabaisi on magicpin, Tayba Gourmet app, Meals on Me). 5th day in a row: the site is still not indexed by this engine.
+- Kerala — "malayali mess dubai": not found. Royal Kalavara Monthly Mess Karama (magicpin) and **Mess Service Alot Kitchen Motor City (magicpin)** are the only mess businesses; rest Gulf News / Khaleej Times Onam, Bayut Kerala restaurants, r/DubaiMallus (via gummysearch), Wikipedia.
+- Kerala — "kerala meals monthly dubai": not found. No monthly mess at all — restaurant lists only (Property Finder ×3, dannibindubai ×2, Bayut, Curly Tales, Khaleej Times "best Kerala curry", Calicut Notebook Deira on Deliveroo).
+- Tamil — "tamil nadu meals dubai": not found. **Anjappar Karama (magicpin ×3)** is the only Tamil business; Khaleej Times Bahubali thali, pickyourtrail + Curly Tales South Indian lists. No Tamil mess.
+- Tamil — "tamil home food dubai": not found. Home Diner Karama (Deliveroo), Gulf News "The taste of Tamil Nadu", Anjappar (magicpin), dannibindubai Kerala list. No Tamil home-food subscription.
+- General — "mess near me dubai": not found. Only Foursquare user lists — no mess business. Open field (for this engine).
+- General — "office lunch delivery dubai": not found. **Meals on Me (hellomealsonme.com) dominates** — own blog ×4 + paid advertorials in Gulf News and Khaleej Times; also Lunch:on (startup news), Uber OfficeEats, Four Seasons, Bateel catering. No South Indian option.
+- Area — "mess al qusais dubai": not found (our /mess-in-al-qusais.html not indexed here). No mess business — Wikipedia + property area guides only.
+
+### AI/GEO visibility
+- "best South Indian Kerala Tamil monthly mess tiffin service Dubai": hackmd.io self-post (Anmol Hyderabadi monthly tiffin, again #1), The National tiffin article, Gulf News tiffin culture (×2), Royal Kalavara (magicpin), Mavalli Tiffin Rooms Dubai, the cigar-cloud mess blog, Property Finder ×4, dannibindubai. **New: a y-axis jobs ad "South Indian Chef/Cook (Monthly Mess) at Meal Mate"** — another South Indian monthly mess competitor (not yet ranking itself).
+- Tamil community search: no Tamil Facebook group or association page surfaced (only a TVK Dubai fan/political site — not suitable). Kerala side: r/DubaiMallus shows up directly for "malayali mess dubai" — the best community place for a post.
+- 14th check, same pattern: **magicpin (Royal Kalavara, Alot Kitchen, Anjappar) + Gulf News / The National / Khaleej Times + Property Finder / dannibindubai / Bayut** are what AI tools would cite. Tayb Meals: not mentioned on any third-party page.
+
+### Site health
+- Live fetch blocked again (WebFetch permission timed out; curl to taybmeals.com no response, code 000) — checks are from repo code.
+- 59 HTML pages: all have title + meta description; JSON-LD parses on all; no broken local links or images. Sitemap: 58 URLs (homepage as "/", app.html left out — OK), lastmod 2026-11-04.
+- **Still open from 11-04: two phone numbers on the site.** WhatsApp links use +971 58 287 1967 (59 files), but +971 50 948 7880 is still on 60 files (footer "Phone:", JSON-LD "telephone", some FAQ text, about.html, llms.txt). Mixed numbers confuse Google and AI answers. Waiting for owner.
+- Wording: Kerala page uses "home food" 2× vs Tamil page 5×; "office lunch" only 2–3× per page, no page for it.
+
+### Plan for tonight
+1. **New page `office-lunch-delivery-dubai.html`** ("Office Lunch Delivery in Dubai — Monthly Kerala, Tamil & North Indian Lunch from AED 199"): Mon–Sat lunch to offices, plans 199/359/459, Starter Plan, on-menu Kerala and Tamil dishes in equal measure, links to office-area pages (Business Bay, DIC, JLT, World Trade Centre, Studio City, DIP), 4 FAQs + FAQPage, LocalBusiness + Breadcrumb JSON-LD; add to sitemap, llms.txt, homepage footer/FAQ link. Meals on Me owns this query and has no South Indian angle.
+2. **Balance "home food":** Kerala page FAQ "Do you deliver Kerala home food in Dubai?" (nadan, homestyle, monthly mess, area-page links) to match the Tamil page; mirror in FAQPage JSON-LD.
+3. If the owner has confirmed the numbers by then: make the phone number the same everywhere (footer, JSON-LD, FAQs, about.html, llms.txt). If not, leave it.
+
+### Owner to-do
+- **Phone number:** which number should the site show — +971 58 287 1967 or +971 50 948 7880 (or one for calls, one for WhatsApp)? Two numbers are on the site right now.
+- **Google Search Console / Bing Webmaster:** confirm taybmeals.com is verified, sitemap submitted, and "Request indexing" on the homepage, Kerala and Tamil pages. The site still doesn't show even for "Tayb Meals".
+- Google Business Profile: still the #1 job — which verification option did Google offer?
+- magicpin merchant sign-up — Royal Kalavara, Alot Kitchen and Anjappar win Kerala/Tamil searches through magicpin every day.
+- Post a short intro in r/DubaiMallus (it now shows for "malayali mess dubai") and the Dubai Tamil Professionals Group (meetup.com).
