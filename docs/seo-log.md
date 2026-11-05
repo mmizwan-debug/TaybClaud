@@ -680,3 +680,11 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Google Business Profile: still the #1 job — which verification option did Google offer?
 - magicpin merchant sign-up — Royal Kalavara, Alot Kitchen and Anjappar win Kerala/Tamil searches through magicpin every day.
 - Post a short intro in r/DubaiMallus (it now shows for "malayali mess dubai") and the Dubai Tamil Professionals Group (meetup.com).
+
+### Evening — 2026-11-05
+- Changed (live on main): none tonight — plan item 2 (Kerala "home food" FAQ) was already on the Kerala page ("Do you deliver Kerala home food (nadan meals) monthly in Dubai?"), so nothing to add.
+- Area pages built: none (all 51 live since 11-03).
+- Proposed (PR): **#6 — new page `office-lunch-delivery-dubai.html`** (https://github.com/mmizwan-debug/TaybClaud/pull/6): monthly office lunch, morning delivery with zone times, Kerala/Tamil mess food + North Indian tiffin, plans, Starter Plan, links to 10 office/industrial area pages, 4 FAQs + FAQPage/LocalBusiness/Breadcrumb JSON-LD; sitemap + llms.txt entries; one link from the Business Bay page. Validated (tags, JSON-LD, no "free"/"try", paperform links). Left out "plus VAT" — not stated on the live site.
+- Live check blocked again (proxy 403 to taybmeals.com).
+- Phone numbers: still two on the site (+971 58 287 1967 for WhatsApp links, +971 50 948 7880 in footer/JSON-LD/llms.txt) — waiting for owner.
+- Next idea: after PR #6 is merged, link it from the homepage footer and the DIC/DIP/JLT/WTC/Healthcare City pages; once owner confirms the number, make it the same everywhere.
