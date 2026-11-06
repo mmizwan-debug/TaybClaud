@@ -724,3 +724,10 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - **Google Search Console / Bing Webmaster:** confirm verified + sitemap submitted, and "Request indexing" for the homepage, Kerala and Tamil pages. The site still doesn't show even for "Tayb Meals".
 - Google Business Profile verification (#1 job) and hidubai approval — a rival "Tiffin Wala Bur Dubai" already ranks through hidubai.
 - magicpin merchant sign-up; short intro posts in r/DubaiMallus and the Dubai Tamil Professionals Group (meetup.com).
+
+### Evening — 2026-11-06
+- Changed (live on main): llms.txt — 3 balanced "food delivery" Q&A lines (Kerala nadan/Malayali, Madurai-style Tamil Nadu incl. Chettinad chicken kulambu, North Indian tiffin), each linking its page; on-menu dishes only. Used "Madurai-style" instead of the morning plan's "Chennai-style" to follow the owner's permanent Tamil-style decision.
+- Plan item 2 skipped: Kerala and Tamil pages already have near-identical FAQs ("Is there daily Kerala/Tamil food delivery in Dubai?"). Item 3 skipped: Jebel Ali page already has "monthly mess near me in Jebel Ali" + JAFZA lunch-time FAQs.
+- Area pages built: none (all 51 live since 11-03).
+- Proposed (PR): none new — PR #6 (office lunch page) still waiting for owner.
+- Next idea: after PR #6 merges, link it from the homepage footer and DIC/DIP/JLT/WTC/Healthcare City pages; make the phone number the same everywhere once the owner confirms it.
