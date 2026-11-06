@@ -688,3 +688,39 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Live check blocked again (proxy 403 to taybmeals.com).
 - Phone numbers: still two on the site (+971 58 287 1967 for WhatsApp links, +971 50 948 7880 in footer/JSON-LD/llms.txt) — waiting for owner.
 - Next idea: after PR #6 is merged, link it from the homepage footer and the DIC/DIP/JLT/WTC/Healthcare City pages; once owner confirms the number, make it the same everywhere.
+
+## 2026-11-06 — Morning check
+
+### Rankings
+Search tool is a US-based web index, not Google UAE — rough signal only. taybmeals.com **not found for any query**, including the brand ("Tayb Meals" Dubai → Tayeb Kitchen Al Khabaisi on magicpin/eazydiner, Tayba Gourmet app, Meals on Me). 6th day in a row: still not indexed by this engine.
+- Kerala — "kerala food delivery dubai": not found. Restaurant lists only (Property Finder ×3, dannibindubai ×2, Bayut, Gulf News ×3, Curly Tales ×2, Khaleej Times "best Kerala curry", wanderlog Kerala Castle / Calicut Foodies Express JLT). No mess or subscription.
+- Kerala — "nadan food dubai": not found. No Kerala business; engine mixes it with Emirati/Nad Al Hamar. Nalan Mankhool (magicpin, HappyCow) only Indian hit. Phrase still open.
+- Tamil — "tamil food delivery dubai": not found. Mostly Swiggy India / Deliveroo UK pages; Deliveroo AE "indian takeaway", Desi Masala. No Dubai Tamil business ranks.
+- Tamil — "chennai mess dubai": not found. Chennai mess guides (Outlook, LBB, Lonely Planet), flights, Khaleej Times Bahubali thali; **Chennai Park Restaurant, Al Satwa (magicpin)** the only Dubai Tamil business. No Chennai-style mess in Dubai.
+- General — "south indian tiffin service dubai": not found. The National + Gulf News tiffin articles, pickyourtrail, Mavalli Tiffin Rooms Dubai, Meenatshi Chettinadu Al Quoz (Deliveroo), Bengaluru Tiffany's (Filmfare ME award), **Tiffin Wala Bur Dubai on hidubai.com** (competitor listed on hidubai — our hidubai listing still pending).
+- General — "tiffin service dubai monthly": not found. **hackmd.io Anmol Hyderabadi self-post #1**, The National + Gulf News tiffin articles, lavis.odoo.com services, makemymealuae blogspot, a Google Business Profile page (business.google.com) of some tiffin service, Tiffin Wala (hidubai).
+- Area — "mess jebel ali dubai": not found (our /mess-in-jebel-ali.html not indexed here). No mess business — Wikipedia, hotels, port pages only. Open field.
+
+### AI/GEO visibility
+- "best Kerala Tamil South Indian monthly mess tiffin service Dubai": Indeed cook jobs, The National tiffin article, hackmd Anmol Hyderabadi, y-axis "Meal Mate monthly mess" job ad, Royal Kalavara (magicpin ×2), Gulf News tiffin culture, cigar-cloud mess blog, pickyourtrail, Gulf News Kerala list, Property Finder, dannibindubai. Same set as 11-05.
+- 15th check, same pattern: **magicpin + hidubai + Gulf News / The National + Property Finder / dannibindubai** are what AI tools would cite; competitors also use a Google Business Profile and self-posts on free blog sites. Tayb Meals: not mentioned on any third-party page. Listings unchanged (docs/listing-status.md, 11-05).
+- No Tamil or Malayali community group surfaced in today's results.
+
+### Site health
+- Live fetch blocked again (curl to taybmeals.com: proxy 403) — checks are from repo code.
+- 59 HTML pages: all have title + meta description; JSON-LD parses on all; no broken local links or images. Sitemap: 58 URLs (app.html left out — OK), lastmod 2026-11-04.
+- PR #6 (office lunch page) still open, mergeable — waiting for owner.
+- Still two phone numbers: +971 50 948 7880 on 60 files (footer, JSON-LD "telephone", some FAQs, about.html, llms.txt) vs +971 58 287 1967 in WhatsApp links (59 files). Waiting for owner.
+- Wording: "food delivery" appears only 2× on Kerala and Tamil pages, 0× in llms.txt; "Chennai"/"Chettinad" only on the Tamil page (0× in llms.txt); "nadan" only on Kerala page. AI tools read llms.txt — it doesn't yet say "Kerala food delivery" or "Tamil / Chennai-style food delivery".
+
+### Plan for tonight
+1. **llms.txt, balanced:** add two short plain lines — "Kerala food delivery in Dubai (nadan / Malayali home food, monthly mess)" → /kerala-mess-dubai.html, and "Tamil food delivery in Dubai (Tamil Nadu, Chennai-style and Chettinad home food, monthly mess)" → /tamil-mess-dubai.html. Only dishes already on the menu.
+2. **One FAQ each, equal:** Kerala page "Is Tayb Meals a Kerala food delivery service in Dubai?" and Tamil page "Is Tayb Meals a Tamil food delivery service in Dubai?" — answer: monthly subscription (not app ordering), Mon–Sat, plans 199/359/459, Starter Plan, delivery across Dubai; mirror in FAQPage JSON-LD. Skip if a near-identical FAQ already exists.
+3. Jebel Ali page: check it has a "mess near Jebel Ali / JAFZA" FAQ with zone times; add if missing (zero competitors there today).
+
+### Owner to-do
+- **Merge PR #6** (office lunch page) if you're happy with it: https://github.com/mmizwan-debug/TaybClaud/pull/6
+- **Phone number:** tell us which to show — +971 58 287 1967 or +971 50 948 7880 (or one for calls, one for WhatsApp).
+- **Google Search Console / Bing Webmaster:** confirm verified + sitemap submitted, and "Request indexing" for the homepage, Kerala and Tamil pages. The site still doesn't show even for "Tayb Meals".
+- Google Business Profile verification (#1 job) and hidubai approval — a rival "Tiffin Wala Bur Dubai" already ranks through hidubai.
+- magicpin merchant sign-up; short intro posts in r/DubaiMallus and the Dubai Tamil Professionals Group (meetup.com).
