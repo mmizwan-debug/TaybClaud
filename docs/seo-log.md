@@ -767,3 +767,12 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - Google Business Profile verification (#1 job), hidubai approval, magicpin merchant sign-up. Ask first customers for Google reviews once GBP is live.
 - Merge PR #6 (office lunch page) if happy: https://github.com/mmizwan-debug/TaybClaud/pull/6
 - Short intro posts: r/DubaiMallus (Kerala) and r/dubai or the Dubai Tamil Professionals Group (Tamil).
+
+### Evening — 2026-11-07
+- Changed (live on main): owner's new Starter Plan rule added next to the existing text on 55 pages + llms.txt (visible FAQs, plan tables and FAQPage JSON-LD): "To cancel, tell us before 12 PM on the 2nd delivery day, even if your plan is dinner only; otherwise the next day's meal will also be delivered." Old "pay only for the meals you received" left in place until the owner confirms (removing it is a rewrite → needs owner).
+- Changed: new FAQ (visible + JSON-LD) "Is there a Kerala mess near Deira or Bur Dubai?" on the Kerala page and "Is there a Tamil mess near Deira or Bur Dubai?" (Madurai-style) on the Tamil page — Zone C times (before 7:00 AM / before 8:00 PM), plans, Starter Plan, links to both area pages.
+- Changed: sitemap lastmod → 2026-11-07 for the 55 pages edited today, 2026-11-06 for index/menu/delivery-timings (owner edit).
+- Checked: all 59 HTML pages tags balanced, every JSON-LD block parses, no "free"/"try" added, no Expo City / Creek Harbour anywhere. Live fetch blocked again from the sandbox (curl no response) — could not confirm on taybmeals.com.
+- Area pages built: none (all 51 live since 11-03).
+- Proposed (PR): none new — PR #6 (office lunch page) still open; its page has the old Starter Plan text, so add the 12 PM line to it before/after merge.
+- Next idea: once the owner answers yes/no on "pay only for the meals you received", make the Starter Plan text identical on every page (PR if it means removing wording); link PR #6 page from area pages after merge.
