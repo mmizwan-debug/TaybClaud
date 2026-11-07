@@ -731,3 +731,39 @@ Search tool is a US-based web index, not Google UAE — rough signal only. taybm
 - Area pages built: none (all 51 live since 11-03).
 - Proposed (PR): none new — PR #6 (office lunch page) still waiting for owner.
 - Next idea: after PR #6 merges, link it from the homepage footer and DIC/DIP/JLT/WTC/Healthcare City pages; make the phone number the same everywhere once the owner confirms it.
+
+## 2026-11-07 — Morning check
+
+### Rankings
+Search tool is a US web index, not Google UAE — rough signal only. taybmeals.com **not found for any query**, including the brand ("Tayb Meals Dubai" → Tayeb Kitchen Al Khabaisi on magicpin/eazydiner, Tayba Gourmet app, Meals on Me). 7th day in a row: not indexed by this engine.
+- Kerala — "kerala mess dubai": not found. Royal Kalavara Monthly Mess Karama (magicpin ×2) the only Dubai mess; Kairali Kerala Mess (wanderlog), stayneat "Kerala Mess"; rest Property Finder, Bayut, dannibindubai ×2, Gulf News Onam sadhya list, Trichy Swiggy pages.
+- Kerala — "malayali mess dubai": not found. Mess Service Alot Kitchen Motor City (magicpin), Kunjikkas Cafe Karama (magicpin), Calicut Paragon Karama (foodle), Onmanorama Karama kanji story, Bayut/Property Finder Kerala lists, Wikipedia Gulf Malayali.
+- Tamil — "tamil mess dubai": not found. Royal Kalavara (magicpin) only Dubai mess; Khaleej Times Bahubali thali, Singapore/Chennai mess guides, Tamil tutors, Dinamalar Gulf news. Still no Tamil mess business on page 1.
+- Tamil — "south indian veg meals dubai": not found. Bikanervala (Deliveroo ×2), Meenatshi Chettinadu Al Quoz (Deliveroo), Nalan Mankhool + VegMe Al Twar (magicpin), Saravana Bhavan (HappyCow ×2, spinach.guide ×2), Mavalli Tiffin Rooms, Bayut veg/South Indian lists. Restaurants only, no veg monthly mess.
+- General — "mess food dubai": not found. Royal Kalavara (magicpin ×2) #1–2; **new #3: "Erode Amman Mess", Deira (mapthemeal.com)** — first Tamil (Kongu-style) mess brand seen in Dubai results; also Ebony Wood Restaurant International City (hidubai), Khaleej Times "where delivery riders eat for Dh4".
+- Area — "mess bur dubai monthly": not found (our /mess-in-bur-dubai.html not indexed here). Airbnb/dubizzle monthly rentals + Royal Kalavara (magicpin). No Bur Dubai mess business.
+
+### AI/GEO visibility
+- "best South Indian monthly mess tiffin service Dubai Tamil Kerala": The National tiffin article, y-axis Meal Mate "monthly mess" job ad, hackmd self-post, Royal Kalavara (magicpin ×2), Gulf News tiffin culture ×2, cigar-cloud mess blog, Tamil Dhaba (wanderlog), Curly Tales + pickyourtrail South Indian lists, lavis.odoo.com. Same set as last 3 days.
+- 16th check, same pattern: **magicpin + hidubai + Gulf News / The National + wanderlog/mapthemeal directories** are what AI tools would cite. Tayb Meals: not mentioned on any third-party page.
+- Community: "Tamil community Dubai home food reddit" → r/DubaiMallus (gummysearch), r/dubai / r/UAE snapshots, Gulf News "Taste of Tamil Nadu", getbelong homesick guide. Still no Tamil-specific forum/group surfaced; r/dubai is the realistic place for a Tamil-audience post.
+
+### Site health
+- Live fetch blocked again (curl: proxy connect_rejected; WebFetch needs permission) — checks are from repo code.
+- 59 HTML pages: all have title + meta description; JSON-LD parses on all; no broken local links or images. Sitemap: 58 URLs (app.html left out — OK).
+- **New: owner commit "NO TRIAL" (11-06)** changed index.html, menu.html, app.html Starter Plan text: now "monthly prepaid payment due on the 2nd delivery day; to cancel, tell us before 12 PM that day, otherwise the next day's meal is also delivered". The old line "if you stop you pay only for the meals you received" is gone from the homepage but **still on 56 files** (Kerala, Tamil, North Indian, about, all area pages, llms.txt line 12 + FAQ line 88, FAQPage JSON-LD). The "12 PM" rule is on 0 of them. AI tools now see two versions.
+- sitemap lastmod still 2026-11-04 although pages changed 11-06.
+- Still two phone numbers (+971 50 948 7880 in footer/JSON-LD/llms.txt on 60 files vs wa.me/971582871967 on 59 files) — waiting for owner. PR #6 (office lunch page) not rechecked today; was open/waiting.
+
+### Plan for tonight
+1. **Starter Plan consistency (all pages + llms.txt):** add the owner's new rule — "To cancel, tell us before 12 PM on the 2nd delivery day; otherwise the next day's meal is also delivered" — to the Starter Plan answers on the Kerala page, Tamil page, North Indian page, about.html, area pages and llms.txt (visible FAQ + JSON-LD). Use the owner's exact homepage wording. Do NOT delete "pay only for the meals you received" until the owner confirms (it's still in the business facts) — flagged in to-do.
+2. **Balanced FAQ, Deira / Bur Dubai:** Tamil page "Is there a Tamil mess near Deira or Bur Dubai?" (a Tamil mess — Erode Amman — now shows for Deira) and Kerala page "Is there a Kerala mess near Deira or Bur Dubai?". Answer: monthly subscription, Zone C — breakfast + lunch before about 7:00 AM, dinner before about 8:00 PM, Mon–Sat, plans 199/359/459, Starter Plan. Mirror in FAQPage JSON-LD; link /mess-in-deira.html and /mess-in-bur-dubai.html. Madurai-style wording on the Tamil side, on-menu dishes only.
+3. sitemap.xml: set lastmod to the change date for every page edited 11-06/11-07.
+
+### Owner to-do
+- **Starter Plan text:** your new homepage wording dropped "if you stop, you pay only for the meals you received". Is that still true? Reply yes/no so all 56 other pages and llms.txt can match.
+- **Phone number:** which to show — +971 58 287 1967 or +971 50 948 7880?
+- **Google Search Console / Bing Webmaster:** confirm sitemap submitted and "Request indexing" for homepage, Kerala and Tamil pages — site still doesn't show even for "Tayb Meals".
+- Google Business Profile verification (#1 job), hidubai approval, magicpin merchant sign-up. Ask first customers for Google reviews once GBP is live.
+- Merge PR #6 (office lunch page) if happy: https://github.com/mmizwan-debug/TaybClaud/pull/6
+- Short intro posts: r/DubaiMallus (Kerala) and r/dubai or the Dubai Tamil Professionals Group (Tamil).
