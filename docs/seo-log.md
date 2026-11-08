@@ -805,3 +805,11 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 
 ### Owner to-do
 - Still open: Starter Plan "pay only for meals received" yes/no; which phone number to show; Google Search Console + Bing "Request indexing" (site not found even for "Tayb Meals"); Google Business Profile verification; hidubai + magicpin listings; merge PR #6 if happy.
+
+### Evening — 2026-11-08
+- Changed (live on main, 95ff221): new FAQ (visible + FAQPage JSON-LD) "Is there a monthly Kerala meal plan (subscription) in Dubai?" on the Kerala page and "Is there a monthly Tamil meal plan (subscription) in Dubai?" on the Tamil page — plans 199/359/459 + VAT, Mon–Sat, Sunday add-on, weekly menu, on-page dishes only, Starter Plan with the 12 PM rule, Register + WhatsApp links. Al Nahda page: new FAQ "Is there a Kerala or Tamil mess in Al Nahda?" (Zone D: before 7:00 AM / before 7:00 PM). llms.txt: "Also called: monthly meal plan, meal subscription, tiffin, mess food" + a matching Q&A line. Sitemap lastmod → 2026-11-08 for the 3 pages.
+- Meta descriptions not changed: Kerala/Tamil ones are already ~190 chars, adding "meal plan" would make them longer.
+- Checked: tags balanced, all JSON-LD parses, Register links → taybmeals.paperform.co, no "free"/"try", no Expo City / Creek Harbour on any page. Live fetch blocked from the sandbox again (proxy 403) — not confirmed on taybmeals.com.
+- Area pages built: none (all 51 live since 11-03).
+- Proposed (PR): none new — PR #6 (office lunch page) still waiting.
+- Next idea: "meal plan" FAQ on the North Indian page (tiffin wording) and on 2–3 top area pages (Karama, Al Qusais, Bur Dubai), since Meals on Me ranks with "meal-plan-<area>" pages.
