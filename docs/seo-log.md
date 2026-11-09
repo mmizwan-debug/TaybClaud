@@ -813,3 +813,33 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - Area pages built: none (all 51 live since 11-03).
 - Proposed (PR): none new — PR #6 (office lunch page) still waiting.
 - Next idea: "meal plan" FAQ on the North Indian page (tiffin wording) and on 2–3 top area pages (Karama, Al Qusais, Bur Dubai), since Meals on Me ranks with "meal-plan-<area>" pages.
+
+## 2026-11-09 — Morning check
+
+### Rankings
+Search tool is a US web index, not Google UAE — rough signal only. taybmeals.com **not found for any query**, including a search for "taybmeals.com" itself (only Canadian "Tayybeh Foods" / "A Taste of Tayb" results). Day 9: site still not indexed by this engine.
+- Kerala — "malayali mess dubai monthly": not found. Royal Kalavara Karama (magicpin ×2) #1–2, Mess Service Alot Kitchen Motor City + Kunjikkas Cafe Karama (magicpin), Ebony Wood International City (hidubai), r/DubaiMallus (gummysearch), Gulf News/Khaleej Times Onam & Kerala curry lists, a Qatar Living mess ad. Same Kerala set as 11-07.
+- Kerala — "nadan food delivery dubai": not found. BBC Good Food tag page, Khaleej Times delivery-rider eats, Bayut delivery-app lists, Deliveroo pages, and **2gis.com (2GIS map directory) ×4 business pages** — new source, not seen in earlier runs. No Kerala mess business.
+- Tamil — "chennai mess dubai": not found. Results are Chennai-city mess guides (Nair Mess, Madurai Military Mess on Swiggy), flights Chennai–Dubai, Khaleej Times Bahubali thali, Chennai Park Restaurant Al Satwa (magicpin). **No Chennai/Tamil mess in Dubai on page 1** — open field; our Tamil page already has a "Chennai mess in Dubai?" FAQ but isn't indexed.
+- Tamil — "tamil food delivery dubai": not found. Swiggy (India), Property Finder blog, 2gis.com ×4, Deliveroo Indian takeaway, Gulf News "traditional hearty meals delivered" advertorial, Khaleej Times delivery lists, UK Tamil takeaways. No Tamil mess/subscription.
+- General — "office lunch delivery dubai monthly": not found. **Meals on Me owns page 1** (blog ×2, /corporate-meal-plan, /our-plans, /meal-plan-dubai-silicon-oasis, /meal-plan-dubai-marina, Khaleej Times feature), plus Four Seasons DIFC, Uber OfficeEats, whatson/emirateswoman healthy-meal lists. Our PR #6 (office lunch page) is the answer to this.
+- Area — "mess al qusais dubai monthly": not found (our /mess-in-al-qusais.html not indexed here). Only Property Finder/dubizzle/plumguide monthly rentals — no mess business at all.
+
+### AI/GEO visibility
+- "best South Indian tiffin service Dubai Tamil Kerala monthly mess": The National tiffin article, hackmd self-post, Curly Tales ×2, pickyourtrail, Bayut and Property Finder South Indian lists, Sangeetha + Tamil Dhaba (wanderlog), Mavalli Tiffin Rooms, Gulf News tiffin culture + Kerala New Year list, Royal Kalavara (magicpin), a Reddit snapshot, cigar-cloud mess blog. 18th check, same set.
+- Sources AI tools would cite: **magicpin, hidubai, wanderlog, Gulf News / Khaleej Times / The National, Bayut / Property Finder lists, Meals on Me's own pages** — and now **2GIS** shows on two food-delivery queries. Tayb Meals: not mentioned on any third-party page.
+- Tamil vs Kerala: Kerala side has Royal Kalavara + Alot Kitchen + Kunjikkas on magicpin; Tamil side still has no mess/subscription listing at all ("chennai mess", "tamil food delivery" both empty of Dubai messes). A Tamil-audience listing would face no competition.
+
+### Site health
+- Live fetch blocked again (curl: no response via proxy; WebFetch permission withdrawn) — checks from repo code (main @ b553d39).
+- 59 HTML pages: all have title + meta description; every JSON-LD block parses; no broken local links or images. Sitemap: 58 URLs (all except app.html — OK); lastmod up to 2026-11-08.
+- No owner commits since 11-06. Phone-number mismatch (+971 50 948 7880 vs wa.me/971582871967) still open. PR #6 (office lunch page) still open, last updated 11-05.
+
+### Plan for tonight
+1. **"Meal plan" FAQ on 3 top area pages (balanced Kerala + Tamil):** Karama, Al Qusais and Bur Dubai — "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" Answer: yes, 1/2/3 meals a day AED 199/359/459, Mon–Sat, Sunday add-on, menu changes weekly, the area's zone delivery times from js/delivery-zones.js, Starter Plan (owner's exact wording incl. 12 PM rule), Register + WhatsApp. One Kerala dish and one Tamil (Madurai-style) dish from the menu only. Mirror in FAQPage JSON-LD. (Meals on Me ranks with "meal-plan-<area>" pages; Al Qusais has no mess business ranking at all.)
+2. **North Indian page:** add the same "monthly meal plan (tiffin subscription)" FAQ (carried over from 11-08's next idea).
+3. sitemap.xml lastmod → 2026-11-09 for edited pages. Check tags balance + JSON-LD parses.
+
+### Owner to-do
+- **New: list Tayb Meals on 2GIS (2gis.com/dubai)** — free map directory, now showing for "nadan food delivery dubai" and "tamil food delivery dubai". Use the same name, address, phone and hours as Google.
+- Still open: Starter Plan "pay only for meals received" yes/no; which phone number to show; Google Search Console + Bing "Request indexing" (site still not found even for "taybmeals.com"); Google Business Profile verification; hidubai + magicpin listings; merge PR #6 (office lunch) if happy — Meals on Me owns that search now.
