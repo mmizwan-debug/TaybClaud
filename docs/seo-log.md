@@ -843,3 +843,10 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 ### Owner to-do
 - **New: list Tayb Meals on 2GIS (2gis.com/dubai)** — free map directory, now showing for "nadan food delivery dubai" and "tamil food delivery dubai". Use the same name, address, phone and hours as Google.
 - Still open: Starter Plan "pay only for meals received" yes/no; which phone number to show; Google Search Console + Bing "Request indexing" (site still not found even for "taybmeals.com"); Google Business Profile verification; hidubai + magicpin listings; merge PR #6 (office lunch) if happy — Meals on Me owns that search now.
+
+### Evening — 2026-11-09
+- Changed (live on main, cc2a008): new FAQ (visible + FAQPage JSON-LD) "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" on the Karama, Bur Dubai and Al Qusais pages — matta rice fish meals (Kerala) + Madurai-style sambar rice / curd rice (Tamil), the area's zone times from js/delivery-zones.js (Karama/Bur Dubai Zone C: before 7:00 AM / before 8:00 PM; Al Qusais Zone D: before 7:00 AM / before 7:00 PM), plans 199/359/459 + VAT, Sunday add-on, Starter Plan with the 12 PM rule, Register + WhatsApp links. North Indian page: "Is there a monthly North Indian meal plan (tiffin subscription) in Dubai?" (on-page dishes only). Sitemap lastmod → 2026-11-09 for the 4 pages.
+- Checked: tags balanced, all JSON-LD parses, Register links → taybmeals.paperform.co, no "free"/"try", no Expo City / Creek Harbour. Live fetch blocked from the sandbox again (proxy connect_rejected for taybmeals.com) — not confirmed on the live site.
+- Area pages built: none (all 51 live since 11-03).
+- Proposed (PR): none new — PR #6 (office lunch page) still waiting for owner.
+- Next idea: same "meal plan" FAQ on Deira, Al Nahda (meal-plan wording only, it already has a Kerala/Tamil FAQ) and International City; add "meal plan" Q&A lines for Karama / Bur Dubai / Al Qusais to llms.txt.
