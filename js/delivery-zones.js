@@ -162,12 +162,8 @@
       bf: "Before 7:30 AM",
       dinner: "Before 8:00 PM",
       areas: [
-        "Arabian Ranches",
-        "Arabian Ranches 2",
-        "Arabian Ranches 3",
         "Damac Hills 2",
         "Jebel Ali Free Zone (JAFZA)",
-        "Palm Jumeirah",
         "The Valley"
       ]
     }
