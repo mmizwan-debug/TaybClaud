@@ -886,3 +886,12 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - **Google Business Profile** verification (#1 job) — a competitor's GBP page (Dabbawaalah Tiffin) now ranks for "tiffin service dubai". Once live, ask first customers for Google reviews.
 - Merge PR #6 (office lunch) only **after** tonight's update — it still has the old Starter Plan text.
 - Still open: Google Search Console + Bing "Request indexing" (site not found anywhere); hidubai, magicpin, mapthemeal and 2GIS listings; short intro posts in r/DubaiMallus (Kerala) and r/dubai or a Dubai Tamil group (Tamil).
+
+### Evening — 2026-11-10
+- Changed (live on main, a976469): new FAQ (visible + FAQPage JSON-LD) "How do I pay for the Kerala mess?", "How do I pay for the Tamil mess?" and "How do I pay for the North Indian tiffin service?" — new payment rules word for word (pay in advance; card 3.1%, bank transfer, CDM, Tabby, Tamara; bank transfer/CDM no extra charge; no cash on delivery; cancel any time, unused meals refunded within 48 hours; 10:00 AM rule) + full terms, Register and WhatsApp links. Business email hello@taybmeals.com added to the footer of 58 pages (app.html has no footer), to every LocalBusiness JSON-LD ("email") and to llms.txt. Sitemap lastmod → 2026-11-10 for all pages.
+- NOT done (plan item 1): did not remove the homepage/app.html testimonials — permanent owner rule (2026-10-23) says they are real and must never be removed or rewritten. One of them (Rahul Menon, index.html + app.html) still says "I only signed up for the starter plan to test it out … Zero risk". Left for the owner to decide.
+- Not done: `#trial` → `#payment` anchor rename (58 pages, only an internal anchor/CSS class, not visible text) — low value, skipped.
+- PR #6 (office lunch page) updated: merged latest main, payment text now the new rules (no Starter Plan), WhatsApp +971 50 948 7880, current header/footer, email in JSON-LD. Ready for the owner to merge: https://github.com/mmizwan-debug/TaybClaud/pull/6
+- Checked: tags balanced, all JSON-LD parses, Register links → taybmeals.paperform.co, no "free"/"try", no Expo City / Creek Harbour, retired-wording scan clean except the one testimonial. Live fetch blocked from the sandbox (proxy connect_rejected) — not confirmed on taybmeals.com.
+- Area pages built: none (all 51 live since 11-03).
+- Next idea: same "meal plan" FAQ on Deira, Al Nahda and International City; add payment-options line to the ~23 area pages that only have the short payment text.
