@@ -895,3 +895,39 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - Checked: tags balanced, all JSON-LD parses, Register links → taybmeals.paperform.co, no "free"/"try", no Expo City / Creek Harbour, retired-wording scan clean except the one testimonial. Live fetch blocked from the sandbox (proxy connect_rejected) — not confirmed on taybmeals.com.
 - Area pages built: none (all 51 live since 11-03).
 - Next idea: same "meal plan" FAQ on Deira, Al Nahda and International City; add payment-options line to the ~23 area pages that only have the short payment text.
+
+## 2026-11-11 — Morning check
+
+### Rankings
+Search tool is a US web index, not Google UAE — rough signal only. taybmeals.com **not found for any query** (day 11), including "Tayb Meals Dubai" (only Tayeb Kitchen, Tayba Gourmet, Meals on Me).
+- Kerala — "malayali mess dubai": not found. Only mess businesses: Mess Service Alot Kitchen Motor City + Kunjikkas Cafe Karama (magicpin). Rest Gulf News Onam/Kerala lists, Khaleej Times, Onmanorama Karama kanji story, Bayut, Property Finder ×2. Same Kerala set.
+- Kerala — "kerala food delivery dubai": not found. Restaurant lists only (Property Finder ×3, dannibindubai ×2, Bayut, Gulf News ×2, Curly Tales ×5, Khaleej Times, arabiers), Calicut Foodies Express JLT (wanderlog), Kayal Star Qusais (magicpin). No Kerala mess/subscription.
+- Tamil — "south indian veg meals dubai": not found. Saravana Bhavan (HappyCow ×2, spinach.guide ×2), Bikanervala (Deliveroo ×2), **Meenatshi Chettinadu Al Quoz (Deliveroo)**, Nalan Mankhool + VegMe Al Twar (magicpin), Sangeetha, Mavalli Tiffin Rooms, Bayut/Property Finder veg lists. Restaurants only — no veg meal subscription.
+- Tamil — "tamil home food delivery dubai": not found. Swiggy (India), visitdubai, Khaleej Times delivery lists, Gulf News tiffin culture + "traditional hearty meals" advertorial, Bayut app lists, talabat. Still no Tamil home-food subscription in Dubai on page 1.
+- General — "south indian tiffin service dubai": not found. The National + Gulf News tiffin articles, Mavalli Tiffin Rooms, Meenatshi Chettinadu, Curly Tales, Tiffin Wala Bur Dubai (hidubai), Dakshin Tiffin Center (wanderlog), Dubai Gazette dabbawala story, hackmd self-post. No South Indian monthly tiffin brand.
+- General — "mess near me dubai monthly": not found. Royal Kalavara Karama (magicpin ×2) #1–2, cigar-cloud mess blog, Ebony Wood International City (hidubai), Alot Kitchen (magicpin ×4), r/dubai snapshots ×3, Airbnb monthly rentals.
+- Area — "mess karama dubai monthly food": not found (our /mess-in-karama.html not indexed here). Royal Kalavara (magicpin ×2) + Alot Kitchen (×4), Deliveroo Karama restaurants, Property Finder/Bayut Karama lists.
+
+### AI/GEO visibility
+- "best Kerala Tamil South Indian monthly mess tiffin service Dubai": The National tiffin article, hackmd self-post, y-axis Meal Mate job ad, Royal Kalavara (magicpin ×2), Gulf News tiffin culture + Kerala list, cigar-cloud blog, pickyourtrail, lavis.odoo.com, Property Finder ×2, Curly Tales, dannibindubai ×2. 20th check, same set.
+- Sources AI tools would cite: **magicpin** (Royal Kalavara, Alot Kitchen — the only "mess" listings that rank), **hidubai, wanderlog, HappyCow, Deliveroo store pages, Gulf News / Khaleej Times / The National, Bayut / Property Finder / Curly Tales lists**, r/dubai. Tayb Meals: not mentioned on any third-party page. No Malayali or Tamil community group surfaced.
+- Tamil vs Kerala: Kerala side has 3 magicpin mess listings; Tamil side has only restaurants (Saravana Bhavan, Meenatshi Chettinadu, Anjappar). New: **HappyCow** ranks for South Indian veg — a free listing that fits our veg meals (Tamil audience).
+
+### Site health
+- Live fetch blocked again (WebFetch permission withdrawn; curl CONNECT 403) — checks from repo code (main @ c6daf18).
+- 59 HTML pages: all have title + meta description; every JSON-LD block parses; 0 broken local links or images. Sitemap: 58 URLs (all except app.html — OK).
+- Owner commit 11-10 ("seo up"): **Palm Jumeirah and Arabian Ranches 1–3 removed** from delivery (js/delivery-zones.js, homepage FAQ, llms.txt, Dubailand page). **Problem: index.html LocalBusiness JSON-LD `areaServed` still lists "Arabian Ranches", "Arabian Ranches 2", "Arabian Ranches 3" and "Palm Jumeirah"** (lines ~218–226, ~490). No other page mentions them.
+- Retired payment wording: clean on all pages, JSON-LD, llms.txt and sitemap **except one homepage/app.html testimonial** (Rahul Menon: "I only signed up for the starter plan to test it out … Zero risk"). Note: the brief says sample reviews were removed, but the repo still has the testimonials section on index.html (6 cards) and app.html — an earlier owner rule (2026-10-23) says not to remove them. Needs the owner's call; flagged again.
+- Homepage section id still `#trial` (internal anchor only, not visible).
+- Gaps still open: "meal plan" FAQ and payment-options line (card 3.1%, bank transfer, CDM, Tabby, Tamara) missing on Deira, Al Nahda, International City, Jebel Ali (and ~19 other area pages). PR #6 (office lunch) open, last updated 11-10, ready to merge.
+
+### Plan for tonight
+1. **Fix the delivery-area mismatch:** remove "Palm Jumeirah" and "Arabian Ranches 1/2/3" from the index.html JSON-LD `areaServed`, so Google/AI tools don't say we deliver there. Check no other file (incl. PR #6 branch after it merges main) lists them. Sitemap lastmod → 2026-11-11 for index.html.
+2. **Balanced Kerala + Tamil area FAQ:** on Deira (Kerala-heavy) and International City (Tamil + South Indian workers) — add "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" (same pattern as Karama/Bur Dubai/Al Qusais: one Kerala + one Tamil dish from the menu, zone times from js/delivery-zones.js, 199/359/459, Sunday add-on, new payment rules, Register + WhatsApp) and the payment-options line. Mirror in FAQPage JSON-LD.
+3. **Veg (Tamil-friendly) wording:** if the Tamil page has no veg FAQ, add "Do you have South Indian veg meals in Dubai?" using only on-page veg dishes (sambar rice, rasam, curd rice, tamarind rice, idly, dosa, pongal). Mirror in JSON-LD. Check tags balance + JSON-LD parses.
+
+### Owner to-do
+- **Decide on the homepage testimonials:** the brief says sample reviews were removed, but 6 cards are still on index.html and app.html — one still says "starter plan … zero risk". Tell us "remove" or "keep (real)"; if real, ask Rahul if we can drop the "starter plan" line.
+- Check Google Business Profile / Instagram / listings no longer say you deliver to **Palm Jumeirah or Arabian Ranches**, and use the new payment wording.
+- **New: free listing on HappyCow** (veg restaurants & veg delivery) — ranks for "south indian veg meals dubai".
+- Still open: Google Business Profile verification + first Google reviews; Google Search Console + Bing "Request indexing" (site still not found anywhere, even by name); magicpin (where Royal Kalavara & Alot Kitchen rank), hidubai, 2GIS listings; merge PR #6 (office lunch); intro posts in r/DubaiMallus and a Dubai Tamil group.
