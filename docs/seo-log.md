@@ -938,3 +938,38 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - Checked: tags balanced on all 59 pages, every JSON-LD parses, Register links → taybmeals.paperform.co, no "free"/"try", no Expo City / Creek Harbour / Palm Jumeirah / Arabian Ranches. Retired wording clean except the one protected testimonial (Rahul Menon "starter plan", index.html + app.html) — owner's call. Live fetch blocked (proxy connect_rejected) — not confirmed on taybmeals.com.
 - Area pages built: none (all 51 live since 11-03). Proposed (PR): none new; PR #6 still waiting for the owner.
 - Next idea: Kerala/Tamil meal-plan FAQ on Al Nahda and Jebel Ali; add "email" + payment line to llms.txt area list summary if missing.
+
+## 2026-11-12 — Morning check
+
+### Rankings
+Search tool is a US web index, not Google UAE — rough signal only. taybmeals.com **not found for any query** (day 12), including "Tayb Meals" Dubai (only Tayeb Kitchen Deira, Tayba Gourmet app, Meals on Me).
+- Kerala — "nadan food dubai monthly mess": not found. Royal Kalavara Karama (magicpin ×2) #1–2, cigar-cloud mess blog, Ebony Wood International City (hidubai), Alot Kitchen Motor City (magicpin ×2), Meals on Me area pages (town-square, arjan), **homely-delights.odoo.com** (new small home-food site, first time seen).
+- Kerala — "kerala food delivery dubai": not found. Restaurant lists only (Property Finder ×3, dannibindubai ×2, Bayut, Gulf News ×2, Curly Tales ×5, Khaleej Times, arabiers), Calicut Foodies Express JLT (wanderlog), Kayal Star Qusais (magicpin). Same as 11-11.
+- Tamil — "chennai mess dubai": not found. Chennai-city mess guides, flights, Khaleej Times Bahubali thali, Chennai Park Restaurant Satwa (magicpin). Still **no Chennai/Tamil mess in Dubai on page 1**.
+- Tamil — "tamil nadu meals dubai": not found. Khaleej Times Bahubali thali ×3, Gulf News "Taste of Tamil Nadu", Wikipedia Tamil cuisine, pickyourtrail + Curly Tales South Indian lists, **Anjappar / Anjappar Chettinad Karama (magicpin ×3)**, dubaiofw.com. Restaurants only; Chettinad is the Tamil name that ranks.
+- General — "monthly mess dubai": not found. Royal Kalavara (magicpin ×2), cigar-cloud blog, Ebony Wood (hidubai), then Airbnb / monthly rent pages. Only 3 mess results.
+- General — "office lunch delivery dubai": not found. **Meals on Me** /corporate-meal-plan #1 and /our-plans, Uber OfficeEats ×2, Four Seasons DIFC, Bateel catering, Khaleej Times, Pret, business-lunch lists. Our PR #6 (office lunch page) is the answer.
+- Area — "mess al nahda dubai": not found (our /mess-in-al-nahda.html not indexed here). Wikipedia/property pages, Ustad Hotel + Rawabi Al Sham (magicpin). No mess business.
+
+### AI/GEO visibility
+- "best Kerala Tamil South Indian monthly mess tiffin service Dubai": The National tiffin article, hackmd self-post, y-axis Meal Mate job ad, Royal Kalavara (magicpin ×2), Gulf News tiffin culture + Kerala list, cigar-cloud blog, pickyourtrail, lavis.odoo.com, Property Finder ×2, dannibindubai ×2, Curly Tales. 21st check, same set.
+- Sources AI tools would cite: **magicpin** (Royal Kalavara, Alot Kitchen, Anjappar), **hidubai**, wanderlog, Gulf News / Khaleej Times / The National, Bayut / Property Finder / Curly Tales lists, Meals on Me's own pages. Tayb Meals: not mentioned on any third-party page. No Malayali or Tamil community group surfaced.
+- Tamil vs Kerala: Kerala side has 3 magicpin mess listings; Tamil side still only restaurants (Anjappar Chettinad, Chennai Park). "Chettinad" is the Tamil word that ranks — our Tamil page has Chettinad chicken kulambu but no Chettinad FAQ.
+
+### Site health
+- Live fetch blocked again (curl to taybmeals.com: no response via proxy) — checks from repo code (main @ bfca5bb).
+- 59 HTML pages: all have title + meta description; every JSON-LD block parses; 0 broken local links or images. Sitemap: 58 URLs (all except app.html — OK); lastmod up to 2026-11-11. Palm Jumeirah / Arabian Ranches: gone (0 in index.html, llms.txt). Email hello@taybmeals.com present.
+- Owner commit 11-11 (bfca5bb): Complaint / New Instruction / Location Change Google Forms added to the customer hub (index.html + app.html). Links look fine; no SEO impact.
+- **Problem (still open): old "starter plan" wording** in one testimonial (Rahul Menon: "I only signed up for the starter plan to test it out … Zero risk") on index.html line ~1272 and app.html line ~328. The brief says sample reviews were removed, but the testimonials section (Priya Nair, Rahul Menon …) is still in both files; an older owner rule (2026-10-23) says not to remove them. Needs the owner's call — 3rd day flagged. All other retired wording: 0 hits.
+- PR #6 (office lunch page) still open, ready to merge since 11-10.
+
+### Plan for tonight
+1. **Kerala + Tamil meal-plan FAQ on two worker hubs:** Jebel Ali and Al Quoz — "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" Same pattern as Karama / Deira: one Kerala + one Tamil dish from the menu, the area's zone times from js/delivery-zones.js, 199/359/459, Sunday add-on, new payment rules (pay in advance, cancel any time, refund within 48 hours, 10:00 AM rule), Register + WhatsApp. Mirror in FAQPage JSON-LD.
+2. **Balanced page FAQs:** Tamil page — "Do you have Chettinad meals in Dubai?" (only menu dishes: Chettinad chicken kulambu, Chettinad chicken curry); Kerala page — "Is there a Kerala mess near International City, Motor City or Jebel Ali?" (zone times from js/delivery-zones.js; these areas are where Ebony Wood / Alot Kitchen rank). Mirror in JSON-LD.
+3. **llms.txt:** add short Q&A lines "Monthly Kerala meal plan in Dubai?" / "Monthly Tamil meal plan in Dubai?" / "Chettinad meals?" with prices and new payment rules. Sitemap lastmod → 2026-11-12 for changed pages. Check tags balance + JSON-LD parses.
+
+### Owner to-do
+- **Decide on the testimonials** (index.html + app.html): "remove" or "keep (real)". If kept, ask Rahul if we can drop the "starter plan … zero risk" line — it is old wording.
+- **Merge PR #6 (office lunch)** — Meals on Me owns "office lunch delivery dubai" and we have no page live for it.
+- **magicpin listing** — it is the #1 source for "monthly mess dubai", "nadan food" and Tamil (Anjappar) searches.
+- Still open: Google Business Profile verification + first Google reviews; Google Search Console + Bing "Request indexing" (site still not found even by name); hidubai, HappyCow, 2GIS listings; intro posts in r/DubaiMallus and a Dubai Tamil group; check Instagram / GBP / listings use the new payment wording.
