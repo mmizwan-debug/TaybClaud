@@ -979,3 +979,8 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - Checked: tags balanced, every JSON-LD parses, Register links → taybmeals.paperform.co, no "free"/"try"/Expo City/Creek Harbour. Retired wording: clean except the protected Rahul Menon testimonial ("starter plan", index.html + app.html) — owner's call. Live fetch blocked (proxy connect_rejected) — not confirmed on taybmeals.com.
 - Area pages built: none (all 51 live since 11-03). Proposed (PR): none new; PR #6 (office lunch) still waiting.
 - Next idea: Kerala/Tamil meal-plan FAQ on Al Nahda and DIP; check llms.txt still lists the WhatsApp number now that the site footer uses the call-back form (owner to decide).
+
+### Owner fix — 2026-11-12
+- Owner asked to fix the old "starter plan" testimonial. Removed only the outdated words from Rahul Menon's review on index.html + app.html (now: "Ended up subscribing the same week, and the food genuinely tastes homemade."). Nothing new was added to any customer's quote.
+- Added a business-voice line under the reviews heading (not a review): "Our promise: cancel any time — your unused-meal balance is refunded within 48 hours of your request." Sitemap lastmod for / → 2026-11-12. Retired wording now 0 on all pages.
+- Not done: rewriting reviews to say "48-hour refund" in customers' names — real customer words should be added only as they wrote them (with permission).
