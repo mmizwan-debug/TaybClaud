@@ -984,3 +984,37 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - Owner asked to fix the old "starter plan" testimonial. Removed only the outdated words from Rahul Menon's review on index.html + app.html (now: "Ended up subscribing the same week, and the food genuinely tastes homemade."). Nothing new was added to any customer's quote.
 - Added a business-voice line under the reviews heading (not a review): "Our promise: cancel any time — your unused-meal balance is refunded within 48 hours of your request." Sitemap lastmod for / → 2026-11-12. Retired wording now 0 on all pages.
 - Not done: rewriting reviews to say "48-hour refund" in customers' names — real customer words should be added only as they wrote them (with permission).
+
+## 2026-11-13 — Morning check
+
+### Rankings
+Search tool is a US web index, not Google UAE — rough signal only. taybmeals.com **not found for any query** (day 13).
+- Kerala — "kerala mess dubai": not found. Royal Kalavara Karama (magicpin ×2) the only Dubai mess; Kairali Kerala Mess (wanderlog), stayneat "Kerala Mess"; rest Gulf News Onam list, Property Finder, Bayut, dannibindubai ×2, Trichy Swiggy pages. Same as 11-10.
+- Kerala — "kerala meals monthly subscription dubai": not found. **Meals on Me** owns it (meal-plan-arjan, town-square, dubai-marina, vegan plan, FAQ — 7 of ~17 results); **vmeals.ae "Indian fusion meal plan"** (new), Flow Meal Plans (chatfood); rest Kerala restaurant lists. No Kerala mess subscription on page 1.
+- Tamil — "tamil mess dubai": not found. Royal Kalavara (magicpin ×2) only Dubai mess; Khaleej Times Bahubali thali ×2, Chennai/Singapore mess stories, Tamil tutors, Dinamalar Gulf. Still no Tamil mess business on page 1.
+- Tamil — "tamil food delivery dubai": not found. Swiggy India, **2GIS Dubai business pages ×4** (2gis.com/dubai/firm/…), Property Finder, BBC Good Food ME, Deliveroo Indian takeaway, Khaleej Times delivery lists, Gulf News advertorial, UK Tamil restaurants. 2GIS is a free listing that ranks for Tamil.
+- General — "mess food dubai": not found. Royal Kalavara (magicpin ×2) #1–2, **Erode Amman Mess, Deira (mapthemeal) #3 — first Tamil (Kongunadu) mess seen in Dubai results**, Ebony Wood International City (hidubai), Khaleej Times "where delivery riders eat", travel food guides.
+- General — "home food delivery dubai": not found. Delivery-app and article lists only (Gulf News, visitdubai, Khaleej Times ×4, dannibindubai, Bayut ×3, whatson, BBC Good Food ME). No mess/tiffin brand.
+- Area — "mess al qusais dubai": not found (our /mess-in-al-qusais.html not indexed here). Only Wikipedia / property guides — no mess business.
+
+### AI/GEO visibility
+- "best Kerala Tamil South Indian monthly mess tiffin service Dubai": The National tiffin article, hackmd self-post, y-axis Meal Mate job ad, Royal Kalavara (magicpin ×2), Gulf News tiffin culture + Kerala list, cigar-cloud blog, pickyourtrail, lavis.odoo.com, Property Finder ×2, Curly Tales, dannibindubai ×2. 22nd check, same set.
+- Sources AI tools would cite: **magicpin** (Royal Kalavara), **mapthemeal** (Erode Amman Mess, Ghar Ka Tiffin), **hidubai**, **2GIS**, wanderlog, Gulf News / Khaleej Times / The National, Bayut / Property Finder / Curly Tales lists, Meals on Me's own pages. Tayb Meals: not mentioned on any third-party page. No Malayali or Tamil community group surfaced.
+- Tamil vs Kerala: Tamil side now has one mess listing (Erode Amman Mess, Deira, on mapthemeal) — shows mapthemeal + 2GIS are the Tamil-side directories to be on. Kerala side still magicpin (Royal Kalavara).
+
+### Site health
+- Live fetch blocked again (WebFetch permission withdrawn; curl no response via proxy) — checks from repo code (main @ 704e8e2).
+- 59 HTML pages: all have title + meta description; every JSON-LD block parses; 0 broken local links or images. Sitemap: 58 URLs (all except app.html — OK); lastmod up to 2026-11-12.
+- Owner commits 11-12/11-13: Rahul Menon review no longer says "starter plan"; payment wording now "Pay in advance, before the plan starts" (dropped "New clients") on ~20 pages + llms.txt. **Retired wording scan: 0 hits** (starter plan, 2nd day, pay only for meals received, 12 PM, 1 working day) on all pages, JSON-LD, llms.txt, sitemap. Only leftover: internal anchor `#trial` (link text says "Payment") — not visible.
+- **Problem: PR #6 (office lunch page) is out of step** — still says "New clients pay in advance…" ×3 (main now says "Pay in advance, before the plan starts") and was last updated 11-10, before today's owner change. Update before merging.
+- Gaps: Kerala/Tamil meal-plan FAQ still missing on Al Nahda and DIP (Deira, Karama, Bur Dubai, Al Qusais, International City, Jebel Ali, Al Quoz have it).
+
+### Plan for tonight
+1. **PR #6:** merge latest main into the branch and change the 3 "New clients pay in advance" lines to the owner's new wording ("Pay in advance, before the plan starts. Cancel any time; unused-meal balance refunded within 48 hours…"), so it can be merged safely.
+2. **Tamil — Deira:** on tamil-mess-dubai.html add FAQ "Is there a Tamil mess in Deira?" (Erode Amman Mess ranks there) — Deira zone times from js/delivery-zones.js, only Tamil menu dishes, 199/359/459, Sunday add-on, new payment rules, Register + WhatsApp. Mirror in FAQPage JSON-LD + one llms.txt line.
+3. **Kerala + Tamil — Al Nahda & DIP:** add "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" (same pattern as Jebel Ali / Al Quoz). Sitemap lastmod → 2026-11-13 for changed pages; check tags balance + JSON-LD parses.
+
+### Owner to-do
+- **Merge PR #6 (office lunch)** after tonight's update.
+- **New: free listings on mapthemeal and 2GIS** — mapthemeal shows a Tamil mess (Erode Amman, Deira) at #3 for "mess food dubai"; 2GIS ranks for "tamil food delivery dubai". Use docs/listing-kit.md.
+- Still open: Google Business Profile verification + first real Google reviews; Google Search Console + Bing "Request indexing" (site still not found anywhere); magicpin, hidubai, HappyCow; intro posts in r/DubaiMallus and a Dubai Tamil group; check Instagram / GBP / listings use "pay in advance, cancel any time, refund in 48 hours".
