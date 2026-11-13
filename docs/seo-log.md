@@ -1018,3 +1018,6 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - **Merge PR #6 (office lunch)** after tonight's update.
 - **New: free listings on mapthemeal and 2GIS** — mapthemeal shows a Tamil mess (Erode Amman, Deira) at #3 for "mess food dubai"; 2GIS ranks for "tamil food delivery dubai". Use docs/listing-kit.md.
 - Still open: Google Business Profile verification + first real Google reviews; Google Search Console + Bing "Request indexing" (site still not found anywhere); magicpin, hidubai, HappyCow; intro posts in r/DubaiMallus and a Dubai Tamil group; check Instagram / GBP / listings use "pay in advance, cancel any time, refund in 48 hours".
+
+### Owner request — 2026-11-13
+- Owner asked again to change the review wording to the 48-hour refund everywhere. Rahul's review already had the starter-plan words removed (4fd13df). Added the same "Our promise: … refunded within 48 hours" business line above the reviews in app.html (index.html already had it). Retired wording: 0 visible hits site-wide (only CSS class names starter-plan-* and the internal #trial anchor remain).
