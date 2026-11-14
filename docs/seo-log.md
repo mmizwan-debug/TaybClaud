@@ -1021,3 +1021,19 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 
 ### Owner request — 2026-11-13
 - Owner asked again to change the review wording to the 48-hour refund everywhere. Rahul's review already had the starter-plan words removed (4fd13df). Added the same "Our promise: … refunded within 48 hours" business line above the reviews in app.html (index.html already had it). Retired wording: 0 visible hits site-wide (only CSS class names starter-plan-* and the internal #trial anchor remain).
+
+### Evening — 2026-11-13
+- Changed (live on main, b2619db): added "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" FAQ (visible + FAQPage JSON-LD) on **DIP** (Zone A: breakfast + lunch by ~5:00 AM, dinner ~7:00 PM), **Muhaisnah / Sonapur** (Zone D: ~7:00 AM / ~7:00 PM) and **Al Muteena** (Zone C: ~7:00 AM / ~8:00 PM). Only dishes already listed on those pages; 199/359/459, Sunday add-on, current payment wording ("Pay in advance, before the plan starts", cancel any time, refund within 48 hours, 10:00 AM rule). llms.txt: 1 new Q&A line for the three areas. Sitemap lastmod → 2026-11-13 (3 pages).
+- Plan items skipped as already done: Tamil "Deira" FAQ (tamil-mess-dubai.html already has "Is there a Tamil mess near Deira or Bur Dubai?") and Al Nahda ("Is there a Kerala or Tamil mess in Al Nahda?" already live) — not duplicated.
+- PR #6 (office lunch): merged latest main into seo/office-lunch-page (812a4bb), changed the 2 "New clients pay in advance…" lines to "Pay in advance, before the plan starts."; sitemap lastmod → 11-13. Tags balanced, JSON-LD parses, retired wording clean. Ready to merge.
+- Checked: tags balanced, JSON-LD parses, Register → taybmeals.paperform.co, no "free"/"try"/Expo City/Creek Harbour; retired wording 0 visible hits (only internal #trial anchor). Live fetch blocked (proxy connect_rejected) — not confirmed on taybmeals.com.
+- Area pages built: none (all 51 live since 11-03). Proposed (PR): no new PR; PR #6 updated.
+- Next idea: same Kerala/Tamil meal-plan FAQ on Al Rigga, Hor Al Anz and Ras Al Khor (bachelor/worker areas still without it); rename the internal #trial anchor to #payment (needs a PR — touches every page).
+
+### Owner change — 2026-11-14 (payment tone)
+- Owner found "New clients pay in advance" / "Pay in advance, before the plan starts" arrogant and asked for a polite, Silicon Valley style. Owner picked this wording; use it from now on (never go back to "pay in advance" / "new clients"):
+  - Heading: "Flexible plans. Cancel anytime."
+  - Short line: "Simple monthly billing. Cancel anytime — unused meals refunded within 48 hours."
+  - Full: "Your plan is billed upfront, so your first meal arrives without any hassle. Change your mind? Cancel anytime and we’ll refund your unused meals within 48 hours."
+  - Cash: "We’re fully cashless — no cash or card machine needed at your door."
+- Applied on all 59 pages (visible text + JSON-LD) and llms.txt; about.html "Advance payment" row → "Billing". Rules unchanged (payment before the plan starts, 48-hour refund, 10:00 AM rule, payment options + charges). Sitemap lastmod → 2026-11-14.

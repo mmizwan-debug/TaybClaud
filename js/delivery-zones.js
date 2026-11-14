@@ -169,7 +169,7 @@
     }
   };
 
-  var WHATSAPP_NUMBER = "971509487880";
+  var WHATSAPP_NUMBER = "971582871967";
   var SHARE_URL = "https://taybmeals.com/delivery-timings.html";
 
   function shareLink(area) {
