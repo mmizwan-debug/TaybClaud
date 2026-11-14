@@ -1038,3 +1038,37 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
   - Cash: "We’re fully cashless — no cash or card machine needed at your door."
 - Applied on all 59 pages (visible text + JSON-LD) and llms.txt; about.html "Advance payment" row → "Billing". Rules unchanged (payment before the plan starts, 48-hour refund, 10:00 AM rule, payment options + charges). Sitemap lastmod → 2026-11-14.
 - Follow-up (owner asked to cover the FAQs and the rest of the site): same friendly tone applied to the 10:00 AM rule ("Need to change your menu or cancel? Just let us know before 10:00 AM. After 10 AM, tomorrow’s meal is already being freshly prepared, so it will still be delivered to you."), registration ("we’ll confirm with you personally"), bank transfer/CDM ("Just share the receipt on WhatsApp and we’ll start your plan as soon as it’s confirmed"), Tabby/Tamara ("We’ll send you a payment link"), fees ("Card payments include a 3.1% gateway fee … Bank transfer and CDM are free"), "Pay your way:". Visible FAQs + FAQPage JSON-LD + llms.txt + listing kit. Marina/Jumeirah FAQ "Can I start without paying the full month first?" (contradicted the rules) → "What if I change my mind after paying for the month?".
+
+## 2026-11-14 — Morning check
+
+### Rankings
+Search tool is a US web index, not Google UAE — rough signal only. taybmeals.com **not found for any query** (day 14), including "Tayb Meals Dubai" (only Tayeb Kitchen Deira, Tayba Gourmet app, Meals on Me).
+- Kerala — "malayali mess dubai": not found. Only mess businesses: Mess Service Alot Kitchen Motor City + Kunjikkas Cafe Karama (magicpin). Rest Khaleej Times / Gulf News Onam lists, Onmanorama Karama kanji story, Bayut, Property Finder ×2, Calicut Paragon (foodle). Same as 11-11.
+- Kerala — "nadan food dubai": not found. Search engine reads "nadan" as unrelated (iftar / Emirati food pages, Nanda's Breads Karama). No Kerala result — the word is too niche for this index.
+- Tamil — "tamil home food dubai": not found. Calicut/Kerala lists, Gulf News "Taste of Tamil Nadu", **Anjappar Chettinad Karama (magicpin ×2)**, **Home Diner Karama (Deliveroo)**, Khaleej Times Bahubali thali, Curly Tales South Indian list, The National tiffin article. Still no Tamil home-food subscription on page 1.
+- Tamil — "south indian veg meals dubai": not found. Bikanervala (Deliveroo ×2), Meenatshi Chettinadu Al Quoz (Deliveroo), Nalan + VegMe (magicpin), **Saravana Bhavan (HappyCow ×2, spinach.guide ×2)**, Sangeetha, Mavalli Tiffin Rooms, Bayut/Property Finder veg lists. Same as 11-11 — restaurants only.
+- General — "tiffin service dubai": not found. Gulf News + The National tiffin articles, hackmd self-post, Tiffin Wala Bur Dubai (hidubai), dabbawala story, Moombai & Co, **Ghar Ka Tiffin Marina (mapthemeal + BBC Good Food ME)**, **Dabbawaalah Tiffin Services — its Google Business Profile page (business.google.com) ranks ×2**.
+- Area — "mess international city dubai": not found (our /mess-in-international-city.html not indexed here). Only property/Wikipedia pages — no mess business at all.
+
+### AI/GEO visibility
+- "best Kerala Tamil South Indian monthly mess tiffin service Dubai": The National tiffin article, hackmd self-post, y-axis Meal Mate job ad, Royal Kalavara (magicpin ×2), Gulf News tiffin culture + Kerala list, cigar-cloud blog, pickyourtrail, lavis.odoo.com, Property Finder ×2, dannibindubai ×2, Curly Tales. 23rd check, same set.
+- Sources AI tools would cite: **magicpin** (Royal Kalavara, Alot Kitchen, Anjappar), **Google Business Profile pages** (Dabbawaalah ranks with its GBP alone), mapthemeal, hidubai, HappyCow, Deliveroo store pages, Gulf News / Khaleej Times / The National, Bayut / Property Finder / Curly Tales. Tayb Meals: not mentioned on any third-party page. No Malayali or Tamil community group surfaced.
+- Tamil vs Kerala: Kerala side = magicpin mess listings (Alot Kitchen, Royal Kalavara, Kunjikkas); Tamil side = Chettinad restaurants (Anjappar, Meenatshi) + veg (Saravana Bhavan on HappyCow). New today: a tiffin service ranks with only a Google Business Profile — strongest sign yet that verifying our GBP matters.
+
+### Site health
+- Live fetch blocked again (curl to taybmeals.com: no response via proxy; WebFetch permission withdrawn) — checks from repo code (main @ 23540bf).
+- 59 HTML pages: all have title + meta description; every JSON-LD block parses; 0 broken local links or images. Sitemap: 58 URLs (all except app.html — OK); lastmod 2026-11-14.
+- Owner's 11-14 friendly payment wording ("billed upfront … Cancel anytime … refunded within 48 hours", "fully cashless") is in place. **Retired wording scan: 0 visible hits** (starter plan, 2nd day, pay only for meals received, trial, 12 PM, 1 working day, "new clients pay in advance"). Leftovers are internal only: HTML comment `<!-- 3. Pay in advance -->` (index.html line 961) and the `#trial` anchor — not shown to visitors.
+- PR #6 (office lunch): open, mergeable (clean), updated today with the friendly "billed upfront" wording. Ready to merge.
+- Gaps: Kerala/Tamil meal-plan FAQ still missing on Al Rigga, Hor Al Anz, Ras Al Khor (worker/bachelor areas). llms.txt has only 1 veg mention.
+
+### Plan for tonight
+1. **Kerala + Tamil meal-plan FAQ on Al Rigga, Hor Al Anz and Ras Al Khor:** "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" — same pattern as DIP / Muhaisnah: one Kerala + one Tamil dish already on the page, zone times from js/delivery-zones.js, 199/359/459, Sunday add-on, the owner's 11-14 friendly wording (billed upfront, cancel anytime, refund within 48 hours, 10:00 AM rule). Visible + FAQPage JSON-LD.
+2. **South Indian veg in llms.txt (Kerala + Tamil):** add a Q&A line "South Indian veg meals in Dubai?" naming only on-menu veg dishes for both (e.g. Kerala veg meals / avial / sambar; Tamil sambar rice, rasam, curd rice, idly, dosa, pongal), prices, delivery days. AI tools cite Saravana Bhavan/HappyCow here; we have no veg answer for them to quote.
+3. Tidy: change the index.html HTML comment "Pay in advance" to "Billing" (internal only). Sitemap lastmod → 2026-11-14 for changed pages; check tags balance + JSON-LD parses.
+
+### Owner to-do
+- **Verify the Google Business Profile** — today a small tiffin service (Dabbawaalah) ranks for "tiffin service dubai" with only its GBP page. Then ask 3–5 real customers for Google reviews.
+- **Merge PR #6 (office lunch)** — up to date and ready.
+- Free listings: magicpin (Kerala mess side), HappyCow (South Indian veg — Tamil side), mapthemeal, 2GIS, hidubai. Use docs/listing-kit.md and the new friendly payment wording.
+- Still open: Google Search Console + Bing "Request indexing" (site not found anywhere, even by name); intro posts in r/DubaiMallus and a Dubai Tamil group; update Instagram / GBP / listings to "billed upfront, cancel anytime, refund in 48 hours".
