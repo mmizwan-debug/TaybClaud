@@ -1072,3 +1072,10 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - **Merge PR #6 (office lunch)** — up to date and ready.
 - Free listings: magicpin (Kerala mess side), HappyCow (South Indian veg — Tamil side), mapthemeal, 2GIS, hidubai. Use docs/listing-kit.md and the new friendly payment wording.
 - Still open: Google Search Console + Bing "Request indexing" (site not found anywhere, even by name); intro posts in r/DubaiMallus and a Dubai Tamil group; update Instagram / GBP / listings to "billed upfront, cancel anytime, refund in 48 hours".
+
+### Evening — 2026-11-14
+- Changed (live on main, eae2de1): added "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" (visible FAQ + FAQPage JSON-LD) on **Al Rigga** (Zone C: breakfast + lunch before ~7:00 AM, dinner ~8:00 PM), **Hor Al Anz** (Zone C: ~7:00 AM / ~8:00 PM) and **Ras Al Khor** (Zone D: ~7:00 AM / ~7:00 PM). Only dishes already on each page; 199/359/459, Sunday add-on, owner's 11-14 friendly billing wording. llms.txt: new Q&A "Do you have South Indian veg meals in Dubai?" (only veg dishes from the Kerala / Tamil / menu veg FAQs). index.html internal HTML comment "Pay in advance" → "Billing" (not visible). Sitemap lastmod already 2026-11-14.
+- Checked: tags balanced, JSON-LD parses, Register → taybmeals.paperform.co, WhatsApp → wa.me/971582871967, no "free"/"try"/Expo City/Creek Harbour. Live fetch blocked (proxy connect_rejected) — not confirmed on taybmeals.com.
+- Note for owner: this morning's commit b23c57e added "Menu changes take 1 working day … new menu starts 2 delivery days after your request" on index, menu, app, Kerala/Tamil/North Indian pages and llms.txt. The routine's brief lists "1 working day notice" as retired wording — left as is (looks like a newer owner decision); owner to confirm, and update the routine brief if it stays.
+- Area pages built: none (all 51 live since 11-03). Proposed (PR): none new; PR #6 (office lunch) still waiting.
+- Next idea: same Kerala/Tamil meal-plan FAQ on Al Garhoud, Nad Al Sheba and Al Jaddaf; rename the internal #trial anchor to #payment (PR — touches every page).
