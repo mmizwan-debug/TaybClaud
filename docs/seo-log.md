@@ -1029,3 +1029,11 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - Checked: tags balanced, JSON-LD parses, Register → taybmeals.paperform.co, no "free"/"try"/Expo City/Creek Harbour; retired wording 0 visible hits (only internal #trial anchor). Live fetch blocked (proxy connect_rejected) — not confirmed on taybmeals.com.
 - Area pages built: none (all 51 live since 11-03). Proposed (PR): no new PR; PR #6 updated.
 - Next idea: same Kerala/Tamil meal-plan FAQ on Al Rigga, Hor Al Anz and Ras Al Khor (bachelor/worker areas still without it); rename the internal #trial anchor to #payment (needs a PR — touches every page).
+
+### Owner change — 2026-11-14 (payment tone)
+- Owner found "New clients pay in advance" / "Pay in advance, before the plan starts" arrogant and asked for a polite, Silicon Valley style. Owner picked this wording; use it from now on (never go back to "pay in advance" / "new clients"):
+  - Heading: "Flexible plans. Cancel anytime."
+  - Short line: "Simple monthly billing. Cancel anytime — unused meals refunded within 48 hours."
+  - Full: "Your plan is billed upfront, so your first meal arrives without any hassle. Change your mind? Cancel anytime and we’ll refund your unused meals within 48 hours."
+  - Cash: "We’re fully cashless — no cash or card machine needed at your door."
+- Applied on all 59 pages (visible text + JSON-LD) and llms.txt; about.html "Advance payment" row → "Billing". Rules unchanged (payment before the plan starts, 48-hour refund, 10:00 AM rule, payment options + charges). Sitemap lastmod → 2026-11-14.
