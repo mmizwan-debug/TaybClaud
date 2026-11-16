@@ -1125,3 +1125,40 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - Still for owner: the "Menu changes take 1 working day, so your new menu starts 2 delivery days after your request" line (b23c57e, 11-14) is still on index, menu, app, Kerala/Tamil/North Indian pages and llms.txt; the routine brief lists "1 working day notice" as retired. Left as is (looks like an owner decision) — owner to confirm and update the brief or ask for removal.
 - Area pages built: none (all 51 live since 11-03). Proposed (PR): none new; PR #6 (office lunch) still open.
 - Next idea: same Kerala/Tamil meal-plan FAQ on Nad Al Sheba, Oud Metha and Umm Ramool; office-lunch FAQ on Business Bay / WTC pointing to PR #6's page once merged.
+
+## 2026-11-16 — Morning check
+
+### Rankings
+Search tool is a US web index, not Google UAE — rough signal only. taybmeals.com **not found for any query** (day 16), including "Tayb Meals Dubai" (only Tayeb Kitchen Deira, Tayba Gourmet, Meals on Me).
+- Kerala — "kerala mess dubai": not found. Royal Kalavara Karama (magicpin ×2), Property Finder / Bayut / dannibindubai Kerala lists, Gulf News Onam list, Swiggy Trichy "Kerala Mess" (India). **New: StayNeat AI page "Kerala Mess" (stayneat.pages.dev) and wanderlog "Kairali Kerala Mess"** — aggregator/AI-style pages now ranking for the exact phrase.
+- Kerala — "malayali mess dubai monthly": not found. Royal Kalavara (magicpin ×2) #1–2, Mess Service Alot Kitchen Motor City + Kunjikkas Karama (magicpin), Ebony Wood International City (hidubai), Khaleej Times / Gulf News Onam + Kerala curry. A Qatar Living "Best Monthly Mess" ad also shows.
+- Tamil — "tamil mess dubai": not found. No Tamil mess business in Dubai on page 1 — Royal Kalavara (magicpin ×2) is the only Dubai mess; rest Bahubali thali (Khaleej Times), Chennai / Singapore / Malaysia mess stories, **Dinamalar Gulf NRI news section** (Tamil daily — community source).
+- Tamil — "tamil food delivery dubai": not found. **2GIS Dubai business pages ×4**, Swiggy India, Deliveroo (Desi Masala Healthcare City, Makhanwala), Property Finder, BBC Good Food ME, Khaleej Times delivery list.
+- General — "home food delivery dubai": not found. Only delivery-app and article lists (Gulf News, Visit Dubai, Khaleej Times, Bayut, dannibindubai, insurancemarket, BBC Good Food ME). No home-food subscription ranks.
+- Area — "mess al qusais dubai": not found (our /mess-in-al-qusais.html not indexed here). Only Wikipedia / property guides — no mess business.
+
+### AI/GEO visibility
+- "best Kerala Tamil South Indian monthly mess tiffin service Dubai": The National tiffin article, hackmd self-post, y-axis Meal Mate job ad, Royal Kalavara (magicpin ×2), Gulf News tiffin culture + Kerala New Year list, cigar-cloud, pickyourtrail, Property Finder ×3, dannibindubai ×2, Curly Tales. 25th check, same set.
+- Tamil community check ("Dubai Tamil sangam community home food mess"): Dinamalar Gulf NRI page, DT Next "Tamil Kudil" UAE story, TVK Dubai page, Zurich Kotak veg-food guide **in Tamil and Malayalam script**, Sangeetha (Khaleej Times). No Facebook / Reddit group surfaced.
+- Sources AI tools would cite: magicpin (Royal Kalavara, Alot Kitchen, Kunjikkas), 2GIS (Tamil side), hidubai, wanderlog, StayNeat-type directory pages, Gulf News / Khaleej Times / The National, Bayut / Property Finder / dannibindubai / Curly Tales. Tayb Meals: not mentioned anywhere.
+- Tamil vs Kerala: Kerala side = magicpin mess listings; Tamil side = 2GIS + Chettinad/veg restaurants. Native-script pages (Tamil, Malayalam) are surfacing — our Tamil page has a Tamil-script FAQ, the Kerala page has no Malayalam-script one.
+
+### Site health
+- Live fetch blocked again (curl to taybmeals.com: code 000 via proxy) — checks from repo code (main @ 520db94).
+- 59 HTML pages: all have title + meta description; every JSON-LD block parses; 0 broken local links or images. Sitemap: 58 URLs (all except app.html — OK).
+- Retired wording: 0 hits for starter plan, 2nd day, pay only for meals received, free trial, 12 PM, new clients pay, pay in advance. Billing wording ("billed upfront … cancel anytime … refunded within 48 hours") in place.
+- **Still open (3rd day flagged): "Menu changes take 1 working day, so your new menu starts 2 delivery days after your request"** on index ×3, menu ×3, app, kerala, tamil, north-indian pages + llms.txt. The brief lists "1 working day" as retired. Not changed — owner to decide.
+- WhatsApp on site = wa.me/971582871967 (342 links); brief says +971 50 948 7880. Owner to confirm.
+- PR #6 (office lunch): still open, last updated 11-14.
+- Gaps: Kerala page has no Malayalam-script FAQ (Tamil page has "வீட்டு சாப்பாடு"); Tamil page has no "near International City / Jebel Ali" FAQ (Kerala page has one); 35 area pages still lack the Kerala/Tamil meal-plan FAQ (incl. Oud Metha, Umm Ramool, Al Warqa).
+
+### Plan for tonight
+1. **Kerala — Malayalam-script FAQ** on kerala-mess-dubai.html: "Do you deliver Kerala home food (വീട്ടിലെ ഊണ് / നാടൻ ഊണ്) in Dubai?" — mirror the Tamil "வீട்டு சாப்பாடு" FAQ: only on-menu Kerala dishes, 199/359/459, Mon–Sat + Sunday add-on, billing wording. Visible + FAQPage JSON-LD + one llms.txt line.
+2. **Tamil — "Is there a Tamil mess near International City, Al Quoz or Jebel Ali?"** on tamil-mess-dubai.html (mirror the Kerala page's version; zone times from js/delivery-zones.js; only Tamil menu dishes). Visible + JSON-LD.
+3. **Kerala + Tamil meal-plan FAQ on Oud Metha, Umm Ramool and Al Warqa** (same pattern as Satwa / Al Garhoud). Sitemap lastmod → 2026-11-16 for changed pages; check tags balance + JSON-LD parses. Do not touch the "1 working day" lines until the owner decides.
+
+### Owner to-do
+- **Decide the menu-change rule** ("before 10:00 AM" vs "1 working day, new menu 2 delivery days later") and **confirm the WhatsApp number** (site 058 287 1967 vs brief 050 948 7880).
+- **2GIS listing** (won "tamil food delivery dubai" ×4 today) and **magicpin** (won both Kerala queries) — use docs/listing-kit.md.
+- **Merge PR #6 (office lunch)**.
+- Still open: verify Google Business Profile + first real Google reviews; Google Search Console + Bing "Request indexing" (site not found anywhere, even by name); hidubai, wanderlog, HappyCow, mapthemeal; intro posts in r/DubaiMallus and a Dubai Tamil group; check Instagram / GBP / listings use "billed upfront, cancel anytime, refund in 48 hours".
