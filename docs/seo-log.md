@@ -1162,3 +1162,11 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - **2GIS listing** (won "tamil food delivery dubai" ×4 today) and **magicpin** (won both Kerala queries) — use docs/listing-kit.md.
 - **Merge PR #6 (office lunch)**.
 - Still open: verify Google Business Profile + first real Google reviews; Google Search Console + Bing "Request indexing" (site not found anywhere, even by name); hidubai, wanderlog, HappyCow, mapthemeal; intro posts in r/DubaiMallus and a Dubai Tamil group; check Instagram / GBP / listings use "billed upfront, cancel anytime, refund in 48 hours".
+
+### Evening — 2026-11-16
+- Changed (live on main, 9586fa8): "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" (visible FAQ + FAQPage JSON-LD) on **Oud Metha** (Zone C: ~7:00 AM / ~8:00 PM), **Umm Ramool** and **Al Warqa** (Zone D: ~7:00 AM / ~7:00 PM) — only dishes already on each page, 199/359/459, Sunday add-on, live billing wording. **tamil-mess-dubai.html:** new FAQ "Is there a Tamil mess near International City, Al Quoz or Jebel Ali?" (visible + JSON-LD, links to the 3 area pages) + matching llms.txt line. Sitemap lastmod → 2026-11-16 for the 4 pages.
+- Skipped plan item 1: kerala-mess-dubai.html already has a Malayalam-script FAQ ("ദുബായിൽ കേരള മെസ്സ് ഉണ്ടോ?") and a "nadan meals" FAQ — the morning gap note was wrong.
+- Checked: tags balanced, JSON-LD parses, Register → taybmeals.paperform.co, WhatsApp → wa.me/971582871967, no wa.me/971509487880, no retired wording / "free" / "try" / Expo City / Creek Harbour in new text. Live fetch blocked again (proxy, code 000) — not confirmed on the live site.
+- Still for owner: "Menu changes take 1 working day…" line (added 11-14) still on index, menu, app, Kerala/Tamil/North Indian pages + llms.txt; the brief lists "1 working day" as retired. Not changed (rewriting live payment wording needs owner OK). Note: the brief now confirms WhatsApp = 058 287 1967 (matches the site) — that to-do is closed.
+- Area pages built: none (all 51 live). Proposed (PR): none new; PR #6 (office lunch) still open.
+- Next idea: same Kerala/Tamil meal-plan FAQ on Nad Al Sheba, Mirdif and Al Rashidiya.
