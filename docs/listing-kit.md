@@ -5,7 +5,7 @@ Use the SAME name, phone, address and website everywhere (consistency helps Goog
 - **Business name:** Tayb Meals
 - **Primary category:** Meal delivery (Google) / Catering / Food & Beverage – Catering Services (hidubai) / Restaurant – Home Food / Tiffin (magicpin)
 - **Extra categories (Google):** Indian takeaway, South Indian restaurant, Kerala restaurant, Caterer
-- **Phone / WhatsApp:** +971 50 948 7880
+- **Phone / WhatsApp:** +971 58 287 1967
 - **Website:** https://taybmeals.com
 - **Order / register link:** https://taybmeals.paperform.co
 - **Address:** Warsan 1st, France Cluster, Dubai, UAE  (Google: choose "I deliver to customers" and hide the address if this is a kitchen, not a walk-in shop)
@@ -16,7 +16,7 @@ Use the SAME name, phone, address and website everywhere (consistency helps Goog
 Homestyle monthly mess food and tiffin service in Dubai. South Indian, Kerala, North Indian and global meals delivered Mon–Sat to homes and offices across Dubai. Plans from AED 199/month.
 
 **Long description (≤750 chars):**
-Tayb Meals is a Dubai monthly meal subscription (mess food / tiffin service) delivering homestyle South Indian, Kerala, North Indian and global meals to homes and offices across Dubai. Choose 1, 2 or 3 meals a day — AED 199, AED 359 or AED 459 per month. Deliveries run Monday to Saturday, with an optional Sunday add-on. Our menu has 300+ dishes and changes every week. Your plan is billed upfront, so your first meal arrives without any hassle. Change your mind? Cancel anytime and we’ll refund your unused meals within 48 hours. Register at taybmeals.paperform.co or message us on WhatsApp +971 50 948 7880.
+Tayb Meals is a Dubai monthly meal subscription (mess food / tiffin service) delivering homestyle South Indian, Kerala, North Indian and global meals to homes and offices across Dubai. Choose 1, 2 or 3 meals a day — AED 199, AED 359 or AED 459 per month. Deliveries run Monday to Saturday, with an optional Sunday add-on. Our menu has 300+ dishes and changes every week. Your plan is billed upfront, so your first meal arrives without any hassle. Change your mind? Cancel anytime and we’ll refund your unused meals within 48 hours. Register at taybmeals.paperform.co or message us on WhatsApp +971 58 287 1967.
 
 **Products/Services (Google "Products"):**
 - 1 Meal a Day — AED 199/month

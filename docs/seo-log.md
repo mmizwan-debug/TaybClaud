@@ -1206,3 +1206,6 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - **Verify the Google Business Profile** (Dabbawaalah ranks for "tiffin service dubai" with its GBP alone) + ask 3–5 customers for Google reviews.
 - **magicpin** (won Kerala again) and **HappyCow** (veg — Tamil side) listings — use docs/listing-kit.md.
 - Still open: merge PR #6 (office lunch); Google Search Console + Bing "Request indexing"; hidubai, mapthemeal, 2GIS; intro posts in r/DubaiMallus and a Dubai Tamil group; check Instagram / GBP / listings use "billed upfront, cancel anytime, refund in 48 hours".
+
+### Owner decision — 2026-11-17
+- Owner confirmed the only WhatsApp / sales number is **+971 58 287 1967** (wa.me/971582871967). Removed +971 50 948 7880 everywhere: about.html contact table, the "Need it earlier? Ask us on WhatsApp" line (visible + FAQPage JSON-LD) on Al Muteena, Muhaisnah, Dubai Healthcare City, Al Garhoud, Mizhar, Al Jaddaf, and docs/listing-kit.md. Future runs: flag any 050 948 7880 as an error.
