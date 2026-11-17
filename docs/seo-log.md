@@ -1209,3 +1209,4 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 
 ### Owner decision — 2026-11-17
 - Owner confirmed the only WhatsApp / sales number is **+971 58 287 1967** (wa.me/971582871967). Removed +971 50 948 7880 everywhere: about.html contact table, the "Need it earlier? Ask us on WhatsApp" line (visible + FAQPage JSON-LD) on Al Muteena, Muhaisnah, Dubai Healthcare City, Al Garhoud, Mizhar, Al Jaddaf, and docs/listing-kit.md. Future runs: flag any 050 948 7880 as an error.
+- **Owner instruction (permanent, 17 Nov 2026 — overrides the 13 Nov PHONE NUMBERS rule in the routine briefs):** the ONLY phone / WhatsApp / sales number is **+971 58 287 1967** (wa.me/971582871967). +971 50 948 7880 (050 948 7880 / 971509487880) is retired — not a call number any more. Never add it to any page, footer, tel: link, JSON-LD "telephone", about table, llms.txt or doc. If found, replace it with +971 58 287 1967.
