@@ -222,11 +222,19 @@
         <section id="menu-browser" class="bg-white">
             <div class="container">
 
-                <div class="menu-mode-toggle" role="tablist" aria-label="Menu mode">
-                    <button type="button" class="mode-toggle-btn active" data-mode="custom">Custom Menu</button>
-                    <button type="button" class="mode-toggle-btn" data-mode="fixed">Fixed Menu</button>
+                <div class="menu-mode-toggle" id="kitchenBar" role="tablist" aria-label="Kitchen">
+                    <button type="button" class="mode-toggle-btn active" data-kitchen="mealato">Mealato</button>
+                    <button type="button" class="mode-toggle-btn" data-kitchen="vmeals">V Meals</button>
+                    <button type="button" class="mode-toggle-btn" data-kitchen="healthykitchen">Healthy Kitchen</button>
+                    <button type="button" class="mode-toggle-btn" data-kitchen="kcal">Kcal</button>
                 </div>
 
+                <div id="kitchenSoon" style="display:none;text-align:center;padding:3rem 1rem;">
+                    <h3 style="margin-bottom:.5rem;">Menu coming soon</h3>
+                    <p>This kitchen's menu will be added shortly.</p>
+                </div>
+
+                <div id="mealatoWrap">
                 <div id="customMenuSection">
 
                 <div class="menu-toggle" role="tablist" aria-label="Meal style">
@@ -397,6 +405,12 @@
 
                 </div>
                 <!-- /#fixedMenuSection -->
+                </div><!-- /#mealatoWrap -->
+                <script>
+(function(){var bar=document.getElementById("kitchenBar"),soon=document.getElementById("kitchenSoon"),wrap=document.getElementById("mealatoWrap");if(!bar)return;
+var q=new URLSearchParams(location.search);if(q.get("view")==="fixed"||q.get("mode")==="fixed"){bar.style.display="none";}
+bar.addEventListener("click",function(e){var b=e.target.closest("[data-kitchen]");if(!b)return;bar.querySelectorAll("[data-kitchen]").forEach(function(x){x.classList.toggle("active",x===b)});var m=b.getAttribute("data-kitchen")==="mealato";wrap.style.display=m?"":"none";soon.style.display=m?"none":"block";});})();
+                </script>
 
             </div>
         </section>

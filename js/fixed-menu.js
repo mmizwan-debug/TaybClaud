@@ -123,7 +123,8 @@
   }
 
   function initialModeFromUrl() {
-    return getUrlParams().get("mode") === "fixed" ? "fixed" : "custom";
+    var p = getUrlParams();
+    return (p.get("mode") === "fixed" || p.get("view") === "fixed") ? "fixed" : "custom";
   }
 
   function initialCategoryFromUrl() {
