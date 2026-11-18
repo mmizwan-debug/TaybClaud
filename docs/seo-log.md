@@ -1256,3 +1256,11 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - **Verify Google Business Profile** + ask 3–5 customers for Google reviews.
 - **magicpin listing** (Royal Kalavara + Alot Kitchen win "mess" searches through magicpin alone) — use docs/listing-kit.md.
 - Still open: merge PR #6 (office lunch); Search Console / Bing "Request indexing" (area pages still not indexed); intro posts in r/DubaiMallus and a Dubai Tamil group; check Instagram / GBP / listings use "billed upfront, cancel anytime, refund in 48 hours".
+
+### Evening — 2026-11-18
+- Changed (live on main, b63de68): "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" (visible FAQ + FAQPage JSON-LD) on **Dubai Silicon Oasis** (~7:00 AM / ~7:00 PM), **Arjan** and **Motor City** (~5:00 AM / ~7:00 PM) and **Dubai Marina** (~7:30 AM / ~8:30 PM) — only dishes already on each page, 199/359/459, Sunday add-on, live billing wording. New "Do you deliver Kerala and Tamil veg meals in Al Nahda?" on **mess-in-al-nahda.html** (veg dishes from the Karama/Kerala/Tamil veg FAQs, link to menu Veg Only switch + Kerala/Tamil pages). Sitemap lastmod → 2026-11-18 for the 5 pages.
+- Checked: tags balanced, JSON-LD parses, Register → taybmeals.paperform.co, WhatsApp → wa.me/971582871967, no 050 948 7880 anywhere, no retired wording / Expo City / Creek Harbour, no "free"/"try" in new text. Live fetch blocked again (proxy refused taybmeals.com) — not confirmed on the live site.
+- Did not touch menu.html (owner rolled it back today; new Mealato version saved for ~25 Nov in docs/pending-menu-update.md).
+- Still open for owner: "Menu changes take 1 working day…" line (index, menu, app, Kerala, Tamil pages) vs the 10:00 AM rule; "Bank transfer and CDM are free" wording.
+- Area pages built: none (all 51 live). Proposed (PR): none new; PR #6 (office lunch) still open.
+- Next idea: same Kerala/Tamil meal-plan FAQ on Al Khawaneej, Mizhar and Warsan; veg FAQ on Bur Dubai.
