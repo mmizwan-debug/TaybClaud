@@ -77,10 +77,10 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Can I cancel anytime?",
+      "name": "What are the change, cancellation and refund terms?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — cancel anytime. We’ll refund your unused meals within 48 hours of your request. For example, if you cancel on day 12, we refund the unused meals within 48 hours. Need to cancel, stop or pause? Just let us know before 10:00 AM. After 10 AM, tomorrow’s meal is already being freshly prepared, so it will still be delivered to you. Menu changes take 1 working day, so your new menu starts 2 delivery days after your request (for example, request on Monday, new menu from Wednesday)."
+        "text": "Changes: tell us at least 1 day ahead, before 10:00 AM. Not satisfied? Whether it is the food, the service or any other reason, we deduct the value of what you have already consumed and refund the remaining balance. If you stop the service, your remaining balance is refunded by your original contract end date."
       }
     },
     {
@@ -88,7 +88,7 @@
       "name": "How does payment work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your plan is billed upfront, so your first meal arrives without any hassle. Just fill in the quick registration form and we’ll confirm with you personally. Paying by bank transfer or CDM? Just share the receipt on WhatsApp and we’ll start your plan as soon as it’s confirmed. Prefer Tabby or Tamara? We’ll send you a payment link on WhatsApp."
+        "text": "Your plan is billed upfront, so your first meal arrives without any hassle. Register online, then one of our customer executives will call you to confirm your plan and delivery details. Pay by card through a secure Stripe payment link, or by bank transfer or cash deposit machine (CDM). Paying by bank transfer or CDM? Just share the receipt on WhatsApp and we will start your plan as soon as it is confirmed."
       }
     },
     {
@@ -96,7 +96,15 @@
       "name": "How can I pay?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your plan is billed upfront, so your first meal arrives without any hassle. Pay your way: credit/debit card (online), bank transfer, cash deposit (CDM), Tabby or Tamara. Card payments include a 3.1% gateway fee, and Tabby/Tamara have their own gateway fees. Bank transfer and CDM are free — no extra charge. We’re fully cashless — no cash or card machine needed at your door."
+        "text": "Your plan is billed upfront, so your first meal arrives without any hassle. Pay by debit/credit card (Stripe payment link), bank transfer or cash deposit machine (CDM). We are fully cashless, so no cash or card machine is needed at your door."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I choose my delivery days?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Untick the days you do not want, such as Saturday, Sunday, Wednesday or Thursday, during registration. The price stays the same and you still get all 26 deliveries in your plan, on the days you chose."
       }
     },
     {
@@ -120,7 +128,7 @@
       "name": "Is this a Kerala or Tamil mess menu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Both. This is our weekly mess food menu for Dubai, with Kerala dishes like puttu, idiyappam, parotta and matta rice meals, and Tamil Nadu dishes like idly, dosa, pongal, sambar, rasam and kuzhambu, plus North Indian meals. Plans start from AED 199 a month, delivered all across Dubai."
+        "text": "Both. This is our weekly mess food menu for Dubai, with Kerala dishes like puttu, idiyappam, parotta and matta rice meals, and Tamil Nadu dishes like idly, dosa, pongal, sambar, rasam and kuzhambu, plus North Indian meals. Plans start from AED 170 a month (exclusive of 5% VAT), delivered all across Dubai."
       }
     },
     {
@@ -355,13 +363,13 @@
                     <div class="starter-plan-card">
                         <p class="starter-plan-highlight">🍽️ One easy payment. We cook, you enjoy.</p>
                         <ul class="starter-plan-list">
-                            <li>✅ Cancel any time. Unused meals are refunded within 48 hours of your request.</li>
+                            <li>✅ Not happy? We deduct only the meals you’ve had and refund the remaining balance.</li>
                             <li>⏰ Need to cancel, stop or pause? Just let us know before 10:00 AM. After that, tomorrow’s meal is already being freshly prepared, so it will still be delivered to you. Menu changes take 1 working day, so your new menu starts 2 delivery days after your request (for example, request on Monday, new menu from Wednesday).</li>
                             <li>🍛 Fresh homestyle meals from just AED 5–8 each.</li>
                         </ul>
                         <div class="starter-plan-payments">
                             <span class="starter-plan-payments-label">💳 Payment Methods</span>
-                            <span>Credit/Debit Card (online, 3.1% gateway charge), Bank Transfer, CDM, Tabby, Tamara (gateway charges apply). Bank transfer and CDM have no extra charge. We’re fully cashless (no cash on delivery needed).</span>
+                            <span>Debit/Credit Card (Stripe payment link), Bank Transfer, Cash Deposit Machine (CDM). We’re fully cashless (no cash on delivery needed).</span>
                             <span><a href="https://drive.google.com/file/d/1H9AUTqPLQuYHne7R_7cxPrngaYXItJ91/view" target="_blank" rel="noopener noreferrer">Read the full terms</a></span>
                         </div>
                     </div>
@@ -424,10 +432,12 @@ bar.addEventListener("click",function(e){var b=e.target.closest("[data-kitchen]"
                 <div class="faq-accordion">
                     
                     <details class="faq-item">
-                        <summary>Can I cancel anytime?</summary>
+                        <summary>What are the change, cancellation and refund terms?</summary>
                         <div class="faq-content">
-                            <p>Yes — cancel anytime. We’ll refund your unused meals within 48 hours of your request. For example, if you cancel on day 12, we refund the unused meals within 48 hours.</p>
-                            <p>Need to cancel, stop or pause? Just let us know before 10:00 AM. After 10 AM, tomorrow’s meal is already being freshly prepared, so it will still be delivered to you. Menu changes take 1 working day, so your new menu starts 2 delivery days after your request (for example, request on Monday, new menu from Wednesday). Read the <a href="https://drive.google.com/file/d/1H9AUTqPLQuYHne7R_7cxPrngaYXItJ91/view" target="_blank" rel="noopener noreferrer">full terms</a>.</p>
+                            <p><strong>Changes:</strong> Tell us at least 1 day ahead, before 10:00 AM. After 10 AM, tomorrow’s meal is already being freshly prepared, so it will still be delivered to you.</p>
+                            <p><strong>Not satisfied?</strong> Whether it’s the food, the service or any other reason, we deduct the value of what you’ve already consumed and refund the remaining balance.</p>
+                            <p><strong>Stopping the service:</strong> Your remaining balance is refunded by your original contract end date.</p>
+                            <p>Read the <a href="https://drive.google.com/file/d/1H9AUTqPLQuYHne7R_7cxPrngaYXItJ91/view" target="_blank" rel="noopener noreferrer">full terms</a>.</p>
                         </div>
                     </details>
 
@@ -435,7 +445,7 @@ bar.addEventListener("click",function(e){var b=e.target.closest("[data-kitchen]"
                         <summary>How does payment work?</summary>
                         <div class="faq-content">
                             <p>Your plan is billed upfront, so your first meal arrives without any hassle.</p>
-                            <p>Just fill in the quick registration form and we’ll confirm with you personally. Paying by bank transfer or CDM? Just share the receipt on WhatsApp and we’ll start your plan as soon as it’s confirmed. Prefer Tabby or Tamara? We’ll send you a payment link on WhatsApp.</p>
+                            <p>Register online, then one of our customer executives will call you to confirm your plan and delivery details. Pay by card through a secure Stripe payment link, or by bank transfer or cash deposit machine (CDM). Paying by bank transfer or CDM? Just share the receipt on WhatsApp and we’ll start your plan as soon as it’s confirmed.</p>
                         </div>
                     </details>
 
@@ -444,14 +454,19 @@ bar.addEventListener("click",function(e){var b=e.target.closest("[data-kitchen]"
                         <div class="faq-content">
                             <p>Your plan is billed upfront, so your first meal arrives without any hassle. Pay your way:</p>
                             <ul style="margin: 0.5rem 0 1rem 1.25rem; padding: 0;">
-                                <li>Credit/Debit card (online)</li>
+                                <li>Debit/Credit card (Stripe payment link)</li>
                                 <li>Bank transfer</li>
-                                <li>Cash deposit (CDM)</li>
-                                <li>Tabby</li>
-                                <li>Tamara</li>
+                                <li>Cash deposit machine (CDM)</li>
                             </ul>
-                            <p>Card payments include a 3.1% gateway fee, and Tabby/Tamara have their own gateway fees. Bank transfer and CDM are free — no extra charge.</p>
                             <p>We’re fully cashless — no cash or card machine needed at your door. Read the <a href="https://drive.google.com/file/d/1H9AUTqPLQuYHne7R_7cxPrngaYXItJ91/view" target="_blank" rel="noopener noreferrer">full terms</a>.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Can I choose my delivery days?</summary>
+                        <div class="faq-content">
+                            <p>Yes. Don’t need meals on Saturday, Sunday, Wednesday or Thursday? Just untick those days during registration and you won’t receive deliveries on them.</p>
+                            <p>The price stays the same, and you still get all 26 deliveries in your plan, just on the days you chose.</p>
                         </div>
                     </details>
 
@@ -472,7 +487,7 @@ bar.addEventListener("click",function(e){var b=e.target.closest("[data-kitchen]"
                     <details class="faq-item">
                         <summary>Is this a Kerala or Tamil mess menu?</summary>
                         <div class="faq-content">
-                            <p>Both. This is our weekly mess food menu for Dubai, with Kerala dishes like puttu, idiyappam, parotta and matta rice meals, and Tamil Nadu dishes like idly, dosa, pongal, sambar, rasam and kuzhambu, plus North Indian meals. Plans start from AED 199 a month, delivered all across Dubai. Read more about our <a href="kerala-mess-dubai.html">Kerala mess in Dubai</a> and our <a href="tamil-mess-dubai.html">Tamil mess in Dubai</a>.</p>
+                            <p>Both. This is our weekly mess food menu for Dubai, with Kerala dishes like puttu, idiyappam, parotta and matta rice meals, and Tamil Nadu dishes like idly, dosa, pongal, sambar, rasam and kuzhambu, plus North Indian meals. Plans start from AED 170 a month (exclusive of 5% VAT), delivered all across Dubai. Read more about our <a href="kerala-mess-dubai.html">Kerala mess in Dubai</a> and our <a href="tamil-mess-dubai.html">Tamil mess in Dubai</a>.</p>
                         </div>
                     </details>
 
@@ -519,8 +534,8 @@ bar.addEventListener("click",function(e){var b=e.target.closest("[data-kitchen]"
                     <div class="timeline-step">
                         <div class="step-num">3</div>
                         <div>
-                            <h3 style="margin-top: 0.5rem;">Do Order Confirmation on WhatsApp</h3>
-                            <p style="margin-bottom: 0;">Send us a quick WhatsApp message to confirm your order and delivery details.</p>
+                            <h3 style="margin-top: 0.5rem;">Our Customer Support Team Will Connect With You</h3>
+                            <p style="margin-bottom: 0;">One of our customer executives will call you to confirm your order and delivery details.</p>
                         </div>
                     </div>
                     
