@@ -1301,3 +1301,10 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - **List on 2GIS Dubai** (4 results for "tamil food delivery dubai" today) and **magicpin** (Royal Kalavara #1–2 for "monthly mess dubai") — use docs/listing-kit.md.
 - **Verify Google Business Profile** + ask 3–5 customers for Google reviews.
 - Still open: merge PR #6 (office lunch); Search Console / Bing "Request indexing"; intro posts in r/DubaiMallus and a Dubai Tamil group; check Instagram / GBP / listings use "billed upfront, cancel anytime, refund in 48 hours".
+
+### Evening — 2026-11-19
+- Changed (live on main, 26c01e8): "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" (visible FAQ + FAQPage JSON-LD) on **Al Khawaneej**, **Al Mizhar** and **Warsan** (Zone D, ~7:00 AM breakfast+lunch / ~7:00 PM dinner) — only dishes already on each page, 199/359/459, Sunday add-on, live billing wording. New "Do you deliver Kerala and Tamil veg meals in <area>?" on **Bur Dubai** and **Al Mankhool** (Zone C, ~7:00 AM / ~8:00 PM) — veg dishes from the existing veg FAQs, link to menu Veg Only switch + Kerala/Tamil pages. Sitemap lastmod → 2026-11-19 for the 5 pages.
+- Checked: tags balanced, JSON-LD parses, Register → taybmeals.paperform.co, WhatsApp → wa.me/971582871967, 0 hits for 050 948 7880, no Starter Plan / 2nd day / pay only for meals / 12 PM / "new clients pay", no "free"/"try" in new text. Only `#trial` anchor IDs (not visible). Live fetch blocked again (proxy refused taybmeals.com; WebFetch permission timed out) — not confirmed on the live site.
+- Still open for owner: "Menu changes take 1 working day…" (index, menu, app, Kerala, Tamil, North Indian pages, llms.txt) vs the 10:00 AM rule — 6th day; "Bank transfer and CDM are free" wording.
+- Area pages built: none (all 51 live). Proposed (PR): none new; PR #6 (office lunch) still open.
+- Next idea: Kerala/Tamil meal-plan FAQ on JLT, JVC, Al Barsha and Business Bay.
