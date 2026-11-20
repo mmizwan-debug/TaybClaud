@@ -1342,3 +1342,11 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - **List on magicpin** — Royal Kalavara's magicpin page ranks for both "kerala mess dubai" and "tamil mess dubai". Also hidubai (Tiffin Wala ranks for "tiffin service dubai"). Use docs/listing-kit.md.
 - **Verify Google Business Profile** + ask 3–5 customers for Google reviews.
 - Still open: update routine brief WhatsApp number (+971 50 948 7880 → site uses +971 58 287 1967); merge PR #6 (office lunch — Meals on Me owns that search); Search Console "Request indexing" for Al Qusais / Bur Dubai pages; posts in r/DubaiMallus and a Dubai Tamil group.
+
+### Evening — 2026-11-20
+- Changed (live on main, 83268cc): "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" (visible FAQ + FAQPage JSON-LD) on **Discovery Gardens** (Zone B, ~7:30 AM / ~8:30 PM), **Al Barsha** (Zone D ~7:00 AM / ~7:00 PM; Al Barsha South by ~5:00 AM) and **JLT** (Zone B, ~7:30 AM / ~8:30 PM) — only dishes already on each page, 199/359/459, Sunday add-on, live billing wording. Sitemap lastmod → 2026-11-20 for the 3 pages.
+- Skipped Al Nahda from the morning plan: it already has "Is there a Kerala or Tamil mess in Al Nahda?" + a Kerala/Tamil veg FAQ — a third near-identical FAQ would be duplication. Did JLT instead.
+- Checked: tags balanced, JSON-LD parses, sitemap XML valid, Register → taybmeals.paperform.co, WhatsApp → wa.me/971582871967, 0 hits for wa.me/971509487880 / Starter Plan / pay only for meals / 12 PM / "new clients pay", no "free"/"try" in new text. Live fetch blocked again (curl code 000 via proxy) — not confirmed on the live site.
+- Still open for owner: "Menu changes take 1 working day…" vs the 10:00 AM rule (7th day); "Bank transfer and CDM are free" wording.
+- Area pages built: none (all 51 live). Proposed (PR): none new; PR #6 (office lunch) still open.
+- Next idea: Kerala/Tamil meal-plan FAQ on JVC, Business Bay, Dubai Marina.
