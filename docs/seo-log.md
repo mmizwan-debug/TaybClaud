@@ -1350,3 +1350,37 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - Still open for owner: "Menu changes take 1 working day…" vs the 10:00 AM rule (7th day); "Bank transfer and CDM are free" wording.
 - Area pages built: none (all 51 live). Proposed (PR): none new; PR #6 (office lunch) still open.
 - Next idea: Kerala/Tamil meal-plan FAQ on JVC, Business Bay, Dubai Marina.
+
+## 2026-11-21 — Morning check
+
+### Rankings
+- Kerala — "kerala meals monthly dubai": not found. Restaurant lists only: Property Finder ×3, Bayut, dannibindubai ×2, Curly Tales ×4, Khaleej Times Kerala curry, Gulf News, arabiers, eazydiner (Kairali Karama). No mess/subscription brand on page 1 — open gap.
+- Kerala — "malayali mess dubai": not found. Same Kerala restaurant lists + Khaleej Times Onam, Gulf News Onam sadhya. No mess business shown — open gap.
+- Tamil — "tamil home food dubai": not found. wanderlog place page, **Home Diner Karama (Deliveroo)**, Gulf News "Taste of Tamil Nadu", **New Tasty Tamil Restaurant, Deira (eazydiner)**, **Mamis Illam (HappyCow)**, Khaleej Times Bahubali thali, Swiggy Chennai noise.
+- Tamil — "tamil nadu meals dubai": not found. Wikipedia, Gulf News, Khaleej Times Bahubali thali ×3, TN Tourism / Incredible India pages, Curly Tales South Indian list. No Tamil mess brand — wide-open gap.
+- General — "mess food dubai": not found. **Mess Service Alot Kitchen, Motor City (magicpin ×2) #1–2**, hidubai Ebony Wood, **Erode Amman Mess, Deira (mapthemeal)** (Tamil), Khaleej Times delivery-rider cheap meals, travel guides.
+- General — "south indian tiffin dubai": not found. The National tiffin article, Mavalli Tiffin Rooms, Bayut / Curly Tales / pickyourtrail South Indian lists, **Meenatshi Chettinadu, Al Quoz (Deliveroo)** (Tamil), Gulf News tiffin culture.
+- Area — "mess karama dubai": not found (our /mess-in-karama.html not shown). **Royal Kalavara monthly mess Karama (magicpin ×2) #1–2**, then Wikipedia / hotels / Bayut area guides.
+
+### AI/GEO visibility
+- "best Kerala Tamil South Indian monthly mess tiffin Dubai reddit": hackmd.io page, The National tiffin article, cigar-cloud self-post (monthly mess), Curly Tales, Gulf News, Property Finder, **Royal Kalavara (magicpin)**, Qatar Living "Best Monthly Mess". No Reddit / Facebook / Tamil association source surfaced.
+- Sources AI tools would cite: magicpin (Royal Kalavara, Alot Kitchen), Deliveroo / eazydiner / HappyCow / mapthemeal restaurant pages, Gulf News / The National tiffin articles, Bayut / Property Finder / Curly Tales lists. Tayb Meals: not mentioned anywhere.
+- Kerala vs Tamil: Kerala = Royal Kalavara (magicpin) for "mess"; restaurant lists for everything else. Tamil = only restaurant pages (Home Diner, New Tasty Tamil, Mamis Illam, Erode Amman Mess, Meenatshi Chettinadu) — no Tamil monthly-mess site at all.
+
+### Site health
+- Live fetch blocked again (curl code 000 / proxy 403; WebFetch permission not granted) — checks from repo code (main @ 0166b40).
+- 59 HTML pages: all have title + meta description; every JSON-LD block parses; 0 broken local links / images. Sitemap: 58 URLs (all except app.html — OK); latest lastmod 2026-11-20.
+- Retired wording: 0 hits for Starter Plan, 2nd/second day, pay only for meals received, free trial, 12 PM. All 359 WhatsApp links → wa.me/971582871967.
+- **Still open (8th day): "Menu changes take 1 working day…"** — 14 places on index, menu, app, Kerala, Tamil, North Indian pages + llms.txt; conflicts with the 10:00 AM rule. Not changed — owner to decide.
+- Gaps: Kerala/Tamil meal-plan FAQ missing on 19 area pages incl. JVC, Business Bay, Al Mankhool, Jumeirah, DIC. Tamil page has no "veetu saapadu" wording; Kerala page uses "home food" only twice.
+
+### Plan for tonight
+1. **Kerala + Tamil "home food" FAQ pair** (targets "tamil home food dubai" + "malayali mess dubai", both with no mess brand on page 1): on tamil-mess-dubai.html add "Can I get Tamil home food (veetu saapadu) delivered daily in Dubai?"; on kerala-mess-dubai.html add "Is there a Malayali mess with Kerala home food (nadan veettu oonu) in Dubai?". Only dishes already on each page, 199/359/459, Mon–Sat + Sunday add-on, live billing wording. Visible + FAQPage JSON-LD.
+2. **"Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?"** on **mess-in-jvc.html, mess-in-business-bay.html, mess-in-al-mankhool.html** — same pattern as 2026-11-20, zone times from js/delivery-zones.js.
+3. Sitemap lastmod → 2026-11-21 for changed pages; check tags, JSON-LD, only wa.me/971582871967, no retired wording. Do NOT touch the "1 working day" line until the owner decides.
+
+### Owner to-do
+- **Decide the menu-change rule** ("before 10:00 AM" vs "1 working day") — 8th day open.
+- **List on magicpin** (Royal Kalavara ranks #1–2 for "mess karama dubai"), plus Deliveroo / HappyCow / mapthemeal — these are the only Tamil sources showing up. Use docs/listing-kit.md.
+- **Verify Google Business Profile** + ask 3–5 customers for Google reviews.
+- Still open: confirm the right WhatsApp number (routine brief says +971 50 948 7880, site uses +971 58 287 1967); merge PR #6 (office lunch); Search Console "Request indexing" for Karama / Al Qusais / Bur Dubai pages; posts in r/DubaiMallus and a Dubai Tamil group.
