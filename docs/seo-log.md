@@ -1384,3 +1384,11 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - **List on magicpin** (Royal Kalavara ranks #1–2 for "mess karama dubai"), plus Deliveroo / HappyCow / mapthemeal — these are the only Tamil sources showing up. Use docs/listing-kit.md.
 - **Verify Google Business Profile** + ask 3–5 customers for Google reviews.
 - Still open: confirm the right WhatsApp number (routine brief says +971 50 948 7880, site uses +971 58 287 1967); merge PR #6 (office lunch); Search Console "Request indexing" for Karama / Al Qusais / Bur Dubai pages; posts in r/DubaiMallus and a Dubai Tamil group.
+
+### Evening — 2026-11-21
+- Changed (live on main, 1b547e3): "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" (visible FAQ + FAQPage JSON-LD) on **JVC** (Zone A, by ~5:00 AM / ~7:00 PM), **Business Bay** (Zone B, ~7:30 AM / ~8:30 PM), **DIC** (Zone A) and **Jumeirah** (~7:00 AM; dinner ~7:00 PM Jumeirah/Al Safa/Umm Suqeim, ~8:00 PM Al Wasl/La Mer/City Walk) — only dishes already on each page, 199/359/459, Sunday add-on, live billing wording. Tamil page: added romanised "veetu saapadu" to the existing Tamil home food FAQ (visible + JSON-LD). Sitemap lastmod → 2026-11-21 for the 5 pages.
+- Skipped from the morning plan: Kerala "Malayali mess / home food" FAQ (kerala-mess-dubai.html already has "Is there a Malayali mess in Dubai?" and "Do you deliver Kerala home food (nadan meals)…" — would duplicate); Al Mankhool (already has 2 Kerala/Tamil FAQs). Did DIC + Jumeirah instead.
+- Checked: tags balanced, JSON-LD parses, sitemap XML valid, Register → taybmeals.paperform.co, WhatsApp → wa.me/971582871967, 0 hits for wa.me/971509487880 / Starter Plan / 2nd day / pay only for meals / 12 PM / "new clients pay", no "free"/"try" in new text. Live fetch blocked again (proxy 403 on taybmeals.com) — not confirmed on the live site.
+- Still open for owner: "Menu changes take 1 working day…" (index, menu, app, Kerala, Tamil, North Indian pages, llms.txt) vs the 10:00 AM rule — 8th day; "Bank transfer and CDM are free" wording.
+- Area pages built: none (all 51 live). Proposed (PR): none new; PR #6 (office lunch) still open.
+- Next idea: Kerala/Tamil meal-plan FAQ on Dubai Healthcare City, World Trade Centre, Academic City, Dubai South (13 area pages still have no Kerala/Tamil FAQ).
