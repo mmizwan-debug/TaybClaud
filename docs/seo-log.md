@@ -1427,3 +1427,10 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - **List on magicpin** (Royal Kalavara #1–2 "monthly mess", Alot Kitchen #1–4 "mess near me") and **2GIS / hidubai**. Use docs/listing-kit.md.
 - **Verify Google Business Profile** + ask 3–5 customers for Google reviews.
 - Still open: confirm WhatsApp number (brief says +971 50 948 7880, site uses +971 58 287 1967); merge PR #6 (office lunch); Search Console "Request indexing" for International City / Karama / Al Qusais pages; posts in r/DubaiMallus and a Dubai Tamil group.
+
+### Evening — 2026-11-22
+- Changed (live on main, 8d1ec5b): "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" (visible FAQ + FAQPage JSON-LD) on **Dubai Healthcare City** (Zone C, ~7:00 AM / ~8:00 PM), **World Trade Centre + DIFC** (Zone B, ~7:30 AM / ~8:30 PM) and **Al Furjan** (Zone B) — only dishes already on each page, 199/359/459, Sunday add-on, live billing wording. **International City**: new "Do you deliver Kerala and Tamil veg meals in International City?" (Zone D, ~7:00 AM / ~7:00 PM; veg dishes from the page's own lists; links to menu Veg Only switch, Kerala + Tamil pages, Register). Sitemap lastmod → 2026-11-22 for the 4 pages.
+- Checked: tags balanced, JSON-LD parses, sitemap XML valid, Register → taybmeals.paperform.co, WhatsApp → wa.me/971582871967, 0 hits for wa.me/971509487880 / Starter Plan / 2nd day / pay only for meals / trial / 12 PM / 1 working day / "new clients" in new text, no "free"/"try". Live fetch blocked again (curl code 000 via proxy) — not confirmed on the live site.
+- Area pages built: none (all 51 live). Proposed (PR): none new; PR #6 (office lunch) still open.
+- Still open for owner: "Menu changes take 1 working day…" vs the 10:00 AM rule (9th day).
+- Next idea: Kerala/Tamil meal-plan FAQ on Academic City, Dubailand, Sports City (9 area pages left without it).
