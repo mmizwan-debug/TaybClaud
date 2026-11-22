@@ -1436,4 +1436,4 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - Next idea: Kerala/Tamil meal-plan FAQ on Academic City, Dubailand, Sports City (9 area pages left without it).
 
 **Owner instruction (permanent, 22 Nov 2026 — overrides the "1 working day is retired" line in the routine briefs):** Menu changes take **1 working day**. Keep the live wording as it is: "Menu changes take 1 working day, so your new menu starts 2 delivery days after your request (for example, request on Monday, new menu from Wednesday)." The 10:00 AM cut-off stays for cancel / stop / pause. Do not flag or remove the "1 working day" line any more.
-- 22 Nov (owner reply): PR #6 updated — all WhatsApp links, phone and JSON-LD telephone on office-lunch-delivery-dubai.html now use +971 58 287 1967; merged latest main. Waiting for the owner's OK in chat to merge.
+- 22 Nov (owner reply): owner CLOSED PR #6 (office lunch page). Do not propose or rebuild an office lunch page.
