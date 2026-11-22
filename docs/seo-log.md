@@ -1392,3 +1392,38 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - Still open for owner: "Menu changes take 1 working day…" (index, menu, app, Kerala, Tamil, North Indian pages, llms.txt) vs the 10:00 AM rule — 8th day; "Bank transfer and CDM are free" wording.
 - Area pages built: none (all 51 live). Proposed (PR): none new; PR #6 (office lunch) still open.
 - Next idea: Kerala/Tamil meal-plan FAQ on Dubai Healthcare City, World Trade Centre, Academic City, Dubai South (13 area pages still have no Kerala/Tamil FAQ).
+
+## 2026-11-22 — Morning check
+
+### Rankings
+Search tool is a US web index, not Google UAE — rough signal only. taybmeals.com **not found for any query** (day 22).
+- Kerala — "kerala food delivery dubai": not found. Restaurant lists only: Property Finder ×3, Bayut, arabiers, Curly Tales ×4, Gulf News New Year list ×2, Khaleej Times Kerala curry, dannibindubai, Calicut Foodies JLT (wanderlog), Kanji Kada (Deliveroo, Abu Dhabi). No meal plan / mess on page 1.
+- Kerala — "nadan food dubai": not found. Noise (iftar menus, Nad Al Hamar, Nalan on HappyCow, magicpin bakeries). No Kerala business — still an open gap.
+- Tamil — "tamil food delivery dubai": not found. Swiggy India pages, **2GIS Dubai firm page**, **New Tasty Tamil, Hor Al Anz (eazydiner ×2)**, **Meenatshi Chettinadu, Al Quoz (Deliveroo)**, Property Finder, Bayut, Khaleej Times ×2. No Tamil mess / tiffin service.
+- Tamil — "south indian veg meals dubai": not found. Bayut veg + South Indian lists ×3, Deliveroo (Meenatshi Chettinadu, Bikanervala ×2, **Elco Veg Dine Karama & Al Nahda**, **Home Diner Karama**), Saravana Bhavan (HappyCow ×2), **VegMe Al Twar (magicpin)**, Property Finder, Visit Dubai. No veg meal plan.
+- General — "monthly mess dubai": not found. **Royal Kalavara Karama (magicpin ×2) #1–2**, cigar-cloud self-post, Ebony Wood International City (hidubai); rest is monthly rentals.
+- General — "mess near me dubai": not found. **Mess Service Alot Kitchen, Motor City (magicpin ×4) #1–4**, Ebony Wood (hidubai), **Erode Amman Mess, Deira (mapthemeal)** (Tamil), then travel / Foursquare lists.
+- Area — "mess international city dubai": not found (our /mess-in-international-city.html not shown). Only Wikipedia / property / hotel pages — **no mess business at all**, open gap.
+
+### AI/GEO visibility
+- "best Tamil Kerala monthly mess tiffin service Dubai": hackmd.io page, **Royal Kalavara (magicpin ×2)**, The National + Gulf News tiffin articles, cigar-cloud self-post, Tamil Dhaba (wanderlog), Qatar Living "Best Monthly Mess", Curly Tales, Property Finder, Khaleej Times. Rest is India (Jammu, Hyderabad, Chennai, Delhi). No Reddit / Facebook / Tamil association source surfaced.
+- Sources AI tools would cite: magicpin (Royal Kalavara, Alot Kitchen, VegMe), hidubai (Ebony Wood), 2GIS, Deliveroo / eazydiner / HappyCow / mapthemeal, Gulf News / The National tiffin articles, Bayut / Property Finder / Curly Tales lists. Tayb Meals: not mentioned anywhere.
+- Kerala vs Tamil: Kerala = Royal Kalavara (magicpin) for "mess"; restaurant lists for everything else. Tamil = restaurant pages only (New Tasty Tamil, Meenatshi Chettinadu, Erode Amman Mess, Saravana Bhavan) + 2GIS — still no Tamil monthly-mess site. Same pattern as last 3 days.
+
+### Site health
+- Live fetch blocked again (curl code 000 via proxy for /, menu, delivery-timings, about) — checks from repo code (main @ bbe6cfc).
+- 59 HTML pages: all have title + meta description; every JSON-LD block parses; 0 broken local links / images. Sitemap: 58 URLs (all except app.html — OK); latest lastmod 2026-11-21.
+- Retired wording: 0 hits for Starter Plan, 2nd/second day, pay only for meals received, free trial, 12 PM, "new clients pay". 0 hits for 050 948 7880; all 363 WhatsApp links → wa.me/971582871967.
+- **Still open (9th day): "Menu changes take 1 working day…"** on index, menu, app, Kerala, Tamil, North Indian pages + llms.txt — conflicts with the 10:00 AM rule. Not changed — owner to decide.
+- Gaps: Kerala/Tamil meal-plan FAQ still missing on 12 area pages (Academic City, Al Barari, Al Furjan, Al Khail Gate, Dubai Healthcare City, Production City, Sports City, Studio City, Dubailand, Liwan, Majan, World Trade Centre). International City page has no veg FAQ (Karama, Al Qusais, Al Nahda already do).
+
+### Plan for tonight
+1. **"Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?"** on **mess-in-dubai-healthcare-city.html, mess-in-world-trade-centre.html, mess-in-al-furjan.html** — same pattern as 2026-11-21 (one Kerala + one Tamil dish already on the page, zone times from js/delivery-zones.js, 199/359/459, Sunday add-on, live billing wording). Visible + FAQPage JSON-LD.
+2. **"Do you deliver Kerala and Tamil veg meals in International City?"** on mess-in-international-city.html ("mess international city" has no mess business on page 1; Ebony Wood owns nearby "monthly mess") — veg dishes only from the existing Kerala/Tamil veg FAQs, link to menu Veg Only switch + /kerala-mess-dubai.html + /tamil-mess-dubai.html.
+3. Sitemap lastmod → 2026-11-22 for changed pages; check tags, JSON-LD, only wa.me/971582871967, no retired wording. Do NOT touch the "1 working day" line until the owner decides.
+
+### Owner to-do
+- **Decide the menu-change rule** ("before 10:00 AM" vs "1 working day") — 9th day open.
+- **List on magicpin** (Royal Kalavara #1–2 "monthly mess", Alot Kitchen #1–4 "mess near me") and **2GIS / hidubai**. Use docs/listing-kit.md.
+- **Verify Google Business Profile** + ask 3–5 customers for Google reviews.
+- Still open: confirm WhatsApp number (brief says +971 50 948 7880, site uses +971 58 287 1967); merge PR #6 (office lunch); Search Console "Request indexing" for International City / Karama / Al Qusais pages; posts in r/DubaiMallus and a Dubai Tamil group.
