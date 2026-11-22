@@ -137,6 +137,7 @@
         "Reem",
         "Serena",
         "Sobha Hartland",
+        "The Gardens",
         "Tilal Al Ghaf",
         "Town Square",
         "Umm Ramool",
