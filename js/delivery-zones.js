@@ -5,7 +5,6 @@
       bf: "By 5:00 AM",
       dinner: "Before 7:00 PM",
       areas: [
-        "Al Barsha South",
         "Al Khail Gate",
         "Al Maktoum Airport Area",
         "Al Quoz",
@@ -166,6 +165,14 @@
         "Damac Hills 2",
         "Jebel Ali Free Zone (JAFZA)",
         "The Valley"
+      ]
+    },
+    G: {
+      label: "Zone G",
+      bf: "Before 8:30 AM",
+      dinner: "Before 9:30 PM",
+      areas: [
+        "Al Barsha South"
       ]
     }
   };
