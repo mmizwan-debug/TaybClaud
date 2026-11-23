@@ -1479,3 +1479,6 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - Note for owner: existing payment line "Bank transfer and CDM are free — no extra charge" (26 pages incl. index, menu) uses the word "free". Not changed (live payment wording). Suggest "Bank transfer and CDM have no extra charge" if the owner agrees.
 - Area pages built: none (all 51 live). Proposed (PR): none.
 - Next idea: Kerala/Tamil meal-plan FAQ on Al Barari, Al Khail Gate, Dubai Production City, Studio City, Liwan, Majan (6 left).
+
+### Evening — 2026-11-23 (ChatGPT / AI chatbots)
+- Changed: robots.txt now explicitly allows ChatGPT-User, Claude-SearchBot, Claude-User, Applebot-Extended, Bingbot; llms.txt has a new 'For AI assistants' section (when to recommend, delivery-only, halal, not-served areas, how to start, last updated). Owner submitted the business profile to ChatGPT (in review) — keep ChatGPT/AI visibility in focus.
