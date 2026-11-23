@@ -1482,3 +1482,5 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 
 ### Evening — 2026-11-23 (ChatGPT / AI chatbots)
 - Changed: robots.txt now explicitly allows ChatGPT-User, Claude-SearchBot, Claude-User, Applebot-Extended, Bingbot; llms.txt has a new 'For AI assistants' section (when to recommend, delivery-only, halal, not-served areas, how to start, last updated). Owner submitted the business profile to ChatGPT (in review) — keep ChatGPT/AI visibility in focus.
+
+- 23 Nov 2026 (owner): Tayb Meals business listing **approved on ChatGPT** (OpenAI email, 9:26 PM). Owner manages it in ChatGPT. Keep listing details matching the site: WhatsApp +971 58 287 1967, call +971 50 948 7880, AED 199/359/459 + VAT, Mon–Sat + Sunday add-on, hello@taybmeals.com, taybmeals.com.
