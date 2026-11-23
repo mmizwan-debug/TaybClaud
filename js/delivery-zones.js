@@ -25,8 +25,7 @@
         "Jumeirah Golf Estates",
         "Jumeirah Village Circle (JVC)",
         "Jumeirah Village Triangle (JVT)",
-        "Motor City",
-        "Remraam"
+        "Motor City"
       ]
     },
     B: {
@@ -35,8 +34,6 @@
       dinner: "Before 8:30 PM",
       areas: [
         "Al Furjan",
-        "Al Sufouh",
-        "Bluewaters Island",
         "Business Bay",
         "DIFC",
         "Discovery Gardens",
@@ -45,18 +42,10 @@
         "Dubai Internet City",
         "Dubai Knowledge Park",
         "Dubai Marina",
-        "Dubai Media City",
-        "Emirates Hills",
         "JBR",
         "JLT",
         "Jumeirah Heights",
-        "Jumeirah Islands",
         "Jumeirah Park",
-        "The Greens",
-        "The Lakes",
-        "The Meadows",
-        "The Springs",
-        "The Views",
         "World Trade Centre (WTC)"
       ]
     },
@@ -120,14 +109,12 @@
         "Festival City",
         "International City",
         "Jumeirah",
-        "Living Legends",
         "Liwan",
         "Majan",
         "MBR City",
         "Meydan",
         "Mira",
         "Mirdif",
-        "Mudon",
         "Muhaisnah",
         "Muhaisnah 2 (Sonapur)",
         "Nad Al Hamar",
@@ -137,8 +124,6 @@
         "Serena",
         "Sobha Hartland",
         "The Gardens",
-        "Tilal Al Ghaf",
-        "Town Square",
         "Umm Ramool",
         "Umm Suqeim",
         "Villanova",
@@ -153,8 +138,7 @@
       areas: [
         "Al Habtoor City",
         "Al Jaddaf",
-        "Culture Village",
-        "Dubai Design District (d3)"
+        "Culture Village"
       ]
     },
     F: {
