@@ -1472,3 +1472,10 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - **Verify Google Business Profile** + ask 3–5 customers for Google reviews (Dabbawaalah's Google pages rank for "tiffin service dubai").
 - Confirm the WhatsApp number (brief: +971 50 948 7880; site: +971 58 287 1967).
 - Post in r/DubaiMallus and a Dubai Tamil Facebook group; Search Console "Request indexing" for Al Nahda / International City pages.
+
+### Evening — 2026-11-23
+- Changed (live on main, dccf01c): "Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?" (visible FAQ + FAQPage JSON-LD) on **Academic City** (Zone D, ~7:00 AM / ~7:00 PM, students), **Dubai Sports City** (Zone A, ~5:00 AM / ~7:00 PM), **Dubailand** (Zone D) and **Dubai South** (Zone A) — only dishes already on each page, 199/359/459 + VAT, Sunday add-on, pay-upfront + 48-hour refund + 10:00 AM wording copied from the live pages. Sitemap lastmod → 2026-11-23 for the 4 pages.
+- Checked: tags balanced, JSON-LD parses, sitemap XML valid, Register → taybmeals.paperform.co, WhatsApp → wa.me/971582871967, 0 hits for wa.me/971509487880 / Starter Plan / 2nd day / pay only for meals / 12 PM / "New clients" / Expo City / Creek Harbour; "trial" only in the old `index.html#trial` anchor (not visible). Live fetch blocked (proxy 403) — not confirmed on the live site.
+- Note for owner: existing payment line "Bank transfer and CDM are free — no extra charge" (26 pages incl. index, menu) uses the word "free". Not changed (live payment wording). Suggest "Bank transfer and CDM have no extra charge" if the owner agrees.
+- Area pages built: none (all 51 live). Proposed (PR): none.
+- Next idea: Kerala/Tamil meal-plan FAQ on Al Barari, Al Khail Gate, Dubai Production City, Studio City, Liwan, Majan (6 left).
