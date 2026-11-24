@@ -2,12 +2,26 @@
   var ZONES = {
     "A": {
       "label": "Zone A",
-      "bf": "By 5:00 AM",
+      "bf": "Before 6:00 AM",
       "dinner": "Before 7:00 PM",
       "areas": [
+        "Al Khail Gate",
+        "Al Maktoum Airport Area",
+        "Al Quoz",
+        "Al Quoz Industrial Area",
+        "Dubai Industrial City (DIC)",
+        "Dubai Investment Park (DIP)",
+        "Dubai Production City / IMPZ",
         "Dubai Science Park",
+        "Dubai South",
+        "Dubai Sports City",
+        "Dubai Studio City",
+        "Emaar South",
         "Green Community",
-        "Jumeirah Golf Estates"
+        "Jebel Ali",
+        "Jebel Ali Village",
+        "Jumeirah Golf Estates",
+        "Motor City"
       ]
     },
     "B": {
@@ -87,16 +101,13 @@
         "Al Garhoud",
         "Al Hamriya",
         "Al Jaddaf",
-        "Al Khail Gate",
+        "Al Jafliya",
         "Al Khawaneej",
-        "Al Maktoum Airport Area",
         "Al Mankhool",
         "Al Mizhar",
         "Al Muraqqabat",
         "Al Muteena",
         "Al Nahda",
-        "Al Quoz",
-        "Al Quoz Industrial Area",
         "Al Qusais",
         "Al Qusais Industrial Area",
         "Al Raffa",
@@ -121,24 +132,15 @@
         "Discovery Gardens",
         "Dubai Harbour",
         "Dubai Healthcare City",
-        "Dubai Industrial City (DIC)",
-        "Dubai Investment Park (DIP)",
         "Dubai Land Residence Complex (DLRC)",
         "Dubai Marina",
-        "Dubai Production City / IMPZ",
         "Dubai Silicon Oasis",
-        "Dubai South",
-        "Dubai Sports City",
-        "Dubai Studio City",
         "Dubailand",
-        "Emaar South",
         "Hor Al Anz",
         "International City",
         "JBR",
         "JLT",
-        "Jebel Ali",
         "Jebel Ali Free Zone (JAFZA)",
-        "Jebel Ali Village",
         "Jumeirah",
         "Jumeirah Village Circle (JVC)",
         "Jumeirah Village Triangle (JVT)",
@@ -148,7 +150,6 @@
         "Majan",
         "Mira",
         "Mirdif",
-        "Motor City",
         "Muhaisnah",
         "Muhaisnah 2 (Sonapur)",
         "Nadd Al Sheba",
@@ -166,7 +167,7 @@
         "World Trade Centre (WTC)"
       ]
     }
-  };;
+  };;;
 
   var WHATSAPP_NUMBER = "971582871967";
   var SHARE_URL = "https://taybmeals.com/delivery-timings.html";
