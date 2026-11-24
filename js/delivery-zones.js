@@ -1,165 +1,172 @@
 (function () {
   var ZONES = {
-    A: {
-      label: "Zone A",
-      bf: "By 5:00 AM",
-      dinner: "Before 7:00 PM",
-      areas: [
-        "Al Khail Gate",
-        "Al Maktoum Airport Area",
-        "Al Quoz",
-        "Al Quoz Industrial Area",
-        "Arjan",
-        "Dubai Industrial City (DIC)",
-        "Dubai Investment Park (DIP)",
-        "Dubai Land Residence Complex (DLRC)",
-        "Dubai Production City / IMPZ",
+    "A": {
+      "label": "Zone A",
+      "bf": "By 5:00 AM",
+      "dinner": "Before 7:00 PM",
+      "areas": [
         "Dubai Science Park",
-        "Dubai South",
-        "Dubai Sports City",
-        "Dubai Studio City",
-        "Emaar South",
         "Green Community",
-        "Jebel Ali",
-        "Jebel Ali Village",
-        "Jumeirah Golf Estates",
-        "Jumeirah Village Circle (JVC)",
-        "Jumeirah Village Triangle (JVT)",
-        "Motor City"
+        "Jumeirah Golf Estates"
       ]
     },
-    B: {
-      label: "Zone B",
-      bf: "Before 7:30 AM",
-      dinner: "Before 8:30 PM",
-      areas: [
-        "Al Furjan",
-        "Business Bay",
-        "DIFC",
-        "Discovery Gardens",
+    "B": {
+      "label": "Zone B",
+      "bf": "Before 7:30 AM",
+      "dinner": "Before 8:30 PM",
+      "areas": [
         "Downtown Dubai",
-        "Dubai Harbour",
         "Dubai Internet City",
         "Dubai Knowledge Park",
-        "Dubai Marina",
-        "JBR",
-        "JLT",
         "Jumeirah Heights",
-        "Jumeirah Park",
-        "World Trade Centre (WTC)"
+        "Jumeirah Park"
       ]
     },
-    C: {
-      label: "Zone C",
-      bf: "Before 7:00 AM",
-      dinner: "Before 8:00 PM",
-      areas: [
-        "Abu Hail",
-        "Al Baraha",
-        "Al Fahidi",
-        "Al Garhoud",
-        "Al Hamriya",
+    "C": {
+      "label": "Zone C",
+      "bf": "Before 7:00 AM",
+      "dinner": "Before 8:00 PM",
+      "areas": [
         "Al Mamzar",
-        "Al Mankhool",
-        "Al Muraqqabat",
-        "Al Muteena",
-        "Al Raffa",
-        "Al Ras",
-        "Al Rigga",
-        "Al Souq Al Kabeer",
-        "Al Wasl",
-        "Bur Dubai",
-        "BurJuman",
-        "City Walk",
-        "Deira",
-        "Dubai Healthcare City",
-        "Hor Al Anz",
-        "Karama",
-        "La Mer",
-        "Mina Rashid",
-        "Naif",
-        "Oud Metha",
-        "Port Saeed",
-        "Satwa",
-        "Umm Hurair"
+        "Mina Rashid"
       ]
     },
-    D: {
-      label: "Zone D",
-      bf: "Before 7:00 AM",
-      dinner: "Before 7:00 PM",
-      areas: [
-        "Academic City",
-        "Al Barari",
-        "Al Barsha",
-        "Al Khawaneej",
-        "Al Mizhar",
-        "Al Nahda",
-        "Al Qusais",
-        "Al Qusais Industrial Area",
-        "Al Rashidiya",
-        "Al Safa",
+    "D": {
+      "label": "Zone D",
+      "bf": "Before 7:00 AM",
+      "dinner": "Before 7:00 PM",
+      "areas": [
         "Al Twar",
-        "Al Warqa",
-        "Barsha Heights (Tecom)",
-        "Damac Hills",
         "Dubai Hills Estate",
-        "Dubai Silicon Oasis",
-        "Dubailand",
         "Festival City",
-        "International City",
-        "Jumeirah",
-        "Liwan",
-        "Majan",
         "MBR City",
         "Meydan",
-        "Mira",
-        "Mirdif",
-        "Muhaisnah",
-        "Muhaisnah 2 (Sonapur)",
         "Nad Al Hamar",
-        "Nadd Al Sheba",
-        "Ras Al Khor",
         "Reem",
-        "Serena",
         "Sobha Hartland",
         "The Gardens",
-        "Umm Ramool",
-        "Umm Suqeim",
-        "Villanova",
-        "Wadi Al Safa",
-        "Warsan"
+        "Wadi Al Safa"
       ]
     },
-    E: {
-      label: "Zone E",
-      bf: "Before 7:30 AM",
-      dinner: "Before 7:30 PM",
-      areas: [
-        "Al Habtoor City",
-        "Al Jaddaf",
-        "Culture Village"
+    "E": {
+      "label": "Zone E",
+      "bf": "Before 7:30 AM",
+      "dinner": "Before 7:30 PM",
+      "areas": [
+        "Al Habtoor City"
       ]
     },
-    F: {
-      label: "Zone F",
-      bf: "Before 7:30 AM",
-      dinner: "Before 8:00 PM",
-      areas: [
-        "Damac Hills 2",
-        "Jebel Ali Free Zone (JAFZA)",
+    "F": {
+      "label": "Zone F",
+      "bf": "Before 7:30 AM",
+      "dinner": "Before 8:00 PM",
+      "areas": [
         "The Valley"
       ]
     },
-    G: {
-      label: "Zone G",
-      bf: "Before 8:30 AM",
-      dinner: "Before 9:30 PM",
-      areas: [
+    "G": {
+      "label": "Zone G",
+      "bf": "Before 8:30 AM",
+      "dinner": "Before 9:30 PM",
+      "areas": [
         "Al Barsha South"
       ]
+    },
+    "H": {
+      "label": "Zone H",
+      "bf": "Before 7:00 AM",
+      "dinner": "Before 7:30 PM",
+      "areas": [
+        "Abu Hail",
+        "Academic City",
+        "Al Baraha",
+        "Al Barari",
+        "Al Barsha",
+        "Al Fahidi",
+        "Al Furjan",
+        "Al Garhoud",
+        "Al Hamriya",
+        "Al Jaddaf",
+        "Al Khail Gate",
+        "Al Khawaneej",
+        "Al Maktoum Airport Area",
+        "Al Mankhool",
+        "Al Mizhar",
+        "Al Muraqqabat",
+        "Al Muteena",
+        "Al Nahda",
+        "Al Quoz",
+        "Al Quoz Industrial Area",
+        "Al Qusais",
+        "Al Qusais Industrial Area",
+        "Al Raffa",
+        "Al Ras",
+        "Al Rashidiya",
+        "Al Rigga",
+        "Al Safa",
+        "Al Souq Al Kabeer",
+        "Al Warqa",
+        "Al Wasl",
+        "Arjan",
+        "Barsha Heights (Tecom)",
+        "Bur Dubai",
+        "BurJuman",
+        "Business Bay",
+        "City Walk",
+        "Culture Village",
+        "DIFC",
+        "Damac Hills",
+        "Damac Hills 2",
+        "Deira",
+        "Discovery Gardens",
+        "Dubai Harbour",
+        "Dubai Healthcare City",
+        "Dubai Industrial City (DIC)",
+        "Dubai Investment Park (DIP)",
+        "Dubai Land Residence Complex (DLRC)",
+        "Dubai Marina",
+        "Dubai Production City / IMPZ",
+        "Dubai Silicon Oasis",
+        "Dubai South",
+        "Dubai Sports City",
+        "Dubai Studio City",
+        "Dubailand",
+        "Emaar South",
+        "Hor Al Anz",
+        "International City",
+        "JBR",
+        "JLT",
+        "Jebel Ali",
+        "Jebel Ali Free Zone (JAFZA)",
+        "Jebel Ali Village",
+        "Jumeirah",
+        "Jumeirah Village Circle (JVC)",
+        "Jumeirah Village Triangle (JVT)",
+        "Karama",
+        "La Mer",
+        "Liwan",
+        "Majan",
+        "Mira",
+        "Mirdif",
+        "Motor City",
+        "Muhaisnah",
+        "Muhaisnah 2 (Sonapur)",
+        "Nadd Al Sheba",
+        "Naif",
+        "Oud Metha",
+        "Port Saeed",
+        "Ras Al Khor",
+        "Satwa",
+        "Serena",
+        "Umm Hurair",
+        "Umm Ramool",
+        "Umm Suqeim",
+        "Villanova",
+        "Warsan",
+        "World Trade Centre (WTC)"
+      ]
     }
-  };
+  };;
 
   var WHATSAPP_NUMBER = "971582871967";
   var SHARE_URL = "https://taybmeals.com/delivery-timings.html";
