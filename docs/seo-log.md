@@ -1485,3 +1485,41 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 
 - 23 Nov 2026 (owner): Tayb Meals business listing **approved on ChatGPT** (OpenAI email, 9:26 PM). Owner manages it in ChatGPT. Keep listing details matching the site: WhatsApp +971 58 287 1967, call +971 50 948 7880, AED 199/359/459 + VAT, Mon–Sat + Sunday add-on, hello@taybmeals.com, taybmeals.com.
 - 23 Nov (owner): **Tayb Meals business listing approved on ChatGPT** (OpenAI email, 23 Nov 2026, 9:26 PM). Owner can now manage it on ChatGPT. Listing details should match the live site: plans 199/359/459, Mon–Sat + Sunday add-on, hours, pay in advance, cancel before 10:00 AM, 48-hour refund, WhatsApp number, taybmeals.com + Register link.
+
+## 2026-11-24 — Morning check
+
+### Rankings
+Search tool is a US web index, not Google UAE — rough signal only. taybmeals.com **not found for any query** (day 24).
+- Kerala — "kerala meals monthly dubai": not found. Kerala restaurant lists only (Property Finder ×3, Bayut, dannibindubai ×2, Curly Tales ×4, Sassy Mama Kerala Kitchen, Khaleej Times Kerala curry, arabiers, Gulf News, Kairali Karama on eazydiner). **No monthly meal plan / mess on page 1** — open gap.
+- Kerala — "malayali mess dubai": not found. Bayut, Curly Tales, arabiers, Khaleej Times Onam, Gulf News Onam sadhya list, Kairali (eazydiner ×2), dannibindubai. No mess business this time (Royal Kalavara not shown for this wording).
+- Tamil — "tamil home food dubai": not found. Wanderlog place, **Home Diner Karama (Deliveroo)**, Gulf News "Taste of Tamil Nadu", **New Tasty Tamil, Hor Al Anz (eazydiner)**, **Mamis Illam (HappyCow)**, Khaleej Times Bahubali thali, Curly Tales; rest Swiggy India / Singapore. No Tamil home-food service.
+- Tamil — "tamil nadu meals dubai": not found. Wikipedia, Gulf News, Khaleej Times Bahubali thali ×3, TN Tourism / Incredible India pages, dubaiofw.com, Curly Tales South Indian list. No Dubai Tamil meal plan.
+- General — "mess food dubai": not found. **Mess Service Alot Kitchen, Motor City (magicpin ×2) #1–2**, Ebony Wood International City (hidubai), **Erode Amman Mess, Deira (mapthemeal)** (Tamil), Khaleej Times "where delivery riders eat"; rest travel guides.
+- General — "south indian tiffin dubai": not found. The National tiffin article #1, **Mavalli Tiffin Rooms Dubai #2**, Bayut / Curly Tales / pickyourtrail South Indian lists, Meenatshi Chettinadu (Deliveroo), Gulf News tiffin-culture article. **The phrase "South Indian tiffin" appears nowhere on taybmeals.com.**
+- Area — "mess karama dubai": not found (our /mess-in-karama.html not shown). **Royal Kalavara monthly mess Karama (magicpin ×2) #1–2**, then Wikipedia / hotels / Property Finder / Bayut.
+
+### AI/GEO visibility
+- "best South Indian monthly mess Dubai reddit": Property Finder, **Royal Kalavara (magicpin ×2)**, cigar-cloud "Monthly Mess Service in Dubai" self-post, Bayut + Curly Tales + arabiers + eazydiner South Indian lists, wheretoeatdubai.pages.dev. No Reddit / Facebook / Tamil association source surfaced.
+- Sources AI tools would cite: magicpin (Royal Kalavara, Alot Kitchen), hidubai (Ebony Wood), mapthemeal (Erode Amman Mess), Deliveroo / eazydiner / HappyCow, Mavalli Tiffin Rooms site, The National + Gulf News tiffin articles, Bayut / Property Finder / Curly Tales lists. Tayb Meals: not mentioned anywhere.
+- Kerala vs Tamil: Kerala = Royal Kalavara (magicpin) owns "mess"; Kerala "meals/home food" = restaurant lists only. Tamil = restaurant pages only (Home Diner, New Tasty Tamil, Mamis Illam, Erode Amman Mess). Same pattern as the last 5 days.
+- "Tayb Meals" brand search: not found — results are Tayeb Kitchen (Al Khabaisi, magicpin/eazydiner) and Tayba Gourmet app (name confusion risk).
+- ChatGPT: no public ChatGPT listing page for Tayb Meals found on the web (search for "Tayb Meals" + chatgpt.com/openai returned only generic ChatGPT meal-plan pages), so listing details could not be checked. For "monthly mess Dubai", "Kerala mess Dubai" and "Tamil mess Dubai"-type queries, Tayb Meals is not in any web source ChatGPT search is likely to use. Not checked inside ChatGPT.
+
+### Site health
+- Live fetch blocked again (curl code 000, proxy 403 on taybmeals.com) — checks from repo code (main @ 6eaeb30).
+- 59 HTML pages: all have title + meta description; every JSON-LD block parses; 0 broken local links / images. Sitemap: 58 URLs (all except app.html — OK); latest lastmod 2026-11-23.
+- Retired wording: 0 visible hits for Starter Plan, 2nd/second day, pay only for meals received, free trial, 12 PM (only "starter-plan-*" CSS class names — not visible). All 370 WhatsApp links → wa.me/971582871967 (2 more are JS-built in app.html, same number).
+- Last night's commit 6eaeb30 removed 16 areas (Remraam, The Greens/Views/Springs/Meadows/Lakes, Media City, d3, Al Sufouh, Bluewaters, Emirates Hills, Jumeirah Islands, Living Legends, Mudon, Tilal Al Ghaf, Town Square): 0 leftover mentions on any page, llms.txt or zones file — clean.
+- **New check:** js/delivery-zones.js now lists **110 areas**, but "120+ areas" still appears 14 times (incl. llms.txt ×2). Not changed — owner to confirm the number.
+- Gaps: Kerala/Tamil meal-plan FAQ still missing on 4 area pages (Al Barari, Al Khail Gate, Dubai Studio City, Majan). "South Indian tiffin" wording missing site-wide.
+
+### Plan for tonight
+1. **"Is there a monthly Kerala or Tamil meal plan (mess subscription) in <area>?"** on the last 4 pages: **mess-in-al-khail-gate.html, mess-in-dubai-studio-city.html, mess-in-majan.html, mess-in-al-barari.html** — same pattern as 2026-11-23 (one Kerala + one Tamil dish already on the page, zone times from js/delivery-zones.js, 199/359/459, Sunday add-on, pay-in-advance + 48-hour refund + 10:00 AM wording copied from live pages). Visible + FAQPage JSON-LD.
+2. **"South Indian tiffin" FAQ pair** (Mavalli Tiffin Rooms + The National own "south indian tiffin dubai"; no meal plan on page 1): on tamil-mess-dubai.html "Do you have a South Indian tiffin service in Dubai (idly, dosa, pongal for breakfast)?" and on kerala-mess-dubai.html "Do you deliver Kerala breakfast tiffin (puttu, appam) in Dubai?" — only dishes already on each page, plan prices, live billing wording. Visible + FAQPage JSON-LD.
+3. Sitemap lastmod → 2026-11-24 for changed pages; check tags, JSON-LD, only wa.me/971582871967, no retired wording. Do NOT change "120+ areas" until the owner confirms.
+
+### Owner to-do
+- **Confirm the delivery area count**: after removing 16 areas the list has 110, but the site says "120+ areas" in 14 places. Tell us the right figure (e.g. "100+ areas").
+- **List on magicpin** (Royal Kalavara #1–2 for "mess karama" / "monthly mess"; Alot Kitchen #1–2 for "mess food dubai"), plus hidubai and mapthemeal. Use docs/listing-kit.md.
+- **Verify Google Business Profile** + ask 3–5 customers for Google reviews.
+- Ask ChatGPT "best monthly mess in Dubai" and "Tamil mess in Dubai" on your phone and tell us if Tayb Meals shows; check the listing shows WhatsApp +971 58 287 1967, call +971 50 948 7880, AED 199/359/459.
