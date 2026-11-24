@@ -1,10 +1,10 @@
 (function () {
   var ZONES = {
-    "A": {
-      "label": "Zone A",
-      "bf": "Before 6:00 AM",
-      "dinner": "Before 7:00 PM",
-      "areas": [
+    A: {
+      label: "Zone A",
+      bf: "Before 6:00 AM",
+      dinner: "Before 7:00 PM",
+      areas: [
         "Al Khail Gate",
         "Al Maktoum Airport Area",
         "Al Quoz",
@@ -24,11 +24,11 @@
         "Motor City"
       ]
     },
-    "B": {
-      "label": "Zone B",
-      "bf": "Before 7:30 AM",
-      "dinner": "Before 8:30 PM",
-      "areas": [
+    B: {
+      label: "Zone B",
+      bf: "Before 7:30 AM",
+      dinner: "Before 8:30 PM",
+      areas: [
         "Downtown Dubai",
         "Dubai Internet City",
         "Dubai Knowledge Park",
@@ -36,20 +36,20 @@
         "Jumeirah Park"
       ]
     },
-    "C": {
-      "label": "Zone C",
-      "bf": "Before 7:00 AM",
-      "dinner": "Before 8:00 PM",
-      "areas": [
+    C: {
+      label: "Zone C",
+      bf: "Before 7:00 AM",
+      dinner: "Before 8:00 PM",
+      areas: [
         "Al Mamzar",
         "Mina Rashid"
       ]
     },
-    "D": {
-      "label": "Zone D",
-      "bf": "Before 7:00 AM",
-      "dinner": "Before 7:00 PM",
-      "areas": [
+    D: {
+      label: "Zone D",
+      bf: "Before 7:00 AM",
+      dinner: "Before 7:00 PM",
+      areas: [
         "Al Twar",
         "Dubai Hills Estate",
         "Festival City",
@@ -62,35 +62,35 @@
         "Wadi Al Safa"
       ]
     },
-    "E": {
-      "label": "Zone E",
-      "bf": "Before 7:30 AM",
-      "dinner": "Before 7:30 PM",
-      "areas": [
+    E: {
+      label: "Zone E",
+      bf: "Before 7:30 AM",
+      dinner: "Before 7:30 PM",
+      areas: [
         "Al Habtoor City"
       ]
     },
-    "F": {
-      "label": "Zone F",
-      "bf": "Before 7:30 AM",
-      "dinner": "Before 8:00 PM",
-      "areas": [
+    F: {
+      label: "Zone F",
+      bf: "Before 7:30 AM",
+      dinner: "Before 8:00 PM",
+      areas: [
         "The Valley"
       ]
     },
-    "G": {
-      "label": "Zone G",
-      "bf": "Before 8:30 AM",
-      "dinner": "Before 9:30 PM",
-      "areas": [
+    G: {
+      label: "Zone G",
+      bf: "Before 8:30 AM",
+      dinner: "Before 9:30 PM",
+      areas: [
         "Al Barsha South"
       ]
     },
-    "H": {
-      "label": "Zone H",
-      "bf": "Before 7:00 AM",
-      "dinner": "Before 7:30 PM",
-      "areas": [
+    H: {
+      label: "Zone H",
+      bf: "Before 7:00 AM",
+      dinner: "Before 7:30 PM",
+      areas: [
         "Abu Hail",
         "Academic City",
         "Al Baraha",
