@@ -1,3 +1,4 @@
+// NOTE: keep zone keys and field names UNQUOTED (A: { label: ... }) - the WhatsApp AI (tayb-ai worker) reads this file with a parser that expects this format.
 (function () {
   var ZONES = {
     A: {
