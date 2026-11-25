@@ -10,6 +10,8 @@
 
 Reminder cycle: tracking since 2026-10-22; gentle reminder sent 2026-10-29; 2026-11-01, 2026-11-03, 2026-11-05, 2026-11-07, 2026-11-09, 2026-11-11, 2026-11-13 and 2026-11-15, 2026-11-17, 2026-11-19, 2026-11-21, 2026-11-23 and 2026-11-25 checks: no change (no public Google Maps, hidubai or magicpin result found for Tayb Meals; also searched +971 58 287 1967 and old 050 948 7880 — nothing); gentle reminders sent 2026-11-05, 2026-11-11, 2026-11-17 and 2026-11-23; next reminder due 2026-11-29 if items are still pending.
 
+Note (2026-11-25): owner screenshot shows taybmeals.com ranking first on Google for "tayb meals", with sitelinks (Tamil Mess, Kerala Mess, Al Furjan...). The website is indexed. That is ordinary search, not a Google Business Profile / Maps listing. The check's search tool did not return taybmeals.com and Google is blocked from the cloud sandbox, so "not found" means "not seen by the check", not proof it is absent.
+
 ## Questions waiting for the owner
 - Google verification: which option did Google offer (video, phone/SMS, postcard, documents), and what exactly did it say when it rejected the eTrader licence?
 - Phone number: the site now uses only +971 58 287 1967. Please make sure every pending listing (Google, hidubai, Apple, Bing) uses this number, not 050 948 7880.
