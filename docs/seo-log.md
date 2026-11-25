@@ -1530,3 +1530,41 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - Area pages built: none (all 51 live). Proposed (PR): none.
 - Still open for owner: "120+ areas" (14 places) vs 111 areas now in delivery-zones.js; "Bank transfer and CDM are free" wording (uses "free").
 - Next idea: every area page now has the Kerala/Tamil meal-plan FAQ. Next: "South Indian tiffin" line on North Indian / menu pages is not needed; instead add a short "Areas we deliver" list to llms.txt grouped by zone time, or a North Indian "tiffin service near <area>" FAQ on the top office areas (Business Bay, JLT, WTC).
+
+## 2026-11-25 — Morning check
+
+### Rankings
+Search tool is a US web index, not Google UAE — rough signal only. taybmeals.com **not found for any query** (day 25).
+- Kerala — "kerala food delivery dubai": not found. Kerala restaurant lists only (Property Finder ×3, Bayut, arabiers, Curly Tales ×4, Gulf News ×2, Khaleej Times, dannibindubai), Calicut Foodies Express JLT (wanderlog), Kanji Kada (Deliveroo, Abu Dhabi). No meal plan / mess.
+- Kerala — "nadan food dubai": not found. Noise only (Deliveroo Next Door Kitchen, magicpin Nadia's Kitchen, HappyCow Nalan, Visit Dubai PDF). No Kerala "nadan" food business at all — open gap (our Kerala page already uses "nadan").
+- Tamil — "tamil food delivery dubai": not found. Swiggy India, Visit Dubai delivery article, 2GIS listing, **New Tasty Tamil, Hor Al Anz (eazydiner ×2)**, **Meenatshi Chettinadu, Al Quoz (Deliveroo)**, Sangeetha Abu Dhabi (Deliveroo), Bayut / Property Finder takeaway lists. No Tamil meal plan.
+- Tamil — "south indian veg meals dubai": not found. Bayut veg + South Indian lists, Meenatshi Chettinadu, Bikanervala ×2, **Elco Veg Dine Karama/Al Nahda**, **Home Diner Karama** (Deliveroo), Saravana Bhavan ×2 (HappyCow), VegMe Al Twar (magicpin), Property Finder, Visit Dubai. No veg meal plan.
+- General — "monthly mess dubai": not found. **Royal Kalavara monthly mess Karama (magicpin ×2) #1–2**, cigar-cloud mess self-post, Ebony Wood International City (hidubai); rest monthly rentals / cost of living.
+- General — "mess near me dubai": not found. **Mess Service Alot Kitchen, Motor City (magicpin ×4) #1–4**, Ebony Wood (hidubai), **Erode Amman Mess, Deira (mapthemeal)** (Tamil); rest travel guides / Foursquare.
+- Area — "mess al qusais dubai": not found (our /mess-in-al-qusais.html not shown). Only Wikipedia / Bayut / Property Finder / hotels — **no mess business**, open gap.
+
+### AI/GEO visibility
+- "best Tamil monthly mess tiffin service Dubai": hackmd.io, cigar-cloud mess post, **Royal Kalavara (magicpin ×2)**, Gulf News + The National tiffin articles, Qatar Living "Best Monthly Mess", Tamil Dhaba + Sangeetha (wanderlog), Urban Company "Dubai cooks". No Reddit / Facebook / Tamil association source surfaced. Tamil-specific monthly mess: none found.
+- Sources AI tools would cite: magicpin (Royal Kalavara, Alot Kitchen), hidubai (Ebony Wood), mapthemeal (Erode Amman Mess), eazydiner (New Tasty Tamil), Deliveroo / HappyCow, Gulf News / The National tiffin articles, Bayut / Property Finder / Curly Tales lists. Tayb Meals: not mentioned anywhere.
+- Kerala vs Tamil: Kerala = Royal Kalavara (magicpin) owns "monthly mess"; Kerala "food delivery / nadan" = restaurant lists. Tamil = restaurant/delivery-app pages only. Same pattern as the last 6 days.
+- "Tayb Meals" brand search: not found — Tayeb Kitchen (Al Khabaisi) and Tayba Gourmet app again (name-confusion risk).
+- ChatGPT: no public ChatGPT listing page for Tayb Meals found on the web ("Tayb Meals" + chatgpt.com/openai returned only generic ChatGPT recipe/meal-plan pages), so listing name/website/phones/prices/areas could not be checked. For "monthly mess Dubai", "best Tamil monthly mess" and "Kerala food delivery Dubai", Tayb Meals is not in any web source ChatGPT search is likely to use. Not checked inside ChatGPT.
+
+### Site health
+- Live fetch blocked again (curl code 000 via proxy for /, menu, delivery-timings, about) — checks from repo code (main @ c902547).
+- 59 HTML pages: all have title + meta description; every JSON-LD block parses; 0 broken local links / images. Sitemap: 58 URLs (all except app.html — OK); latest lastmod 2026-11-24.
+- Retired wording: 0 hits for Starter Plan, 2nd/second day, pay only for meals received, free trial, 12 PM. All 376 WhatsApp links → wa.me/971582871967. "Menu changes take 1 working day" = correct per owner, not flagged.
+- Still open (owner): js/delivery-zones.js has **111 areas**, site says "120+ areas" in 14 places (incl. llms.txt). "Bank transfer and CDM are free" wording on 52 lines (uses "free"). Not changed.
+- Coverage: every area page now has the Kerala/Tamil meal-plan FAQ. llms.txt has no per-area list with delivery times (only "120+ areas").
+
+### Plan for tonight
+1. **llms.txt "Areas we deliver" section** grouped by zone with breakfast / dinner cut-off times copied from js/delivery-zones.js (8 zones, 111 areas) and links to the matching /mess-in-<area>.html pages — so ChatGPT / Perplexity can answer "do you deliver Kerala/Tamil mess to <area>?". Do not change the "120+" figure.
+2. **Delivery-app comparison FAQ pair** (delivery apps + restaurant lists own "kerala food delivery dubai" / "tamil food delivery dubai"): on kerala-mess-dubai.html "Is a Kerala monthly mess cheaper than ordering Kerala food on delivery apps every day?" and on tamil-mess-dubai.html the same for Tamil food — plan prices 199/359/459 + VAT (per-meal maths from these only), Mon–Sat + Sunday add-on, menu changes weekly, pay-in-advance + 48-hour refund + 10:00 AM wording copied from the live pages; no competitor names, no invented app prices. Visible + FAQPage JSON-LD.
+3. Sitemap lastmod → 2026-11-25 for changed pages; check tags, JSON-LD, only wa.me/971582871967, no retired wording.
+
+### Owner to-do
+- **Confirm the delivery area count** (list has 111; site says "120+" in 14 places) — e.g. switch to "110+ areas".
+- **List on magicpin** (Royal Kalavara #1–2 "monthly mess", Alot Kitchen #1–4 "mess near me") and **mapthemeal** (Erode Amman Mess is the only Tamil mess showing). Use docs/listing-kit.md.
+- **Verify Google Business Profile** + ask 3–5 customers for Google reviews.
+- Ask ChatGPT "best monthly mess in Dubai" and "Tamil mess in Dubai" on your phone and tell us if Tayb Meals shows; check the listing shows WhatsApp +971 58 287 1967, call +971 50 948 7880, AED 199/359/459.
+- Search Console "Request indexing" for /mess-in-al-qusais.html (no mess business ranks for "mess al qusais").
