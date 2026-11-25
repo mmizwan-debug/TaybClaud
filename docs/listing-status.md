@@ -4,7 +4,7 @@
 |---|---|---|---|
 | Google Business Profile | not found | 2026-11-25 | Owner (2026-10-23): profile started, but Google is not accepting the Dubai eTrader licence for verification. No public Maps / g.page result yet. |
 | hidubai.com (now Invest in Dubai business directory) | live | 2026-11-25 | Owner 2026-11-25: hidubai.com now redirects to the government Invest in Dubai directory (search also shows hidubai.com titled "Invest in Dubai"). Tayb Meals is listed: https://investindubai.gov.ae/en/dubai-business-directory-search/details?id=iBRpSqrwKzVOtbCh4opcMob67KBjE3uc6uQhvmxw24w%3D — legal name "Tayb meals For Purchasing Through Catalogue Services", Warsan, Commercial licence 1626708 (DUL FC3687), Active, issued 24 May 2026, expires 23 May 2027. Address matches (Warsan). It is a licence record: no phone or website field, so nothing to correct there. |
-| magicpin | not found | 2026-11-25 | no magicpin.com/uae/Dubai/ page for Tayb Meals (only unrelated "Tayeb Kitchen", Al Khabaisi). Owner has not reported starting sign-up. |
+| magicpin | blocked | 2026-11-25 | Owner 2026-11-25: magicpin sign-up only accepts Indian mobile numbers (+91), so it can't be created with a UAE number. No public UAE merchant sign-up found. Its UAE pages (magicpin.com/uae/Dubai/...) seem to be built from other public data, so one may appear by itself after the Google profile is live. Not counted as pending; checks keep looking for a page. |
 | Apple Business Connect (Apple Maps) | not found | 2026-11-25 | Owner (2026-10-23): submitted, under review. |
 | Bing Places | not found | 2026-11-25 | Owner (2026-10-23): submitted, under review. |
 
@@ -15,4 +15,3 @@ Note (2026-11-25): owner screenshot shows taybmeals.com ranking first on Google 
 ## Questions waiting for the owner
 - Google verification: try the "documents" option again with this Commercial licence (1626708) and the Invest in Dubai page link above. If Google still refuses, which option did it offer (video, phone/SMS, postcard, documents), and what exactly did it say? Earlier question: which option did Google offer (video, phone/SMS, postcard, documents), and what exactly did it say when it rejected the eTrader licence?
 - Phone number: the site now uses only +971 58 287 1967. Please make sure every pending listing (Google, hidubai, Apple, Bing) uses this number, not 050 948 7880.
-- magicpin: not started yet? (merchant sign-up needs only a mobile OTP)
