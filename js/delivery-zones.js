@@ -162,7 +162,6 @@
         "Serena",
         "Umm Hurair",
         "Umm Ramool",
-        "Umm Suqeim",
         "Villanova",
         "Warsan",
         "World Trade Centre (WTC)"
