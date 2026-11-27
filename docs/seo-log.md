@@ -1658,3 +1658,9 @@ Search tool is a US web index, not Google UAE — rough signal only. taybmeals.c
 - **List on magicpin** (Alot Kitchen #1–2 "mess food dubai"), **mapthemeal** (Erode Amman Mess = only Tamil mess showing) and **hidubai**. Use docs/listing-kit.md.
 - **Confirm the delivery area count** (list has 110; site says "120+" in 14 places) — e.g. "100+ areas".
 - Ask ChatGPT "best monthly mess in Dubai" and "Tamil mess in Dubai" on your phone and tell us if Tayb Meals shows; check the listing shows WhatsApp +971 58 287 1967, call +971 50 948 7880, AED 199/359/459.
+
+### Evening — 2026-11-27
+- Changed (live on main, 288ccbc): **FAQPage JSON-LD on about.html** for the 6 visible "Quick answers" (Kerala mess, Tamil mess, North Indian tiffin, price, areas, payment) — text copied from the visible list, "120+ areas" kept as is. **llms.txt**: 2 new Q&As — "Is there a monthly Tamil home food (veetu saapadu, வீட்டு சாப்பாடு) service in Dubai?" → tamil-mess-dubai.html and "Is there a Malayali mess or Kerala home-style monthly meal plan in Dubai?" → kerala-mess-dubai.html (dishes copied from each page's FAQ, 199/359/459 + VAT, Sunday add-on, billed upfront, 48-hour refund, 10:00 AM). Last updated → 2026-11-27. Sitemap lastmod about.html → 2026-11-27.
+- Checked: about.html tags balanced, all JSON-LD parses, sitemap XML valid, 0 hits for retired wording / wa.me/971509487880 / "free" / "try" in the diff. Live fetch blocked (proxy, code 000) — not confirmed on the live site.
+- Area pages built: none (all 51 live). Proposed (PR): none new — PR #7 still waiting for owner.
+- Next idea: North Indian "tiffin service near <area>" FAQ on Business Bay, JLT, WTC pages using only North Indian dishes on the menu.
